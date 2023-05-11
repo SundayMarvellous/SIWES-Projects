@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <p>Choose favorite languages:</p>
+    <form>
+        <input type="checkbox" id="html" name="HTML">
+        <label for="html" >HTML</label><br>
+        <input type="checkbox" id="css" name="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" name="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="python" name="Python">
+        <label for="python">Python</label>
+    </form>
+    
+
+    
+    <p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br>
+  <input type="radio" id="python" name="Python">
+  <label for="python">Python</label>
+</form>
+
+
+
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+    <input type="submit" value="Submit">
+
+  </form>
+  
+  <form>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <label for="color" style="text-align: center;">Choose a color:</label>
+<select id="color" name="color" size="3">
+  <option value="volvo">Pink</option>
+  <option value="saab">Purple</option>
+  <option value="fiat">Yellow</option>
+  <option value="audi">Blue</option>
+
+</select>
+<br><br><br>
+<button type="button" onclick="alert('Smile')">HI</button><br><br><br>
+<button type="button" onclick="alert('Hey Marvie!')">Say Hi!</button>
+
+<p>HTML CANVAS PRACTICE</p>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(150,50);
+ctx.stroke();
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,50);
+ctx.stroke();
+var ctx = c.getContext("2d");
+ctx.moveTo(200,50);
+ctx.lineTo(150,50);
+ctx.stroke();
+var ctx = c.getContext("2d");
+ctx.moveTo(0,100);
+ctx.lineTo(150,50);
+ctx.stroke();
+var ctx = c.getContext("2d");
+ctx.moveTo(0,100);
+ctx.lineTo(200,50);
+ctx.stroke();
+var ctx = c.getContext("2d");
+ctx.moveTo(200,50);
+ctx.lineTo(150,50);
+ctx.stroke();
+</script>
+
+</body>
+</html>
+
+
+
+</body>
+</html>

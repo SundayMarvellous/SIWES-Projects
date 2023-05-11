@@ -1,0 +1,106 @@
+body{
+    background-color: aliceblue;
+}
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    text-align: center;
+    font-size: 15px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+
+img{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+p{
+    color: rgb(50, 141, 11);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+.movies{
+    width: 100%;
+}
+/*.movies{
+    justify-content: space-between;
+    border: 1px solid red;
+}
+*/
+
+.row{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+.item{
+    width: 300px;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 10px #00000030;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: white;
+    transform: scale(1.02);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* .first-row{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.second-row{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.third-row{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.fourth-row{
+    display: flex;
+    gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+} */

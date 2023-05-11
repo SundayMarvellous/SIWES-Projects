@@ -1,0 +1,101 @@
+body{
+	padding: 0;
+	margin: 0;
+	width:100vw;
+	height: 100vh;
+}
+.panel{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.question-container{
+	margin: 10px;
+	padding: 5px;
+	width: 80vw;
+	height: 10vh;
+	background-color: #c7dddf;
+	font-size: x-large;
+	text-align: center;
+   
+	
+}
+.result{
+	margin: 10px;
+	padding: 5px;
+	width:80vw;
+	height: 10vh;
+	text-align: center;
+	font-size: 50px;
+	
+}
+.option-container{
+	/* display: flex;
+	justify-content: space-around; */
+	margin: 20px;
+	padding: 5px;
+	width: 80vw;
+	height: 20vh;
+	background-color: #9eb1b3;
+	
+}
+.option{
+	padding: 10px;
+    margin: 2px;
+	width: 15vw;
+	height: 10vh;
+	font-size: larger;
+	background-color: lightskyblue;
+	border-radius: 40%;
+}
+.option:hover{
+	background-color: rgb(225, 133, 90);
+    
+}
+.navigation{
+	width: 80vw;
+	height: 10vh;
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	background-color:#c7dddf;
+}
+
+.evaluate,.next{
+	width:30vw;
+	height: 8vh;
+	padding: 5px;
+	font-size: larger;
+    align-self: center;
+}
+
+.evaluate,.next:hover{
+    box-shadow: 2px 3px rgb(1, 1, 93);
+}
+
+.evaluate{
+    color: whitesmoke;
+	background-color: #0909b0;
+}
+.next{
+	color: white;
+	background-color: #b11001;
+}
+
+.back{
+    padding: 5px;
+    width: 15vw;
+    height: 5vh;
+    background-color: aquamarine;
+    font-size: 18px;
+}
+
+.back:hover{
+    box-shadow: 5px 5px hsl(167, 97%, 31%);
+}

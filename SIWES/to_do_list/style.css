@@ -1,0 +1,125 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: blue;
+    text-shadow: 10px 5px  black;
+    font-size: 80px;
+    text-decoration:  underline;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #dedede;
+    transition: 0.2s;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* ul li:nth-child(odd){
+    background-color: #7c7c7c;
+  } */
+  
+  ul li:hover{
+    background-color: #3e3c3c;
+    color: antiquewhite;
+  }
+
+  ul li.checked {
+    background-color: #0b0b0b;
+    color: rgb(255, 215, 166);
+    text-decoration: line-through;
+  }
+
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: 1px solid black;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 12px 16px 12px 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+  
+
+.header {
+    background-color: #fe9b59;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    /* border: 2px solid #f44336; */
+  }
+  
+  /* /* Clear floats after the header  */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }

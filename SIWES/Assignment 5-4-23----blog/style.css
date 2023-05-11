@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(to right, rgb(228, 132, 228),rgb(98, 176, 221));
+}
+
+h1{
+    font-size: 50px;
+    
+}
+
+.topnav {
+  background-color: #d8c0eb;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #05108b;
+  text-align: center;
+  padding: 10px 13px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  box-shadow: 5px 6px rgb(130, 127, 127);
+}
+
+.topnav a.active {
+  background-color: #aa048e;
+  color: white;
+}
+
+.def{
+  
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+.def:hover{
+  background-color: rgb(147, 135, 239);
+  transform: scale(1.02);
+}
+
+.first{
+position: relative; 
+align-items: center;
+justify-content: center;
+display: grid;
+background-color: white;
+}
+
+.first::before{
+  content: "";
+  background-image: url("/images/def.jpg");
+  opacity: 0.25;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+p{
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.first-a{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: center;
+
+}
+
+
+  
+img{
+  width: 350px;
+  height: 300px;
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px rgb(69, 66, 66);
+
+}

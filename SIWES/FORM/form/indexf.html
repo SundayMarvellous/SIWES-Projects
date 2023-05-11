@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link href="form-style.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/action_page.php" autocomplete="on">
+    <h2>PERSONAL DETAILS</h2>
+    <p>Please fill the details below correctly</p>
+    <label for="salut">Salutation:</label>
+    <select id="salut" name="salutation">
+        <option value="mr">Mr.</option>
+        <option value="mrs">Mrs.</option>
+        <option value="miss">Miss</option>
+        <option value="ms">Ms.</option>
+        <option value="none" selected>none</option>
+    </select>
+
+    <br><br>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="F_Name" required><br><br>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="L_Name" required><br><br>
+    <label for="oname">Other Names:</label>
+    <input type="text" id="oname" name="O_Name" disabled><br><br>
+    <label for="comp">Extras:</label>
+    <input type="text" id="comp" name="extra" value="Fasho_co" readonly><br><br>
+
+
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+
+    <br><br>
+    <label for="email">Personal Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="s/c_email">School/Company Email:</label>
+    <input type="s/c_email" id="s/c_email" name="s/c_email">
+
+    <br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+    
+    <label for="datemax">Enter a date before 2006-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="2005-12-31">
+
+    <br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="60">
+
+    <br><br>
+    <label for="age.">Age(Between 18 and 60):</label>
+    <input type="range" id="age." name="age" min="18" max="60">
+
+    <br><br>
+    <label for="avail_time">Time you would be available for interview (date and time):</label>
+    <input type="datetime-local" id="avail_time" name="avail_time">
+
+    <br><br>
+    <label for="Address">Address:</label>
+   <textarea name="Address" rows="10" cols="30">
+        Your address
+    </textarea>
+
+    <br><br>
+    <label for="gsearch">Search Google***:</label>
+    <input type="search" id="gsearch" name="gsearch">
+    
+    <br><br>
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="080-1234-5678">
+
+
+    <br><br>
+    <fieldset>
+    <legend><p>Which of these programming languages do you have experience in?</p></legend>
+    <input type="checkbox" id="exp_language1" name="exp_language1" value="HTML">
+    <label for="exp_language1">HTML</label><br>
+    <input type="checkbox" id="exp_language2" name="exp_language2" value="CSS">
+    <label for="exp_language2">CSS</label><br>
+    <input type="checkbox" id="exp_language3" name="exp_language3" value="JavaScript">
+    <label for="exp_language3">JavaScript</label><br>
+    <input type="checkbox" id="exp_language4" name="exp_language4" value="Python">
+    <label for="exp_language4">Python</label>
+    </fieldset>
+
+    <br><br>
+    <p>What is your most used browser?</p>
+    <input list="mu_browsers" name="mu_browser">
+    <datalist id="mu_browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <br><br>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor">
+    <br><br>
+    <input type="reset"><br><br>
+    <button type="button" onclick="alert('Your Form Has Been Saved!')">Save</button>
+    <input type="submit" value="Submit">
+    
+    
+
+</form>
+
+</body>
+</html>
