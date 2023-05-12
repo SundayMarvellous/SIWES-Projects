@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: darksalmon;
+  background-color: rgb(165, 122, 233);
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ body {
 div {
   position: absolute;
   bottom: 20px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.079);
   padding: 10px 20px;
   font-size: 18px;
 }
@@ -28,7 +28,7 @@ input {
   width: 50px;
   padding: 5px;
   font-size: 18px;
-  background-color: darksalmon;
+  background-color: rgb(70, 67, 67);
   border: none;
   text-align: center;
 }
