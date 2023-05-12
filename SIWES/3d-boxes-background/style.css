@@ -17,7 +17,7 @@ body {
 }
 
 .magic {
-  background-color: #f9ca24;
+  background-color: #5df2d7;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   border: 0;
@@ -72,7 +72,7 @@ body {
 
 .box::after {
   content: '';
-  background-color: #f6e58d;
+  background-color: #5df2d7;
   position: absolute;
   top: 8px;
   right: -15px;
@@ -83,7 +83,7 @@ body {
 
 .box::before {
   content: '';
-  background-color: #f9ca24;
+  background-color: #5df2d7;
   position: absolute;
   bottom: -15px;
   left: 8px;
