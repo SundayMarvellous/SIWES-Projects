@@ -28,7 +28,7 @@ body {
   position: fixed;
   top: 20px;
   letter-spacing: 1px;
-  box-shadow: 0 3px rgba(249, 202, 36, 0.5);
+  box-shadow: 0 3px #13c910;
   z-index: 100;
 }
 
