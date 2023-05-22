@@ -59,15 +59,16 @@ footer{
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-align-items: center;
+align-items: stretch;
+
 
 }
 
 .aparts{
-width: 200px;
+/* width: 300px; */
 border: 2px inset red;
 }
 
 .aparts > img{
-    width: 200px;
+    width: 22vw;
 }
