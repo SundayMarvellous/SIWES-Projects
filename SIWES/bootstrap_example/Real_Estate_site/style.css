@@ -1,10 +1,16 @@
+body{
+   background-color: rgb(255, 255, 255); 
+   margin: auto 10vw; 
+   width: 80vw;
+}
+
 .who{
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 
 .navbar {
-    margin-bottom: 0;
+    margin: 0;
     border-radius: 0;
 }
 
@@ -27,3 +33,24 @@ footer {
 }
 }
 
+footer{
+    background-color: rgb(62, 61, 61); 
+    color: white;
+    margin: auto 0;
+}
+
+.footerme{
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    justify-content: space-around;
+}
+
+.copyright{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social{
+    font-size: 17px;
+}
