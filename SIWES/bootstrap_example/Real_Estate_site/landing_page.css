@@ -1,6 +1,6 @@
 body{
     /* margin: auto 2vw; */
-    background-color: rgb(186, 185, 185);
+    background-color: rgb(255, 255, 255);
 }
 
 .top{
@@ -52,7 +52,7 @@ footer{
 }
 
 .thumbnail{
-    background-color: rgb(223, 221, 223);
+    background-color: rgb(216, 213, 213);
 }
 
 .flexi{

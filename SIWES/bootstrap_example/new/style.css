@@ -53,7 +53,7 @@ body {
 .bg_img{
     background-image: url();
     font-weight: 700;
-    font-size: 52px;
+    font-size: 4vw;
     margin-bottom: 8px;
 }
 
@@ -63,17 +63,17 @@ body {
 }
 
 .quote{
-    font-size: 24px;
+    font-size: 2vw;
     font-weight: 400;
 }
 
 button{
-font-size: 20px;
+font-size: 2vw;
 background-color: #08820c;
 color: white;
 border: #08820c;
 border-radius: 5px;
-padding: 18px 100px;
+padding: 1.2vw 6vw;
 }
 
 .main{
@@ -87,4 +87,10 @@ height: 515px;
 left: 835px;
 top: 160px;
 border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        text-align: center;
+    }
 }
