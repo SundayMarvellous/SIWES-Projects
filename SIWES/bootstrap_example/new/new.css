@@ -1,0 +1,59 @@
+body {
+    /* background-color: #fffcfc; */
+    background-image: url(./Group\ 1171275402.png);
+    background-repeat: no-repeat;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.436),rgba(0, 0, 0, 0.292)); */
+    background-size: cover;
+    background-color: rgba(0, 0, 36, 0.823);
+
+}
+
+.middle{
+    margin: 4vw;
+}
+
+.navbar-brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: black;
+    margin-left: 5vw;
+}
+
+.navbar-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+
+}
+
+.active{
+    text-decoration: 2px underline #08820c;
+    color: #08820c;
+}
+
+.login{
+    border: 2px solid #08820c;
+    padding: 0%;
+    border-radius: 4px;
+}
+
+.sign-up{
+    background-color: #08820c;
+    padding: 1px 2px;
+    margin-right: 10px;
+    border-radius: 4px;
+
+
+}
+
+.main{
+    color: white;
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20vh;
+    font-weight: 700;
+}
+
+.qua{
+    color: #08820c;
+}

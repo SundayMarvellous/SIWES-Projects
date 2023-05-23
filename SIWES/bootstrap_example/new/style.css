@@ -51,7 +51,6 @@ body {
 
 
 .bg_img{
-    background-image: url();
     font-weight: 700;
     font-size: 4vw;
     margin-bottom: 8px;
@@ -83,7 +82,7 @@ padding: 1.2vw 6vw;
 
 .build{
 width: 506px;
-height: 515px;
+height: 75vh;
 left: 835px;
 top: 160px;
 border-radius: 30px;
@@ -93,4 +92,14 @@ border-radius: 30px;
     body{
         text-align: center;
     }
+}
+
+.patners_img{
+    margin-top: 14vh;
+    margin-right: 4vw;
+    width: 5vw;
+}
+
+.quality{
+    margin-top: 5vh;
 }
