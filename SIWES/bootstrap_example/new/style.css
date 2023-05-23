@@ -1,0 +1,90 @@
+body {
+    background-color: #fffcfc;
+}
+
+.middle{
+    margin: 4vw;
+}
+
+.bg_img{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+}
+
+.navbar-brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: black;
+    margin-left: 5vw;
+}
+
+.navbar-nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+
+}
+
+.active{
+    text-decoration: 2px underline #08820c;
+    color: #08820c;
+}
+
+.login{
+    border: 2px solid #08820c;
+    padding: 0%;
+    border-radius: 4px;
+}
+
+.sign-up{
+    background-color: #08820c;
+    padding: 1px 2px;
+    margin-right: 10px;
+    border-radius: 4px;
+
+
+}
+
+.sign-up:hover{
+    color: black;
+}
+
+
+.bg_img{
+    background-image: url();
+    font-weight: 700;
+    font-size: 52px;
+    margin-bottom: 8px;
+}
+
+.qua{
+    color: #08820c;
+   
+}
+
+.quote{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+button{
+font-size: 20px;
+background-color: #08820c;
+color: white;
+border: #08820c;
+border-radius: 5px;
+padding: 18px 100px;
+}
+
+.main{
+    margin-bottom: 8px;
+ 
+}
+
+.build{
+width: 506px;
+height: 515px;
+left: 835px;
+top: 160px;
+border-radius: 30px;
+}
