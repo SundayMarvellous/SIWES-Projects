@@ -53,6 +53,12 @@ footer{
 
 .thumbnail{
     background-color: rgb(216, 213, 213);
+    
+}
+
+.imgc{
+    height: 350px !important;
+    width: 100%;
 }
 
 .flexi{
