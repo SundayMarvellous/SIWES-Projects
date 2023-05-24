@@ -14,14 +14,14 @@ body {
 
 .navbar-brand{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 23px;
     color: black;
     margin-left: 5vw;
 }
 
 .navbar-nav{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
 
 }
@@ -48,12 +48,42 @@ body {
 
 .main{
     color: white;
-    font-size: 4vw;
+    font-size: 2vw;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20vh;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.first{
+    color: white;
+    font-size: 3.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 18vh;
     font-weight: 700;
+    text-align: center;
 }
 
 .qua{
     color: #08820c;
+}
+
+button{
+    font-size: 2vw;
+    background-color: #08820c;
+    color: white;
+    border: #08820c;
+    border-radius: 5px;
+    margin-top: 61px;
+    padding: 1.2vw 6vw;
+}
+
+.patners{
+    background-color: white;
+    margin: auto 0;
+    margin-top: 140px;
+}
+
+.patners_img{
+width: 6vw;
+margin: auto 6.5vw;
 }
