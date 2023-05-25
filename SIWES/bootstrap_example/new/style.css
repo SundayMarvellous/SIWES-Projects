@@ -1,9 +1,10 @@
-body {
+body{
     background-color: #fffcfc;
-}
 
-.middle{
+}
+.intro{
     margin: 4vw;
+
 }
 
 .bg_img{
@@ -16,13 +17,22 @@ body {
     font-size: 23px;
     color: black;
     margin-left: 5vw;
+    padding: auto 3vw;
 }
 
 .navbar-nav{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-
+    font-size: 19px;
 }
+
+ul.nav.navbar-nav *{
+    margin-right: 1vw;
+}
+
+ul.nav.navbar-nav {
+text-align: center;
+}
+
 
 .navbar{
     padding: 13px;
@@ -121,3 +131,38 @@ border-radius: 30px;
 .quality{
     margin-top: 5vh;
 }
+
+.middle1{
+    margin-top: 136px;
+    background-color: #FDFFFD;
+    padding-left: 5vw;
+}
+
+.middle2{
+    margin-top: 136px;
+    height: 750px;
+    padding: 4vw;
+    background-color: #FDFFFD;
+}
+
+.lor{
+    font-size: 24px;
+}
+
+div#myCarousel.carousel.slide{
+    background-color: rgba(36, 36, 36, 0.704);
+}
+
+
+.m2c{
+    color: #DB3069;
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+
+.description{
+    /* padding-left: 4vw; */
+    /* padding-right: 4vw; */
+
+}
+
