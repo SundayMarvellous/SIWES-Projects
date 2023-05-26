@@ -1,0 +1,150 @@
+body{
+    margin: auto 5vw;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+hr.title{
+    border-top: 3px solid rgb(3, 132, 192);
+}
+
+
+h2.title{
+    margin: auto 1vw;
+    font-size: 23px;
+}
+
+p.title{
+    color: rgb(3, 132, 192);
+    margin: auto 1vw;
+    margin-bottom: 2vw;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.title_bottom{
+    border-top: 2px solid;
+    margin-bottom: 30px;
+}
+
+.heads{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 10px;
+    font-size: 20px;
+    /* margin: auto 1vw; */
+
+}
+
+.employee_pay_summary{
+    display: grid;
+    grid-template-columns: 220px 700px auto ;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+/* .employee_pay_summary>div{
+    border: 2px solid red;
+} */
+
+.values{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.diff{
+    margin-bottom: 40px;
+}
+
+.content{
+    text-align: right;
+    padding-right: 75px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+hr.net_pay{
+    margin-top: 130px;
+    padding: auto 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 0;     
+    border-top: 2px solid black;
+}
+    
+
+.amount{
+    margin-top: -18px;
+    margin-bottom: -18px;
+
+}
+
+table{
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+table *{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+td {
+    padding-bottom: 2px;
+    /* text-align: left; */
+    border-bottom: 1px solid #000000;
+}
+
+th{
+    padding-bottom: 10px;
+    border-top: 2px solid rgb(3, 132, 192);
+    border-bottom: 1px dashed rgb(3, 132, 192);
+    color: rgb(3, 132, 192);
+
+}
+
+.other_column{
+    text-align: right;
+    width: 15%;
+}
+
+.first_column{
+    text-align: left;
+    font-weight: 600;
+    width: 70%;
+}
+
+.gross{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.highlight{
+    background-color: rgba(3, 44, 192, 0.181);
+}
+
+.down{
+    color: rgb(3, 132, 192);
+    font-weight: 700;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.words{
+    font-size: 20px;
+}
+
+footer{
+    margin-top: 60px;
+    font-weight: 600;
+    color: grey;
+    font-size: 14px;
+    text-align: center;
+}
