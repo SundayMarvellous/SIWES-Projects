@@ -1,0 +1,55 @@
+nav{
+    background-color: rgb(253, 185, 146);
+    padding: 2px;
+    margin: auto -10px;
+    margin-top: -10px;
+}
+
+nav > p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+body{
+    background: linear-gradient(to right, rgb(124, 124, 255), rgb(211, 211, 255) );
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+img{
+    width: 60px;
+}
+
+.suggest{
+    text-align: center;
+    font-size: 30px;
+}
+
+button{
+    float: right;
+    margin-top: 300px;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: rgb(255, 178, 116);
+    font-size: 18px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 157, 36);
+    color: white;
+    box-shadow: 4px 4px rgb(165, 108, 1);
+}
+
+#activity{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+}
