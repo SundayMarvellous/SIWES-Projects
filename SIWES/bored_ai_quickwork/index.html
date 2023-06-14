@@ -11,11 +11,29 @@
     <nav>
        <p>Activity Finder - Get Activities</p>
     </nav>
-    <h1>Are You Bored? <img class="bored" src="./bore.webp" alt="bored face"> </h1>
-    <p class="suggest">Here are some activities you could do</p>
-    <p id="activity"></p>
-    <!-- <button onclick="yourActivity()"> Click to Load More Activities  </button> -->
-    
-   <script src="script.js"></script>
+    <h1 id="header" class="visible">Are You Bored? <img class="bored" src="./bore.webp" alt="bored face"> </h1>
+    <!-- <div id="container" class="invisible"> -->
+        <p class="suggest">Here are some activities you could do</p>
+        <p id="activity">Activity</p>
+        <p id="type">Type</p>
+        <p id="participants">Participants</p>
+        <p id="accessibility">Accessibility</p>
+    </div>
+    <button type="button" class="yourActivity" id="add-activity">Get Activity</button>    
+   <script>
+    function yourActivity(){
+    container.classlist.replace('invisible', 'visible')
+    header.classList.replace('visible', 'invisible')
+    button.style.top ='75%'
+    button.stye.transform ='translate(-50%, -50%) scale(1.4)'
+    fetch("http://www.boredapi.com/api/activity/")
+    .then(res => res.json())
+    .then(data =>{
+       console.log(data)
+    })
+}
+document.getElementById('add-activity').addEventListener('click', yourActivity)
+
+   </script>
 </body>
 </html>

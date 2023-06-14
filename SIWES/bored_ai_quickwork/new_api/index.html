@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p>Activity Finder - Get Activities</p>
+     </nav>
+     <h1 id="header" class="visible">Are You Bored? <img class="bored" src="/SIWES/bored_ai_quickwork/bore.webp" alt="bored face"> </h1>
+         <p class="suggest">Here are some activities you could do</p>
+         <p class='activities' id="activity">Activity</p>
+         <p class='activities' id="type">Type</p>
+         <p class='activities' id="participants">Participants</p>
+         <p class='activities' id="accessibility">Accessibility</p>
+     </div>
+     <button onclick="getRandomActivity()" type="button" class="getRandomActivity" id="getRandomActivity">Get Activity</button>    
+    <script>
+
+        async function getRandomActivity() {
+        var apiURL="http://www.boredapi.com/api/activity";
+        var response= await fetch(apiURL);
+        var data= await response.json()
+        var {activity} = data;
+        var {type} = data;
+        var {participants} = data;
+        var {accessibility} = data;
+
+
+        document.getElementById("activity").innerHTML = activity;
+        document.getElementById("type").innerHTML = type;
+        document.getElementById("participants").innerHTML = participants;
+        document.getElementById("accessibility").innerHTML = accessibility;
+        }
+    </script>
+</body>
+</html>

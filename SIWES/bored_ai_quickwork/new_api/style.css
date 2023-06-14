@@ -59,51 +59,8 @@ button:hover{
     box-shadow: 4px 4px rgb(165, 108, 1);
 }
 
-.poppins{
-    font-family: sans-serif;
-    font-size: 1.45rem;
-}
-
-.montserrat{
-    font-family: sans-serif;
-    font-size: 1.25rem;
-}
-
 .activities{
     font-size: 30px;
     text-align: center;
     font-weight: 800;
-}
-
-.bold{
-    font-weight: bold;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-.animation{
-    animation: fade 1.75s linear infinite;
-}
-
-@keyframes fade{
-    25%{
-        opacity: 55%;
-    }
-    50%{
-        opacity: 75%;
-    }
-    75%{
-        opacity: 100%;
-    }
-}
-
-.invisible{
-    opacity: 0;
-}
-
-.visible {
-    opacity: 100%;
 }
