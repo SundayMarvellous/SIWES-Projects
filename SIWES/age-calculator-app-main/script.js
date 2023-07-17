@@ -32,4 +32,48 @@ document.querySelector('form').addEventListener('submit', function(event) {
         yearInput.value = ''; // Clear the input field
         yearInput.focus(); // Set focus to the input field
       }
+    else {
+      function diff_years(dt2, dt1) 
+      {
+     
+       var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+        diff /= (60 * 60 * 24);
+       return Math.abs(Math.round(diff/365.25));
+        
+      }
+     
+     dt1 = year;
+     dt2 = currentYear;
+     let show = (diff_years(dt1, dt2))
+     document.getElementById('year').innerHTML = show;
+    }
     });
+
+
+   
+
+  //   function ageCalculator() {  
+  //     var userinput = document.getElementById("DOB").value;  
+  //     var dob = new Date(userinput);  
+  //     if(userinput==null || userinput=='') {  
+  //       document.getElementById("message").innerHTML = "**Choose a date please!";    
+  //       return false;   
+  //     } else {  
+        
+  //     //calculate month difference from current date in time  
+  //     var month_diff = Date.now() - dob.getTime();  
+        
+  //     //convert the calculated difference in date format  
+  //     var age_dt = new Date(month_diff);   
+        
+  //     //extract year from date      
+  //     var year = age_dt.getUTCFullYear();  
+        
+  //     //now calculate the age of the user  
+  //     var age = Math.abs(year - 1970);  
+        
+  //     //display the calculated age  
+  //     return document.getElementById("result").innerHTML =    
+  //              "Age is: " + age + " years. ";  
+  //     }  
+  // }  
