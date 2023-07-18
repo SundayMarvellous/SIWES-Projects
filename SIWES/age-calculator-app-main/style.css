@@ -20,7 +20,7 @@ hr{
 border-top: 1px solid rgba(132, 132, 132, 0.086); 
 width: 85%;
 margin-left: 0;
-margin-top: 20px;
+margin-top: -15px; 
 }
 
 button{
@@ -41,6 +41,10 @@ button{
   padding: 10px;
 }
 
+.alert{
+  color: red;
+  font-size: 8px;
+}
 
 .form-container{
     display: flex;
@@ -101,6 +105,10 @@ button{
   color: hsl(259, 100%, 65%);
 }
 
+.alert{
+  font-size: 10px;
+  color: red;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -124,7 +132,7 @@ button{
   border-top: 1px solid rgba(132, 132, 132, 0.086); 
   width: 100%;
   margin-left: 0;
-  margin-top: 60px;
+  margin-top: 28px;
   margin-bottom: 70px;
   }
   

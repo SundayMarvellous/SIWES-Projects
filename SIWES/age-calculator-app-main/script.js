@@ -7,6 +7,17 @@ document.querySelector('form').addEventListener('submit', function(event) {
       alert('Must be a valid day');
       dayInput.value = ''; // Clear the input field
       dayInput.focus(); // Set focus to the input field
+
+    } else{
+      let dt1 = year;
+      let dt2 = currentYear;
+
+const days = (date_1, date_2) =>{
+    let difference = date_1.getTime() - date_2.getTime();
+    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+    return TotalDays;
+}
+console.log(days(date_1, date_2) +" days to world cup");
     }
   });
 
@@ -32,23 +43,32 @@ document.querySelector('form').addEventListener('submit', function(event) {
         yearInput.value = ''; // Clear the input field
         yearInput.focus(); // Set focus to the input field
       }
+  
     else {
-      function diff_years(dt2, dt1) 
-      {
-     
-       var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+    let dt1 = year;
+    let dt2 = currentYear;
+      const diff_years = (dt2, dt1) =>{
+      let diff =(dt2.getTime() - dt1.getTime()) / 1000;
         diff /= (60 * 60 * 24);
        return Math.abs(Math.round(diff/365.25));
-        
-      }
-     
-     dt1 = year;
-     dt2 = currentYear;
-     let show = (diff_years(dt1, dt2))
-     document.getElementById('year').innerHTML = show;
+     }
+      return document.getElementById("year").innerHTML = 'diff_years';
     }
-    });
-
+  }
+  );
+  // 
+     
+     
+  //    let show = (diff_years(dt2, dt1))
+  //    document.getElementById('year').innerHTML = show;
+  //   }
+  //   });
+  //   const days = (date_1, date_2) =>{
+  //     let difference = date_1.getTime() - date_2.getTime();
+  //     let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+  //     return TotalDays;
+  // }
+  // console.log(days(date_1, date_2) +" days to world cup");
 
    
 
