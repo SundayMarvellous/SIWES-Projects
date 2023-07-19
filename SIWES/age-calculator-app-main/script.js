@@ -1,99 +1,58 @@
-document.querySelector('form').addEventListener('submit', function(event) {
-    var dayInput = document.getElementById('day');
-    var day = parseInt(dayInput.value);
+document.getElementById('ageForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
 
-    if (isNaN(day) || day < 1 || day > 31) {
-      event.preventDefault(); // Prevent form submission
-      alert('Must be a valid day');
-      dayInput.value = ''; // Clear the input field
-      dayInput.focus(); // Set focus to the input field
+  var dayInput = document.getElementById('day');
+  var monthInput = document.getElementById('month');
+  var yearInput = document.getElementById('year');
+  var dayError = document.getElementById('dayError');
+  var monthError = document.getElementById('monthError');
+  var yearError = document.getElementById('yearError');
 
-    } else{
-      let dt1 = year;
-      let dt2 = currentYear;
+  var day = parseInt(dayInput.value);
+  var month = parseInt(monthInput.value);
+  var year = parseInt(yearInput.value);
 
-const days = (date_1, date_2) =>{
-    let difference = date_1.getTime() - date_2.getTime();
-    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-    return TotalDays;
-}
-console.log(days(date_1, date_2) +" days to world cup");
-    }
-  });
+  var currentDate = new Date();
+  var enteredDate = new Date(year, month - 1, day);
 
-  document.querySelector('form').addEventListener('submit', function(event) {
-    var monthInput = document.getElementById('month');
-    var month = parseInt(monthInput.value);
+  // Clear previous error messages
+  dayError.textContent = '';
+  monthError.textContent = '';
+  yearError.textContent = '';
 
-    if (isNaN(month) || month < 1 || month > 12) {
-      event.preventDefault(); // Prevent form submission
-      alert('Must be a valid month');
-      monthInput.value = ''; // Clear the input field
-      monthInput.focus(); // Set focus to the input field
-    }
-  });
+  if (isNaN(day) || day < 1 || day > 31) {
+    dayError.textContent = 'Must be a valid day';
+    dayInput.focus();
+  } else if (isNaN(month) || month < 1 || month > 12) {
+    monthError.textContent = 'Must be a valid month';
+    monthInput.focus();
+  } else if (isNaN(year) || year < 1 || year > currentDate.getFullYear()) {
+    yearError.textContent = 'Must be in the past';
+    yearInput.focus();
+  } else if (dayInput.value.trim() === '') {
+    dayError.textContent = 'The field is required';
+    dayInput.focus();
+  } else if (monthInput.value.trim() === '') {
+    monthError.textContent = 'The field is required';
+    monthInput.focus();
+  } else if (yearInput.value.trim() === '') {
+    yearError.textContent = 'The field is required';
+    yearInput.focus();
+  } else if (enteredDate > currentDate || enteredDate.getMonth() !== month - 1) {
+    dayError.textContent = 'Must be a valid date';
+    dayInput.value = '';
+    monthInput.value = '';
+    yearInput.value = '';
+    dayInput.focus();
+  } else {
+    var ageInMilliseconds = currentDate - enteredDate;
+    var ageDate = new Date(ageInMilliseconds);
+    var ageYears = ageDate.getUTCFullYear() - 1970;
+    var ageMonths = ageDate.getUTCMonth();
+    var ageDays = ageDate.getUTCDate() - 1;
 
-  document.querySelector('form').addEventListener('submit', function(event) {
-    var yearInput = document.getElementById('year');
-    var year = parseInt(yearInput.value);
-    var currentYear = new Date().getFullYear();
-    if (isNaN(year) || year < 1 || year > currentYear) {
-        event.preventDefault(); // Prevent form submission
-        alert('Must be in the past');
-        yearInput.value = ''; // Clear the input field
-        yearInput.focus(); // Set focus to the input field
-      }
-  
-    else {
-    let dt1 = year;
-    let dt2 = currentYear;
-      const diff_years = (dt2, dt1) =>{
-      let diff =(dt2.getTime() - dt1.getTime()) / 1000;
-        diff /= (60 * 60 * 24);
-       return Math.abs(Math.round(diff/365.25));
-     }
-      return document.getElementById("year").innerHTML = 'diff_years';
-    }
+    document.getElementById('yearResult').textContent = ageYears;
+    document.getElementById('monthResult').textContent = ageMonths;
+    document.getElementById('dayResult').textContent = ageDays;
   }
-  );
-  // 
-     
-     
-  //    let show = (diff_years(dt2, dt1))
-  //    document.getElementById('year').innerHTML = show;
-  //   }
-  //   });
-  //   const days = (date_1, date_2) =>{
-  //     let difference = date_1.getTime() - date_2.getTime();
-  //     let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-  //     return TotalDays;
-  // }
-  // console.log(days(date_1, date_2) +" days to world cup");
-
-   
-
-  //   function ageCalculator() {  
-  //     var userinput = document.getElementById("DOB").value;  
-  //     var dob = new Date(userinput);  
-  //     if(userinput==null || userinput=='') {  
-  //       document.getElementById("message").innerHTML = "**Choose a date please!";    
-  //       return false;   
-  //     } else {  
-        
-  //     //calculate month difference from current date in time  
-  //     var month_diff = Date.now() - dob.getTime();  
-        
-  //     //convert the calculated difference in date format  
-  //     var age_dt = new Date(month_diff);   
-        
-  //     //extract year from date      
-  //     var year = age_dt.getUTCFullYear();  
-        
-  //     //now calculate the age of the user  
-  //     var age = Math.abs(year - 1970);  
-        
-  //     //display the calculated age  
-  //     return document.getElementById("result").innerHTML =    
-  //              "Age is: " + age + " years. ";  
-  //     }  
-  // }  
+});
