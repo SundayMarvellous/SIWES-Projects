@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(234, 29%, 20%);
+    box-sizing: border-box;
+    /* font-size: 62.5% */
+}
+
+.mobile-sign-up-illustration{
+    width: 100vw;
+    margin-bottom: -20px;
+}
+
+.desktop-sign-up-illustration{
+    display: none;
+}
+
+.form{
+    padding: 25px;
+}
+
+p{
+    font-weight: 400;
+}
+
+.check{
+    /* margin-top: 5px; */
+    margin-bottom: -4px;
+    margin-right: 10px;
+}
+
+#email{
+    font-weight: 700;
+
+}
+
+.much{
+    margin-bottom: 30px;
+}
+
+input{
+    width: 85vw;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 2px inset hsla(231, 7%, 60%, 0.31);
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    position: absolute;
+    left: 36%;
+    top: 62%;
+    display: none;
+}
+
+button{
+    width: 85vw;
+    height: 40px;
+    margin-top: 8px;
+    border-radius: 7px;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(235, 18%, 26%);
+    /* border: none; */
+}
+
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 12px hsl(4, 100%, 67%);
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+} 
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+a:active{
+    text-decoration: none;
+    color: white;
+}
+
+.appreciation{
+    margin-top: 10vh;
+}
+
+.success-message-dismiss{
+    margin-top: 40vh;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -15px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media screen and (min-width: 600px){
+body{
+    background-color: hsl(235, 18%, 26%);
+
+}
+
+    .mobile-sign-up-illustration{
+        display: none;
+    }
+
+    .desktop-sign-up-illustration{
+        /* width: 100vw; */
+        display: block;
+        height: 90%;
+        margin-top: 30px;
+        margin-bottom: -20px;
+        border-radius: 0;
+    }
+
+    .sign-up-illustration{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        border-radius: 15px;
+        /* align-items: center; */
+        background-color: white;
+        width: 58vw;
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        transform: (-50%, 50%);
+    }
+
+    .form{
+        margin: 55px;
+        width: 50%;
+    }
+
+    input{
+        width: 25vw;
+        height: 50px;
+    }
+    
+    button{
+        width: 25vw;
+        height: 50px;
+    }
+
+    .much{
+        margin-bottom: 40px;
+    }
+
+    .smf{
+        position: absolute;
+        top: 18%;
+        left: 35%;
+        background-color: white;
+        width: 20vw;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    h1{
+        font-size: 38px;
+    }
+
+    .appreciation{
+        margin-top: 0vh;
+    }
+    
+    .success-message-dismiss{
+        margin-top: 2vh;
+        width: 19.4vw;
+
+    }
+}
