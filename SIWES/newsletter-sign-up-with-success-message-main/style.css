@@ -118,7 +118,8 @@ a:active{
     color: hsl(228, 45%, 44%);
   }
 
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 1000px){
 body{
     background-color: hsl(235, 18%, 26%);
 
@@ -129,31 +130,36 @@ body{
     }
 
     .desktop-sign-up-illustration{
-        /* width: 100vw; */
+        width: 30vw;
         display: block;
-        height: 90%;
-        margin-top: 30px;
-        margin-bottom: -20px;
-        border-radius: 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 85vh;
+        position: relative;
+        /* border: 1px solid red; */
     }
 
     .sign-up-illustration{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; 
         justify-content: space-between;
-        border-radius: 15px;
-        /* align-items: center; */
+        align-items: center;
+        justify-items: center;
+        padding-left: 2vw;
         background-color: white;
         width: 58vw;
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 20%;
-        transform: (-50%, 50%);
+        border-radius: 20px;
     }
 
     .form{
-        margin: 55px;
-        width: 50%;
+        padding-left: 2vw;
+        position: relative;
+        width: 25vw;
+
+        /* border: 1px solid orangered; */
     }
 
     input{
