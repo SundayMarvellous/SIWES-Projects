@@ -1,0 +1,31 @@
+body{
+    background-color: #EFF5FF;
+    margin: 0;
+    padding: 0;
+}
+
+.container__bg-image{
+    width: 100%;
+}
+
+.container__main-background{
+    /* border: 1px solid red ; */
+    height: 55vh;
+    width: 90vw;
+    position: absolute;
+    top: 15%;
+    left: 4.5%;
+    background-color: white;
+    border-radius: 3%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.container__main-heading{
+    margin-top: 0;
+}
+
+.container__main-info{
+    color: #9699AA;
+    font-size: 16px;
+}
