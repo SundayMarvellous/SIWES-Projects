@@ -16,12 +16,12 @@
         <img class="container__bg-image" src="./assets/images/top.svg"></img>
         <div class="container__bg-pagination">
           <div class="container_bg-pagination-1 container__bg-paginations">1</div>
-          <div class="container_bg-pagination-2 container__bg-paginations">2</div>
+          <div class="container_bg-pagination-2 container__bg-paginations container__bg-paginations-active">2</div>
           <div class="container_bg-pagination-3 container__bg-paginations">3</div>
           <div class="container_bg-pagination-4 container__bg-paginations">4</div>
         </div>
       </div>
-      <div class="container__main-background">
+      <div id="container__main-background">
         <div class="container__main-background-side">
           <img class="container__main-background-side-image" src="./assets/images/Oval.svg">
           <div class="container__bg-pagination2">
@@ -34,7 +34,7 @@
               </div>
             </div>
             <div class="container_bg-pagination-2 group">
-              <div class="container__bg-paginations2 container__bg-paginations2-active ">2 </div>
+              <div class="container__bg-paginations2 container__bg-paginations2-active">2 </div>
               <div class="container__bg-pagination2-details">
                 <p id="step">STEP 2</p>
                 <br>
@@ -63,29 +63,47 @@
             <h1 class="container__main-heading">Select your plan</h1>
             <p class="container__main-info">You have the option of monthly or yearly billing.</p>
             <form>
-                <div class="container__main-form">
-                    <div class="container__main-cards">
-                        <button class="container__main-card container__main-cards-1">
-                            <p>Arcade</p>
-                            <p></p>
-                        </button>
-                        <button class="container__main-card container__main-cards-2">
-                            <p>Adnanced</p>
-                            <p></p>
-                        </button>
-                        <button class="container__main-card container__main-cards-3">
-                            <p>Pro</p>
-                            <p></p>
-                        </button>
+              <div class="container__main-form">
+                <div class="container__main-cards-button">
+                  <button class="container__main-card container__main-cards-1 container__main-card-head-active" id="container__main-card-head-active">
+                    <img class="container__main-card-images" src="./assets/images/arcade img.svg">
+                    <div class="container__main-card-details">
+                      <p class="container__main-card-head">Arcade</p>
+                      <p class="container__main-card-price">$9/mo</p>
                     </div>
-
+                  </button>
+                  <button class="container__main-card container__main-cards-2">
+                    <img class="container__main-card-images" src="./assets/images/advanced img.svg" alt="advanved icon">
+                    <div class="container__main-card-details">
+                      <p class="container__main-card-head">Advanced</p>
+                      <p class="container__main-card-price">$12/mo</p>
+                    </div>
+                  </button>
+                  <button class="container__main-card container__main-cards-3">
+                    <img class="container__main-card-images" src="./assets/images/pro img.svg">
+                    <div class="container__main-card-details">
+                      <p class="container__main-card-head">Pro</p>
+                      <p class="container__main-card-price">$15/mo</p>
+                    </div>
+                  </button>
                 </div>
+                <div class="container__main-plan-option">
+                  <p class="container__main-card-plan-option-monthly">Monthly</p>
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                  <p class="container__main-card-plan-option-yearly">Yearly</p>
+                </div>
+                
+
+              </div>
             </form>
       </div>
-      <div class="container__buttom">
-        <p></p>
-        <button class="container__buttom-button" type="submit">Next Step</button>
-      </div>
+    </div>
+    <div class="container__buttom">
+      <button class="container__buttom-button-previous" type="submit">Go back</button>
+      <button class="container__buttom-button-next" type="submit">Next Step</button>
     </div>
     <script src="./script.js"></script>
   </body>

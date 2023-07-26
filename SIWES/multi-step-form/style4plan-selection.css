@@ -1,3 +1,4 @@
+
 div #background{
         border: 1px solid red ;
     height: 95vh;
@@ -12,3 +13,243 @@ div #background{
     box-shadow: 0px 5px 10px #D6D9E6;
 
 }
+
+#container__main-background{
+ border: 1px solid red ;
+ height: fit-content;
+ margin-bottom: 100px;
+ width: 90vw;
+ position: absolute;
+ top: 15%;
+ left: 4.5%;
+ background-color: white;
+ border-radius: 3%;
+ box-sizing: border-box;
+ padding: 30px;
+ box-shadow: 0px 5px 10px #D6D9E6;
+}
+
+
+.container__buttom{
+    background-color: white;
+    margin-bottom: 0;
+    width: 100%;
+    height: 13%;
+    position: absolute;
+    top: 87%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 22px;
+    padding-right: 22px;
+
+
+}
+
+
+.container__main-cards-button{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+ }
+
+ .container__main-card{
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    border: none;
+    border: 1px solid #9699AA;
+    height: 11vh;
+    margin-bottom: 10px;
+ }
+
+ .container__main-card-images{
+    margin-top: 14px;
+    margin-left: 14px;
+ }
+
+ .container__main-card-head{
+    color: #022959;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 6px;
+ }
+
+ .container__main-card-price{
+    color: #9699AA;
+    font-size: 14px;
+    font-weight: 500;
+ }
+
+.container__main-plan-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #022959;
+    font-weight: 600;
+    background-color: #F8F9FF;
+}
+
+.container__main-card-head-active{
+    border: 1px solid #6259FF;
+    background-color: #F8F9FF;
+
+}
+
+.container__main-card-plan-option-yearly{
+    color: #9699AA;
+}
+
+ .container__main-card-details{
+   /* border: 1px solid red; */
+   margin-left: 20px;
+   padding: 0;
+   text-align: left;
+ }
+
+ .container__buttom-button-previous{
+    color: #9699AA;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    font-size: 16px;
+ }
+
+ .container__buttom-button-next{
+    color: white;
+    background-color: #022959;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 5px;
+ }
+ /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid red;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #022959;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #9699AA;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #022959;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 900px){
+    /* .container__main-cards{
+        border: 1px solid red ;
+        height: 80vh;
+        width: 50vw;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        background-color: white;
+        border-radius: 1%;
+        box-sizing: border-box;
+        padding: 30px;
+        box-shadow: 0px 5px 10px #D6D9E6;
+    } */
+
+    .container__buttom{
+        background-color: transparent;
+        margin-bottom: 0;
+        width: 100%;
+        height: 13%;
+        position: absolute;
+        top: 87%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 43vw;
+        padding-right: 12.6vw;
+    }
+
+    .container__main-background-side-image{
+        display: block;
+        height: 86vh;
+        width: 100%;
+        padding-left: -2vw;
+        /* border: 1px solid red; */
+    }
+
+    .container__main-cards-button{
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid red; */
+     }
+
+     #container__main-card-head-active{
+        border: 1px solid #6259FF;
+        background-color: #F8F9FF;
+     }
+    
+    .container__main-card{
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: white;
+        border: none;
+        border: 1px solid #9699AA;
+        height: 160px;
+        width: 138px;
+        margin-right: 20px;
+    }
+  
+  }

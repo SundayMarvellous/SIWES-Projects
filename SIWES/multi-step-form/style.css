@@ -127,10 +127,11 @@ body{
     display: none;
  }
 
+
 @media screen and (min-width: 900px){
     .container__main-background{
         /* border: 1px solid red ; */
-        height: 90vh;
+        height: 80vh;
         width: 90vw;
         position: absolute;
         top: 15%;
@@ -268,7 +269,7 @@ body{
         display: block;
         position: absolute;
         color: white;
-        top: 92%;
+        top: 83%;
         left: 76%;
         background-color: #022959;
         height: 8%;
