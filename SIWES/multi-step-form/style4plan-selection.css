@@ -1,6 +1,6 @@
 
 div #background{
-        border: 1px solid red ;
+        /* border: 1px solid red ; */
     height: 95vh;
     width: 90vw;
     position: absolute;
@@ -15,7 +15,7 @@ div #background{
 }
 
 #container__main-background{
- border: 1px solid red ;
+ /* border: 1px solid red ; */
  height: fit-content;
  margin-bottom: 100px;
  width: 90vw;
@@ -251,5 +251,12 @@ div #background{
         width: 138px;
         margin-right: 20px;
     }
-  
+    
+    .container__main-background {
+        border: 1px solid red;
+    }
+
+    .container__main-background > div {
+        border: 1px solid red;
+    }
   }
