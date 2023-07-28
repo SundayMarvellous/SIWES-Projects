@@ -132,7 +132,7 @@ div #background{
     height: 24px;
     margin-left: 15px;
     margin-right: 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   
   /* Hide default HTML checkbox */
@@ -211,20 +211,21 @@ div #background{
         width: 100%;
         height: 13%;
         position: absolute;
-        top: 87%;
+        top: 93%;
         display: flex;
         justify-content:space-between;
         align-items: center;
         box-sizing: border-box;
         padding-left: 43vw;
-        padding-right: 12.6vw;
+        padding-right: 17vw;
     }
 
     .container__main-background-side-image{
         display: block;
         height: 86vh;
         width: 100%;
-        padding-left: -2vw;
+        padding-left: -200vw;
+        margin-left: -2.4vw;
         /* border: 1px solid red; */
     }
 
@@ -235,7 +236,7 @@ div #background{
      }
 
      #container__main-card-head-active{
-        border: 1px solid #6259FF;
+        border: 2px solid #6259FF;
         background-color: #F8F9FF;
      }
     
@@ -246,17 +247,34 @@ div #background{
         flex-direction: column;
         background-color: white;
         border: none;
-        border: 1px solid #9699AA;
-        height: 160px;
-        width: 138px;
-        margin-right: 20px;
-    }
-    
-    .container__main-background {
-        border: 1px solid red;
+        border: 2px solid #9699aa58;
+        height: 25vh;
+        width: 11vw;
+        margin-right: 2vw;
     }
 
-    .container__main-background > div {
-        border: 1px solid red;
+    .container__main-cards{
+        margin-left: auto;
+        margin-right: auto;
     }
+    
+    .container__bg-pagination2{
+      margin-top: 3vw;
+      /* border: 1px solid yellow; */
+    }
+
+    #container__main-background {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* #container__main-background > div {
+      border: 1px solid blue;
+  } */
+
+  .container__main-heading{
+    margin-top: 4vw;
+  }
+
   }

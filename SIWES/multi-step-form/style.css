@@ -149,11 +149,20 @@ body{
 
     .container__main-background-side-image{
         display: block;
-        height: 86vh;
+        height: 100%;
         width: 100%;
         padding-left: 2.5vw;
         /* border: 1px solid red; */
     }
+
+    .container__main-background-side{
+        /* border: 1px solid blue; */
+        height: 99%;
+    }
+    
+    /* .container__main-background{
+        border: 1px solid red;
+    } */
 
     .container__main{
         padding-left: 4.2vw;

@@ -1,0 +1,27 @@
+.container__main-card-price-addons{
+    color: #483EFF;
+    /* margin-right:; */
+}
+
+.container__main-card-addons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-items: center;
+    justify-content: space-between;
+    /* column-gap: 10vw; */
+    border: 1px solid salmon;
+
+}
+
+.container__main-card-addons *{
+    border: 1px solid salmon;
+}
+
+.container__main-card{
+    width: 100%;
+}
+
+.container__main-cards-addons-checkbox{
+    height: 4vh;
+}
