@@ -1,0 +1,21 @@
+.header{
+    background: linear-gradient(to right, #effeff76, #d6e6fea0);
+    text-align: center;
+    padding: 24px;
+    border-radius: 0 0 35px 35px;
+    border-bottom: 1px solid black;
+
+
+    h1{
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 24px;
+        color: $Gunmetal;
+    }
+
+    p{
+        font-size: 16px;
+        color: $DarkElectricBlue;
+        margin-bottom: 217px;
+    }
+}

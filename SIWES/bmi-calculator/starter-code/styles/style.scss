@@ -1,0 +1,20 @@
+$Gunmetal: #253347 ;
+$DarkElectricBlue: #5E6E85;
+$Blue: #345FF6;
+$Purewhite: #FFFFFF;
+$Borders: #345FF6;
+
+
+@import "./header";
+@import "./form";
+@import "./radioButton";
+
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   
+}
