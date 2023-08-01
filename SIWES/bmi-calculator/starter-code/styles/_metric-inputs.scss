@@ -1,0 +1,44 @@
+.metric-inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    .metric{
+        display: flex;
+        flex-direction: column;
+        .number-input{
+          padding: 15px;  
+          border-radius: 12px;
+          border: 1px solid #D8E2E7;
+          display: flex;
+          justify-content: space-between;
+          color: $Gunmetal;
+
+          input{
+            border: none;
+            text-align: left;
+            font-size: 24px;
+            font-weight: 600;
+            width: 173px;
+
+            &:focus{
+            border: 1px solid rgb(0, 115, 255);
+            box-shadow: 0 0 3px rgb(0, 115, 255);
+            outline-offset: 0px;
+            outline: none;
+            }
+
+        }
+
+          .unit{
+            color: blue;
+            font-size: 24px;
+          }
+        }
+        p{
+            text-align: left;
+            margin-bottom: -12px;
+            font-size: 14px;
+            color: $DarkElectricBlue;
+        }
+    }
+}

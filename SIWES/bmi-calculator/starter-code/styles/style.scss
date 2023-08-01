@@ -8,8 +8,15 @@ $Borders: #345FF6;
 @import "./header";
 @import "./form";
 @import "./radioButton";
+@import "./metric-inputs";
+@import "./result";
+@import "./images";
+@import "./bmi-meaning";
 
 
+body{
+    background: linear-gradient(to right, $Purewhite, #ebf1fa);
+}
 
 * {
     font-family: 'Inter', sans-serif;
