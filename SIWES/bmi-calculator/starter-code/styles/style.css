@@ -22,9 +22,10 @@ form {
   width: 70vw;
   position: absolute;
   top: 471px;
-  left: 9vw;
+  left: 10vw;
   padding: 24px;
   border-radius: 16px;
+  box-shadow: rgba(150, 150, 255, 0.397) 0px 20px 30px;
 }
 form h3 {
   color: #253347;
@@ -80,7 +81,7 @@ form h3 {
   text-align: left;
   font-size: 24px;
   font-weight: 600;
-  width: 173px;
+  width: 40vw;
 }
 .metric-inputs .metric .number-input input:focus {
   border: 1px solid rgb(0, 115, 255);
@@ -130,17 +131,81 @@ form h3 {
 }
 
 .image-man-eating {
-  width: 10vw;
-  height: 20px;
+  width: 100vw;
+  height: 350px;
   margin-left: 0;
   margin-top: 552px;
   padding: 0;
-  border: 1px solid red;
+  margin-bottom: 48px;
 }
 
-.bmi-meaning .means {
+.second-page {
+  background-color: #FFFFFF;
+  margin-bottom: 70px;
+}
+.second-page .bmi-meaning {
+  padding: 24px;
+  text-align: left;
+  color: #5E6E85;
+}
+.second-page .bmi-meaning .means {
   font-size: 32px;
   font-weight: 600;
+  letter-spacing: -5%;
+  text-align: left;
+  color: #253347;
+}
+
+.third-page {
+  background: linear-gradient(to right, rgba(247, 252, 255, 0.826), rgba(240, 251, 255, 0.7450980392));
+  padding: 24px;
+}
+.third-page .points {
+  text-align: left;
+}
+.third-page .points * {
+  text-align: left;
+}
+.third-page .points h3 {
+  margin-top: 32px;
+  color: #253347;
+}
+.third-page .points p {
+  margin-bottom: 24px;
+  margin-top: 24px;
+  color: #5E6E85;
+}
+
+.fourth-page {
+  background-color: #FFFFFF;
+  padding: 24px;
+  padding-top: 72px;
+  color: #5E6E85;
+}
+.fourth-page h2 {
+  color: #253347;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+.fourth-page p {
+  margin-bottom: 56px;
+}
+.fourth-page .cards {
+  box-shadow: rgba(156, 187, 208, 0.812) 0px 3px 20px;
+  padding: 24px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+}
+.fourth-page .cards .heading {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin-bottom: 20px;
+}
+.fourth-page .cards .heading h3 {
+  text-align: left;
 }
 
 body {
