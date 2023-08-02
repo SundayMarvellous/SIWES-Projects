@@ -5,6 +5,9 @@
   border-radius: 0 0 35px 35px;
   border-bottom: 1px solid black;
 }
+.header .header_title2 {
+  display: none;
+}
 .header h1 {
   font-size: 48px;
   font-weight: 600;
@@ -17,6 +20,19 @@
   margin-bottom: 217px;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  .header .header_title {
+    display: none;
+  }
+  .header .header_title2 {
+    margin-top: 40px;
+    display: block;
+  }
+}
 form {
   background-color: #FFFFFF;
   width: 70vw;
@@ -32,6 +48,20 @@ form h3 {
   text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  form {
+    width: 75vw;
+    top: 371px;
+    left: 8vw;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: rgba(150, 150, 255, 0.397) 0px 20px 30px;
+  }
+  form h3 {
+    color: #253347;
+    text-align: left;
+  }
+}
 .choices {
   display: flex;
   justify-items: center;
@@ -59,6 +89,14 @@ form h3 {
   margin-top: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .choices {
+    display: grid;
+    grid-template-columns: auto 58vw;
+    align-items: center;
+    justify-content: none;
+  }
+}
 .metric-inputs {
   display: flex;
   flex-direction: column;
@@ -71,6 +109,7 @@ form h3 {
 .metric-inputs .metric .number-input {
   padding: 15px;
   border-radius: 12px;
+  gap: 24px;
   border: 1px solid #D8E2E7;
   display: flex;
   justify-content: space-between;
@@ -100,9 +139,18 @@ form h3 {
   color: #5E6E85;
 }
 
+@media screen and (min-width: 768px) {
+  .metric-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .metric-inputs .metric .number-input input {
+    width: 24.5vw;
+  }
+}
 .result {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   background-color: #345FF6;
   color: #FFFFFF;
   border-radius: 16px;
@@ -130,15 +178,36 @@ form h3 {
   font-weight: 600;
 }
 
+@media screen and (min-width: 768px) {
+  .result {
+    border-radius: 100px 999px 999px 100px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+  }
+  .result div {
+    width: 45%;
+  }
+}
 .image-man-eating {
   width: 100vw;
-  height: 350px;
+  height: 60vh;
   margin-left: 0;
   margin-top: 552px;
   padding: 0;
   margin-bottom: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .image-man-eating {
+    width: 100%;
+    margin-top: 400px;
+    margin-right: -15vw;
+    height: auto;
+    margin-bottom: 48px;
+  }
+}
 .second-page {
   background-color: #FFFFFF;
   margin-bottom: 70px;
@@ -208,6 +277,79 @@ form h3 {
   text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  .second-page {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+  }
+  .second-page .bmi-meaning {
+    margin-top: 400px;
+    padding: 24px;
+    margin-right: 43px;
+    text-align: left;
+  }
+  .second-page .bmi-meaning .means {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -5%;
+    text-align: left;
+    color: #253347;
+  }
+  .third-page {
+    padding: 43px;
+  }
+  .third-page .points {
+    text-align: left;
+    display: flex;
+    gap: 40px;
+  }
+  .fourth-page {
+    background-color: #FFFFFF;
+    padding: 24px;
+    padding-top: 96px;
+    padding-left: 43px;
+    padding-right: 43px;
+    color: #5E6E85;
+  }
+  .fourth-page h2 {
+    color: #253347;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .fourth-page p {
+    margin-bottom: 56px;
+    text-align: left;
+  }
+  .fourth-page .card {
+    display: flex;
+    text-align: left;
+    gap: 2%;
+  }
+  .fourth-page .card .cards {
+    box-shadow: rgba(156, 187, 208, 0.812) 0px 3px 20px;
+    padding: 24px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    width: 45%;
+    text-align: left;
+  }
+  .fourth-page .card .e {
+    margin-left: 22vw;
+  }
+  .fourth-page .heading {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    margin-bottom: 20px;
+  }
+  .fourth-page .heading h3 {
+    text-align: left;
+  }
+}
 body {
   background: linear-gradient(to right, #FFFFFF, #ebf1fa);
 }

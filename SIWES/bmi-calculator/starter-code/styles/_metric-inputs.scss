@@ -8,6 +8,7 @@
         .number-input{
           padding: 15px;  
           border-radius: 12px;
+          gap: 24px;
           border: 1px solid #D8E2E7;
           display: flex;
           justify-content: space-between;
@@ -41,4 +42,23 @@
             color: $DarkElectricBlue;
         }
     }
+}
+
+@media screen and (min-width: 768px){
+  .metric-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .metric{
+      .number-input{
+        input{
+          width: 24.5vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px){
+    
 }

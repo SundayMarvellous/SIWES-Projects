@@ -5,6 +5,9 @@
     border-radius: 0 0 35px 35px;
     border-bottom: 1px solid black;
 
+    .header_title2{
+        display: none;
+    }
 
     h1{
         font-size: 48px;
@@ -18,4 +21,23 @@
         color: $DarkElectricBlue;
         margin-bottom: 217px;
     }
+}
+
+@media screen and (min-width:768px){
+    .header{
+        padding-left: 39px;
+        padding-right: 39px;
+
+        .header_title{
+            display: none;
+        }
+        .header_title2{
+            margin-top: 40px;
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    
 }

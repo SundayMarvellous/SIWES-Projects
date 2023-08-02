@@ -38,6 +38,16 @@
     }
 }
 
+@media screen and (min-width:768px){
+    .choices{
+    display: grid;
+    grid-template-columns: auto 58vw;
+    align-items: center;
+    justify-content: none;
+    }
+}
 
-
+@media screen and (min-width: 1440px){
+    
+}
 

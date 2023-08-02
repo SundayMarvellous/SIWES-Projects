@@ -12,3 +12,23 @@ form{
         text-align: left;
     }
 }
+
+@media screen and (min-width: 768px){
+    form{
+        width: 75vw;
+        top: 371px;
+        left: 8vw;
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: rgba(150, 150, 255, 0.397) 0px 20px 30px;
+        h3{
+            color: $Gunmetal;
+            text-align: left;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1440px){
+    
+}
