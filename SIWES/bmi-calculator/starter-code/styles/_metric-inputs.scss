@@ -60,5 +60,16 @@
 }
 
 @media screen and (min-width: 1440px){
-    
+  .metric-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .metric{
+      .number-input{
+        input{
+          width: 12vw;
+        }
+      }
+    }
+  }
 }

@@ -33,6 +33,32 @@
     display: block;
   }
 }
+@media screen and (min-width: 1440px) {
+  .header {
+    margin-left: 24px;
+    border-radius: 0 0 35px 35px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 116px;
+    box-sizing: border-box;
+  }
+  .header img {
+    margin-top: 74px;
+    margin-bottom: 8vh;
+  }
+  .header .header_sub {
+    width: 60%;
+  }
+  .header .header_sub .header_title2 {
+    text-align: left;
+  }
+  .header .header_sub p {
+    text-align: left;
+    width: 80%;
+  }
+}
 form {
   background-color: #FFFFFF;
   width: 70vw;
@@ -53,6 +79,20 @@ form h3 {
     width: 75vw;
     top: 371px;
     left: 8vw;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: rgba(150, 150, 255, 0.397) 0px 20px 30px;
+  }
+  form h3 {
+    color: #253347;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  form {
+    width: 40vw;
+    top: 20vh;
+    left: 45vw;
     padding: 32px;
     border-radius: 16px;
     box-shadow: rgba(150, 150, 255, 0.397) 0px 20px 30px;
@@ -147,6 +187,16 @@ form h3 {
   }
   .metric-inputs .metric .number-input input {
     width: 24.5vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .metric-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .metric-inputs .metric .number-input input {
+    width: 12vw;
   }
 }
 .result {
@@ -351,7 +401,7 @@ form h3 {
   }
 }
 body {
-  background: linear-gradient(to right, #FFFFFF, #ebf1fa);
+  background-color: #FFFFFF;
 }
 
 * {

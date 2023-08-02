@@ -39,5 +39,32 @@
 }
 
 @media screen and (min-width: 1440px){
-    
+    .header{
+        margin-left: 24px;
+        border-radius: 0 0 35px 35px;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        padding-left: 116px;
+        box-sizing: border-box;
+
+        img{
+            margin-top: 74px;
+            margin-bottom: 8vh;
+        }
+
+        .header_sub{ 
+            width: 60%;
+            .header_title2{
+                text-align: left;
+            }
+
+            p{
+                text-align: left;
+                width: 80%;
+            }
+        }
+       
+    }
 }

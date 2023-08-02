@@ -30,5 +30,16 @@ form{
 }
 
 @media screen and (min-width: 1440px){
-    
+    form{
+        width: 40vw;
+        top: 20vh;
+        left: 45vw;
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: rgba(150, 150, 255, 0.397) 0px 20px 30px;
+        h3{
+            color: $Gunmetal;
+            text-align: left;
+        }
+    }
 }
