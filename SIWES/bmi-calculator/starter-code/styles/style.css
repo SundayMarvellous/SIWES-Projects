@@ -92,7 +92,7 @@ form h3 {
 @media screen and (min-width: 1440px) {
   form {
     width: 40vw;
-    top: 20vh;
+    top: 18vh;
     left: 45vw;
     padding: 32px;
     border-radius: 16px;
@@ -138,6 +138,14 @@ form h3 {
     justify-content: none;
   }
 }
+@media screen and (min-width: 1440px) {
+  .choices {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 67%;
+  }
+}
 .metric-inputs {
   display: flex;
   flex-direction: column;
@@ -178,6 +186,49 @@ form h3 {
   margin-bottom: -12px;
   font-size: 14px;
   color: #5E6E85;
+}
+
+.imperial-inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.imperial-inputs .imperial {
+  display: flex;
+  flex-direction: column;
+}
+.imperial-inputs .imperial p {
+  text-align: left;
+}
+.imperial-inputs .imperial .number-input {
+  display: flex;
+  gap: 20px;
+}
+.imperial-inputs .imperial .number-input .un {
+  padding: 15px;
+  border-radius: 12px;
+  gap: 24px;
+  border: 1px solid #D8E2E7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imperial-inputs .imperial .number-input .un .unit {
+  color: blue;
+  font-size: 24px;
+}
+.imperial-inputs .imperial .number-input input {
+  border: none;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  width: 25%;
+}
+.imperial-inputs .imperial .number-input input:focus {
+  border: 1px solid rgb(0, 115, 255);
+  box-shadow: 0 0 3px rgb(0, 115, 255);
+  outline-offset: 0px;
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {

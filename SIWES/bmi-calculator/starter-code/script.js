@@ -4,7 +4,7 @@
   const content2 = document.getElementById('content2');
 
   form.addEventListener('change', function() {
-    const selectedOption = document.querySelector('input[name="measurment-type"]:checked').value;
+    const selectedOption = document.querySelector('input[name="measurement-type"]:checked').value;
     
     if (selectedOption === 'Metric') {
       content1.style.display = 'block';
@@ -15,3 +15,11 @@
     }
   });
 
+  $(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".result").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
