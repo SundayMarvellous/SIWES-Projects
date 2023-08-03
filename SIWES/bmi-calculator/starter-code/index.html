@@ -65,7 +65,7 @@
           <p>Height</p>
           <br />
           <div class="number-input">
-            <input type="number" id="height" />
+            <input type="number" id="height" placeholder="0"/>
             <h4 class="unit">cm</h4>
           </div>
         </label>
@@ -73,7 +73,7 @@
           <p>Weight</p>
           <br />
           <div class="number-input">
-            <input type="number" id="weight" />
+            <input type="number" id="weight" placeholder="0"/>
             <h4 class="unit">kg</h4>
           </div>
         </label>
@@ -130,6 +130,7 @@
     <div class="second-page">
       <img src="./assets/images/man-eating.png" class="image-man-eating" />
       <div class="bmi-meaning">
+        <img src="./assets/images/curve.svg" class="curve">
         <p class="means">What your BMI result means</p>
         <p>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
         Maintaining a healthy weight may lower your chances of experiencing
@@ -184,15 +185,18 @@
       </div>
     </div>
     <div class="fourth-page">
-      <h2>Limitations of BMI</h2>
-      <p>
-        Although BMI is often a practical indicator of healthy weight, it is not
-        suited for every person. Specific groups should carefully consider their
-        BMI outcomes, and in certain cases, the measurement may not be
-        beneficial to use.
-      </p>
+      <div class="Limitations">
+        <h2>Limitations of BMI</h2>
+        <p>
+          Although BMI is often a practical indicator of healthy weight, it is not
+          suited for every person. Specific groups should carefully consider their
+          BMI outcomes, and in certain cases, the measurement may not be
+          beneficial to use.
+        </p>
+      </div>
+      <img src="./assets/images/curve2.svg" class="curve2">
       <div class="card">
-        <div class="cards">
+        <div class="cards" id="a">
           <div class="heading">
             <img src="./assets/images/icon-gender.svg" />
             <h3>Gender</h3>
@@ -203,7 +207,7 @@
             evaluating their BMI.
           </p>
         </div>
-        <div class="cards">
+        <div class="cards" id="b">
           <div class="heading">
             <img src="./assets/images/icon-age.svg" />
             <h3>Age</h3>
@@ -215,7 +219,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="cards">
+        <div class="cards" id="c">
           <div class="heading">
             <img src="./assets/images/icon-muscle.svg" />
             <h3>Muscle</h3>
@@ -225,7 +229,7 @@
             doesn't differentiate muscle from fat.
           </p>
         </div>
-        <div class="cards">
+        <div class="cards"  id="d">
           <div class="heading">
             <img src="./assets/images/icon-pregnancy.svg" />
             <h3>Pregnancy</h3>
@@ -238,7 +242,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="cards e">
+        <div class="cards e" id="e">
           <div class="heading">
             <img src="./assets/images/icon-race.svg" />
             <h3>Race</h3>

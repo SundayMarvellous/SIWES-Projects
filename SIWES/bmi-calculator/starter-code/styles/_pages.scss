@@ -13,6 +13,10 @@
         text-align: left;
         color: $Gunmetal;
     }
+
+    .curve{
+        display: none;
+    }
 }
 }
 
@@ -57,6 +61,10 @@
         margin-bottom: 56px;
     }
 
+    .curve2{
+        display: none;
+    }
+
     .cards{
         box-shadow: rgba(156, 187, 208, 0.812) 0px 3px 20px;
         padding: 24px;
@@ -97,6 +105,10 @@
                 text-align: left;
                 color: $Gunmetal;
             }
+
+            .curve{
+                display: none;
+            }
         }   
     }
 
@@ -116,6 +128,11 @@
         padding-left: 43px;
         padding-right: 43px;
         color: $DarkElectricBlue;
+
+        .curve2{
+            display: none;
+        }
+
     
         h2{
             color: $Gunmetal;
@@ -132,7 +149,6 @@
             display: flex;
             text-align: left;
             gap: 2%;
-
 
            .cards{
             box-shadow: rgba(156, 187, 208, 0.812) 0px 3px 20px;
@@ -164,5 +180,91 @@
 }
 
 @media screen and (min-width: 1440px){
-    
+    .second-page{
+        margin-right: 10vw;
+        margin-left: 10vw;
+        margin-top: 65px;
+
+        .bmi-meaning{
+            margin-top: 0;
+            .curve{
+                display: block;
+                position: relative;
+                top: -50px;
+                left: 320px;
+                bottom: 30px;
+            }
+        }
+    }
+
+    .third-page{
+        display: flex;
+        padding: 72px 117px 96px 116px;
+        gap: 32px;
+
+        .points{
+           display: block;
+        }
+    }
+
+    .fourth-page{
+        .Limitations{
+            margin-left: 5vw;
+            text-align: left;
+            width: 35vw;
+            h2{
+                text-align:left;
+            }
+        }
+
+        .curve2{
+            display: block;
+            position: relative;
+            left: 18vw;
+            top: 8vh;
+        }
+
+
+        .cards{
+            padding: 32px;
+            p{
+                margin: 0;
+            }
+        }
+
+        #a{
+            position: absolute;
+            width: 18%;
+            left: 60vw;
+            bottom: -1400px;
+        }
+
+        #b{
+            position: absolute;
+            width: 19%;
+            left: 43vw;
+            bottom: -1600px;
+        }
+
+        #c{
+            position: absolute;
+            width: 20%;
+            left: 67vw;
+            bottom: -1600px;
+        }
+
+        #d{
+            position: absolute;
+            width: 20%;
+            left: 28vw;
+            bottom: -1840px;
+        }
+
+        #e{
+            position: absolute;
+            width: 20%;
+            left: 32vw;
+            bottom: -1840px;
+        }
+    }
 }

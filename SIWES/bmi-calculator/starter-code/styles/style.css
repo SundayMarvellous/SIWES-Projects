@@ -38,6 +38,7 @@
     margin-left: 24px;
     border-radius: 0 0 35px 35px;
     width: 65%;
+    border: none;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -258,6 +259,11 @@ form h3 {
     margin-bottom: 48px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .image-man-eating {
+    margin-top: 0;
+  }
+}
 .second-page {
   background-color: #FFFFFF;
   margin-bottom: 70px;
@@ -273,6 +279,9 @@ form h3 {
   letter-spacing: -5%;
   text-align: left;
   color: #253347;
+}
+.second-page .bmi-meaning .curve {
+  display: none;
 }
 
 .third-page {
@@ -308,6 +317,9 @@ form h3 {
 }
 .fourth-page p {
   margin-bottom: 56px;
+}
+.fourth-page .curve2 {
+  display: none;
 }
 .fourth-page .cards {
   box-shadow: rgba(156, 187, 208, 0.812) 0px 3px 20px;
@@ -347,6 +359,9 @@ form h3 {
     text-align: left;
     color: #253347;
   }
+  .second-page .bmi-meaning .curve {
+    display: none;
+  }
   .third-page {
     padding: 43px;
   }
@@ -362,6 +377,9 @@ form h3 {
     padding-left: 43px;
     padding-right: 43px;
     color: #5E6E85;
+  }
+  .fourth-page .curve2 {
+    display: none;
   }
   .fourth-page h2 {
     color: #253347;
@@ -398,6 +416,81 @@ form h3 {
   }
   .fourth-page .heading h3 {
     text-align: left;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .second-page {
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 65px;
+  }
+  .second-page .bmi-meaning {
+    margin-top: 0;
+  }
+  .second-page .bmi-meaning .curve {
+    display: block;
+    position: relative;
+    top: -50px;
+    left: 320px;
+    bottom: 30px;
+  }
+  .third-page {
+    display: flex;
+    padding: 72px 117px 96px 116px;
+    gap: 32px;
+  }
+  .third-page .points {
+    display: block;
+  }
+  .fourth-page .Limitations {
+    margin-left: 5vw;
+    text-align: left;
+    width: 35vw;
+  }
+  .fourth-page .Limitations h2 {
+    text-align: left;
+  }
+  .fourth-page .curve2 {
+    display: block;
+    position: relative;
+    left: 18vw;
+    top: 8vh;
+  }
+  .fourth-page .cards {
+    padding: 32px;
+  }
+  .fourth-page .cards p {
+    margin: 0;
+  }
+  .fourth-page #a {
+    position: absolute;
+    width: 18%;
+    left: 60vw;
+    bottom: -1400px;
+  }
+  .fourth-page #b {
+    position: absolute;
+    width: 19%;
+    left: 43vw;
+    bottom: -1600px;
+  }
+  .fourth-page #c {
+    position: absolute;
+    width: 20%;
+    left: 67vw;
+    bottom: -1600px;
+  }
+  .fourth-page #d {
+    position: absolute;
+    width: 20%;
+    left: 28vw;
+    bottom: -1840px;
+  }
+  .fourth-page #e {
+    position: absolute;
+    width: 20%;
+    left: 32vw;
+    bottom: -1840px;
   }
 }
 body {
