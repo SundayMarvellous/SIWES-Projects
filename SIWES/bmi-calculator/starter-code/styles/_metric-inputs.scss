@@ -81,7 +81,7 @@
         text-align: left;
         font-size: 24px;
         font-weight: 600;
-        width: 25%;
+        width: 60%;
 
         &:focus{
           border: 1px solid rgb(0, 115, 255);
@@ -101,8 +101,9 @@
     justify-content: space-between;
     .metric{
       .number-input{
+        width: 90%;
         input{
-          width: 45vw;
+          width: 70%;
         }
       }
     }
@@ -116,8 +117,9 @@
     justify-content: space-between;
     .metric{
       .number-input{
+        width: 90%;
         input{
-          width: 30vw;
+          width: 50%;
         }
       }
     }

@@ -222,7 +222,7 @@ form h3 {
   text-align: left;
   font-size: 24px;
   font-weight: 600;
-  width: 25%;
+  width: 60%;
 }
 .imperial-inputs .imperial .number-input input:focus {
   border: 1px solid rgb(0, 115, 255);
@@ -237,8 +237,11 @@ form h3 {
     flex-direction: row;
     justify-content: space-between;
   }
+  .metric-inputs .metric .number-input {
+    width: 90%;
+  }
   .metric-inputs .metric .number-input input {
-    width: 45vw;
+    width: 70%;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -247,8 +250,11 @@ form h3 {
     flex-direction: row;
     justify-content: space-between;
   }
+  .metric-inputs .metric .number-input {
+    width: 90%;
+  }
   .metric-inputs .metric .number-input input {
-    width: 30vw;
+    width: 50%;
   }
 }
 .result {
@@ -278,6 +284,23 @@ form h3 {
 }
 .result .suggests .range {
   font-weight: 600;
+}
+
+.Welcome {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.Welcome #welc {
+  text-align: left;
+  margin-right: 80%;
+}
+.Welcome h2 {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.Welcome p {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

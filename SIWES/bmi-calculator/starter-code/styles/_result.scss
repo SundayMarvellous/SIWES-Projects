@@ -34,6 +34,25 @@
     
 }
 
+.Welcome{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    #welc{
+        text-align: left;
+        margin-right: 80%;
+    }
+    h2{
+        color: $Purewhite;
+        font-weight: 600;
+    }
+
+    p{
+        width: 100%;
+    }
+}
+
 @media screen and (min-width:768px){
     .result{
         border-radius: 100px 999px 999px 100px;
