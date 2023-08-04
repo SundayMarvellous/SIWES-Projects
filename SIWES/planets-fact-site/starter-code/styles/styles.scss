@@ -1,0 +1,10 @@
+@import "./partials";
+@import "./nav-bar";
+
+body{
+    background-color: $Deep-blue;
+    color: $White;
+    background-image: url('../assets/background-stars.svg');
+    margin: 0;
+    padding: 0;
+}

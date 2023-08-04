@@ -1,0 +1,44 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-right: 41px;
+    &_site-name{
+        font-family: $Font-Antonio;
+        padding: 28px 0px 22px 18px ;
+        font-size: 24px;
+    }
+
+    &_site-paths{
+        font-family: $Font-Spartan;
+        color: $White;
+        display: flex;
+        gap: 32px;
+        a{
+            color: $White;
+            font-weight: bold;
+            font-size: 11px;
+            &:visited{
+                text-decoration: none;
+            }
+
+            &:hover{
+                text-decoration: none;
+            }
+
+            &:link{
+                text-decoration: none;
+            }
+
+            &:active{
+                text-decoration:none;
+            }
+        }
+    }
+}
+
+hr{
+    border-top: 1px solid #979797;
+    margin: 0;
+}
