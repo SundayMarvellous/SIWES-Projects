@@ -18,6 +18,12 @@
       rel="stylesheet"
     />
     <title>Frontend Mentor | Planets fact site</title>
+    <style>
+      .planet_description-nav-buttons button.active {
+        background-color: #419EBB;
+      }
+    </style>
+    
   </head>
   <body>
     <nav>
@@ -30,15 +36,18 @@
           <a href="./mars.html">MARS</a>
           <a href="./jupiter.html">JUPITER</a>
           <a href="./saturn.html">SATURN</a>
+          <a href="./uranus.html">URANUS</a>
           <a href="./neptune.html">NEPTUNE</a>
         </div>
       </div>
     </nav>
     <hr />
     <div class="planet">
-      <img src="./assets/planet-mercury.svg" />
+      <img src="./assets/planet-mercury.svg" class="overview"/>
+      <!-- <img src="./assets/planet-mercury-internal.svg" class="internal_structure"/>
+      <img src="./assets/geology-mercury.png" class="surface-geology"/> -->
       <div class="planet_description">
-        <p class="planet_description-header">Mercury</p>
+        <p class="planet_description-header">MERCURY</p>
         <div class="planet_description-content">
           <div class="planet_description-content-overview">
             <p class="overview">
@@ -50,7 +59,7 @@
             </p>
             <p>
               Source :
-              <a href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+              <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank"
                 >Wikipedia</a
               >
             </p>
@@ -67,7 +76,7 @@
             <p>
               Source :
               <a
-                href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
+                href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" target="_blank"
                 >Wikipedia</a
               >
             </p>
@@ -82,7 +91,7 @@
             <p>
               Source :
               <a
-                href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geolog"
+                href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" target="_blank"
                 >Wikipedia</a
               >
             </p>
@@ -91,35 +100,36 @@
         <div class="planet_description-nav-buttons">
           <button>
             <p>01</p>
-            <p>Overview</p>
+            <p>OVERVIEW</p>
           </button>
           <button>
             <p>02</p>
-            <p>Internal Structure</p></button
+            <p>INTERNAL STRUCTURE</p></button
           ><button>
             <p>03</p>
-            <p>Surface Geology</p>
+            <p>SURFACE GEOLOGY</p>
           </button>
         </div>
       </div>
     </div>
     <div class="cards">
       <div class="card">
-        <h5>Rotation Time</h5>
-        <h1>58.6 Days</h1>
+        <h5>ROTATION TIME</h5>
+        <h1>58.6 DAYS</h1>
       </div>
       <div class="card">
-        <h5>Revolution Time</h5>
-        <h1>87.97 Days</h1>
+        <h5>REVOLUTION TIME</h5>
+        <h1>87.97 DAYS</h1>
       </div>
       <div class="card">
-        <h5>Radius</h5>
+        <h5>RADIUS</h5>
         <h1>2,439.7 KM</h1>
       </div>
       <div class="card">
-        <h5>Average Temp.</h5>
-        <h1>430°c</h1>
+        <h5>AVERAGE TEMP.</h5>
+        <h1>430°C</h1>
       </div>
-    </div>
+    </div>  
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

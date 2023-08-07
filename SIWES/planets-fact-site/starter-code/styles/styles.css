@@ -1,35 +1,50 @@
 .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   justify-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 41px;
 }
+
 .nav-bar_site-name {
   font-family: "Antonio", sans-serif;
   padding: 28px 0px 22px 18px;
   font-size: 24px;
 }
+
 .nav-bar_site-paths {
   font-family: "League Spartan", sans-serif;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 32px;
 }
+
 .nav-bar_site-paths a {
   color: #ffffff;
   font-weight: bold;
   font-size: 11px;
 }
+
 .nav-bar_site-paths a:visited {
   text-decoration: none;
 }
+
 .nav-bar_site-paths a:hover {
   text-decoration: none;
 }
+
 .nav-bar_site-paths a:link {
   text-decoration: none;
 }
+
 .nav-bar_site-paths a:active {
   text-decoration: none;
 }
@@ -39,10 +54,157 @@ hr {
   margin: 0;
 }
 
+.planet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+  margin-top: 5vh;
+  margin-left: 10vw;
+}
+
+.planet_description {
+  width: 25vw;
+}
+
+.planet_description-header {
+  font-family: "Antonio", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.planet_description-content {
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  width: 90%;
+}
+
+.planet_description-content div {
+  display: none;
+}
+
+.planet_description-content a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.planet_description-content a:visited {
+  text-decoration: none;
+}
+
+.planet_description-content a:hover {
+  text-decoration: none;
+}
+
+.planet_description-content a:link {
+  text-decoration: none;
+}
+
+.planet_description-content a:active {
+  text-decoration: none;
+}
+
+.planet_description-nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.planet_description-nav-buttons button {
+  border: 1px solid #ffffff;
+  background-color: #070724;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+  padding: 12px 0 11px 28px;
+}
+
+.planet_description-nav-buttons button p {
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+}
+
+.button-active-mercury {
+  background-color: #419EBB;
+}
+
+.button-active-venus {
+  background-color: #EDA249;
+}
+
+.button-active-earth {
+  background-color: #6f2ed6;
+}
+
+.button-active-mars {
+  background-color: #D14C32;
+}
+
+.button-active-jupiter {
+  background-color: #D83A34;
+}
+
+.button-active-saturn {
+  background-color: #CD5120;
+}
+
+.button-active-uranus {
+  background-color: #1ec2a4;
+}
+
+.button-active-neptune {
+  background-color: #2d68f0;
+}
+
+.cards {
+  margin-left: 10vw;
+  margin-right: 12vw;
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards .card {
+  border: 1px solid #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 23px;
+  width: 255px;
+}
+
+.cards .card h5 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 11px;
+}
+
+.cards .card h1 {
+  font-family: "Antonio", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+}
+
 body {
   background-color: #070724;
   color: #ffffff;
   background-image: url("../assets/background-stars.svg");
   margin: 0;
   padding: 0;
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */

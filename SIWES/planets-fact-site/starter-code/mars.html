@@ -1,63 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Mars
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Planets fact site</title>
+    <style>
+      .planet_description-nav-buttons button.active {
+        background-color: #D14C32;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="nav-bar_site-name">THE PLANETS</div>
+        <div class="nav-bar_site-paths">
+          <a href="./index.html">MERCURY</a>
+          <a href="./venus.html">VENUS</a>
+          <a href="./earth.html">EARTH</a>
+          <a href="#">MARS</a>
+          <a href="./jupiter.html">JUPITER</a>
+          <a href="./saturn.html">SATURN</a>
+          <a href="./uranus.html">URANUS</a>
+          <a href="./neptune.html">NEPTUNE</a>
+        </div>
+      </div>
+    </nav>
+    <hr />
+    <div class="planet">
+      <img src="./assets/planet-mars.svg" />
+      <div class="planet_description">
+        <p class="planet_description-header">MARS</p>
+        <div class="planet_description-content">
+          <div class="planet_description-content-overview">
+            <p class="overview">
+              Mars is the fourth planet from the Sun and the second-smallest planet 
+              in the Solar System, being larger than only Mercury. In English, Mars 
+              carries the name of the Roman god of war and is often referred to as 
+              the "Red Planet".
+            </p>
+            <p>
+              Source :
+              <a href="https://en.wikipedia.org/wiki/Mars" target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
 
-  <!-- Overview Content Start -->
-
-  Mars is the fourth planet from the Sun and the second-smallest planet 
-  in the Solar System, being larger than only Mercury. In English, Mars 
-  carries the name of the Roman god of war and is often referred to as 
-  the "Red Planet".
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Like Earth, Mars has differentiated into a dense metallic core overlaid 
-  by less dense materials. Scientists initially determined that the core 
-  is at least partially liquid. Current models of its interior imply a 
-  core consisting primarily of iron and nickel with about 16–17% sulfur.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Mars is a terrestrial planet whose surface consists of minerals containing 
-  silicon and oxygen, metals, and other elements that typically make up rock. 
-  The surface is primarily composed of tholeiitic basalt, although parts are 
-  more silica-rich than typical basalt.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  1.03 Days
-
-  Revolution Time
-  1.88 Years
-
-  Radius
-  3,389.5 KM
-
-  Average Temp.
-  -28°c
-</body>
+          <div class="planet_description-content-internal-structure">
+            <p class="internal_structure">
+              Like Earth, Mars has differentiated into a dense metallic core overlaid 
+              by less dense materials. Scientists initially determined that the core 
+              is at least partially liquid. Current models of its interior imply a 
+              core consisting primarily of iron and nickel with about 16–17% sulfur.
+            </p>
+            <p>
+              Source :
+              <a
+                href="https://en.wikipedia.org/wiki/Mars#Internal_structure" target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
+          <div class="planet_description-content-surface-geology">
+            <p class="surface-geology">
+              Mars is a terrestrial planet whose surface consists of minerals containing 
+              silicon and oxygen, metals, and other elements that typically make up rock. 
+              The surface is primarily composed of tholeiitic basalt, although parts are 
+              more silica-rich than typical basalt.
+            </p>
+            <p>
+              Source :
+              <a
+                href="https://en.wikipedia.org/wiki/Mars#Surface_geology" target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="planet_description-nav-buttons">
+          <button>
+            <p>01</p>
+            <p>OVERVIEW</p>
+          </button>
+          <button>
+            <p>02</p>
+            <p>INTERNAL STRUCTURE</p></button
+          ><button>
+            <p>03</p>
+            <p>SURFACE GEOLOGY</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h5>ROTATION TIME</h5>
+        <h1> 1.03 DAYS</h1>
+      </div>
+      <div class="card">
+        <h5>REVOLUTION TIME</h5>
+        <h1>1.88 YEARS</h1>
+      </div>
+      <div class="card">
+        <h5>RADIUS</h5>
+        <h1>3,389.5 KM</h1>
+      </div>
+      <div class="card">
+        <h5>AVERAGE TEMP.</h5>
+        <h1>-28°C</h1>
+      </div>
+    </div>  
+    <script src="./scripts/mars.js"></script> 
+  </body>
 </html>
+

@@ -1,63 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Venus
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Planets fact site</title>
+    <style>
+      .planet_description-nav-buttons button.active {
+        background-color: #EDA249;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="nav-bar_site-name">THE PLANETS</div>
+        <div class="nav-bar_site-paths">
+          <a href="./index.html">MERCURY</a>
+          <a href="#">VENUS</a>
+          <a href="./earth.html">EARTH</a>
+          <a href="./mars.html">MARS</a>
+          <a href="./jupiter.html">JUPITER</a>
+          <a href="./saturn.html">SATURN</a>
+          <a href="./uranus.html">URANUS</a>
+          <a href="./neptune.html">NEPTUNE</a>
+        </div>
+      </div>
+    </nav>
+    <hr />
+    <div class="planet">
+      <img src="./assets/planet-venus.svg" />
+      <div class="planet_description">
+        <p class="planet_description-header">VENUS</p>
+        <div class="planet_description-content">
+          <div class="planet_description-content-overview">
+            <p class="overview">
+              Venus is the second planet from the Sun. It is named after the 
+              Roman goddess of love and beauty. As the brightest natural object 
+              in Earth's night sky after the Moon, Venus can cast shadows and 
+              can be, on rare occasions, visible to the naked eye in broad daylight.
+            </p>
+            <p>
+              Source :
+              <a href="https://en.wikipedia.org/wiki/Venus" target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
 
-  <!-- Overview Content Start -->
-
-  Venus is the second planet from the Sun. It is named after the 
-  Roman goddess of love and beauty. As the brightest natural object 
-  in Earth's night sky after the Moon, Venus can cast shadows and 
-  can be, on rare occasions, visible to the naked eye in broad daylight.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  The similarity in size and density between Venus and Earth suggests 
-  they share a similar internal structure: a core, mantle, and crust. 
-  Like that of Earth, Venusian core is most likely at least partially 
-  liquid because the two planets have been cooling at about the same rate.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Much of the Venusian surface appears to have been shaped by volcanic activity. 
-  Venus has several times as many volcanoes as Earth, and it has 167 large 
-  volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
-  of this size on Earth is the Big Island of Hawaii.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  243 Days
-
-  Revolution Time
-  224.7 Days
-
-  Radius
-  6,051.8 KM
-
-  Average Temp.
-  471°c
-</body>
+          <div class="planet_description-content-internal-structure">
+            <p class="internal_structure">
+              The similarity in size and density between Venus and Earth suggests they share a similar internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most likely at least partially liquid because the two planets have been cooling at about the same rate.
+            </p>
+            <p>
+              Source :
+              <a
+                href="https://en.wikipedia.org/wiki/Venus#Internal_structure" target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
+          <div class="planet_description-content-surface-geology">
+            <p class="surface-geology">
+              Much of the Venusian surface appears to have been shaped by volcanic activity. 
+              Venus has several times as many volcanoes as Earth, and it has 167 large 
+              volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
+              of this size on Earth is the Big Island of Hawaii.
+            </p>
+            <p>
+              Source :
+              <a
+                href="https://en.wikipedia.org/wiki/Venus#Surface_geology" target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="planet_description-nav-buttons">
+          <button>
+            <p>01</p>
+            <p>OVERVIEW</p>
+          </button>
+          <button>
+            <p>02</p>
+            <p>INTERNAL STRUCTURE</p></button
+          ><button>
+            <p>03</p>
+            <p>SURFACE GEOLOGY</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h5>ROTATION TIME</h5>
+        <h1>243 DAYS</h1>
+      </div>
+      <div class="card">
+        <h5>REVOLUTION TIME</h5>
+        <h1>224.7 DAYS</h1>
+      </div>
+      <div class="card">
+        <h5>RADIUS</h5>
+        <h1>6,051.8 KM</h1>
+      </div>
+      <div class="card">
+        <h5>AVERAGE TEMP.</h5>
+        <h1>470°C</h1>
+      </div>
+    </div>  
+    <script src="./scripts/venus.js"></script> 
+  </body>
 </html>

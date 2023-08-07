@@ -1,0 +1,99 @@
+.planet{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    margin-top: 5vh;
+    margin-left: 10vw;
+
+    &_description{
+        width: 25vw;
+
+        &-header{
+            font-family: $Font-Antonio;
+            font-size: 80px;
+            font-weight: 500;
+        }
+
+        &-content{
+            font-family: $Font-Spartan;
+            font-size: 14px;
+            width: 90%;
+
+            & div{
+                display: none;
+            }
+            a{
+                color: $White;
+                font-weight: bold;
+                &:visited{
+                    text-decoration: none;
+                }
+    
+                &:hover{
+                    text-decoration: none;
+                }
+    
+                &:link{
+                    text-decoration: none;
+                }
+    
+                &:active{
+                    text-decoration:none;
+                }
+            }
+        }
+
+        &-nav-buttons{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+            button{
+                border: 1px solid $White;
+                background-color: $Deep-blue;
+                color: $White;
+                display: flex;
+                gap: 28px;
+                padding: 12px 0 11px 28px;
+
+                p{
+                    font-family: $Font-Spartan;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.button-active-mercury{
+    background-color: $Pale-blue;
+}
+
+.button-active-venus{
+    background-color: $Pale-orange;
+}
+
+.button-active-earth{
+    background-color: $Purple;
+}
+
+.button-active-mars{
+    background-color: $Dark-red;
+}
+
+.button-active-jupiter{
+    background-color: $Normal-red;
+}
+
+.button-active-saturn{
+    background-color: $Normal-orange;
+}
+
+.button-active-uranus{
+    background-color: $Green;
+}
+
+.button-active-neptune{
+    background-color: $Normal-blue;
+}
