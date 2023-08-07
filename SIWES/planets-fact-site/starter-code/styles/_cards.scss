@@ -6,11 +6,11 @@
     justify-content: space-between;
 
     .card{
-        border: 1px solid $White;
+        border: 1px solid rgba(255, 255, 255, 0.426);
         padding-top: 20px ;
         padding-bottom:  20px;
         padding-left:  23px;
-        width: 255px;
+        width: 18vw;
 
         h5{
             font-family: $Font-Spartan;
@@ -22,6 +22,21 @@
             font-size: 40px;
             font-weight: 500;
             letter-spacing: -1.5px;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .cards{
+        .card{
+            padding-top: 17px ;
+            padding-bottom:  16px;
+            padding-left:  18px;
+            width: 16vw;
+            
+            h1{
+                font-size: 25px;
+            }
         }
     }
 }

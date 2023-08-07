@@ -42,3 +42,13 @@ hr{
     border-top: 1px solid #979797;
     margin: 0;
 }
+
+@media screen and (max-width:768px){
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        &_site-paths{
+            margin-bottom: 24px;
+        }
+    }
+}

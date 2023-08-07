@@ -8,55 +8,58 @@
 
     &_description{
         width: 25vw;
-        border: 1px solid white;
+        // border: 1px solid white;
 
-        &-header{
-            font-family: $Font-Antonio;
-            font-size: 80px;
-            font-weight: 500;
-        }
-
-        &-content{
-            font-family: $Font-Spartan;
-            font-size: 14px;
-            width: 85%;
-
-            & div{
-                display: none;
+        &-main{
+            &-header{
+                font-family: $Font-Antonio;
+                font-size: 80px;
+                font-weight: 500;
+                margin-bottom: 0;
             }
-            a{
-                color: $White;
-                font-weight: bold;
-                &:visited{
-                    text-decoration: none;
+
+            &-content{
+                font-family: $Font-Spartan;
+                font-size: 14px;
+                width: 90%;
+                color: rgba(255, 255, 255, 0.51);
+
+                & div{
+                    display: none;
                 }
-    
-                &:hover{
-                    text-decoration: none;
-                }
-    
-                &:link{
-                    text-decoration: none;
-                }
-    
-                &:active{
-                    text-decoration:none;
+                a{
+                    color: rgba(255, 255, 255, 0.562);
+                    font-weight: bold;
+                    &:visited{
+                        text-decoration: underline;
+                    }
+        
+                    &:hover{
+                        text-decoration: underline;
+                    }
+        
+                    &:link{
+                        text-decoration: underline;
+                    }
+        
+                    &:active{
+                        text-decoration:underline;
+                    }
                 }
             }
         }
-
         &-nav-buttons{
             display: flex;
             flex-direction: column;
             gap: 16px;
 
             button{
-                border: 1px solid $White;
+                border: 1px solid rgba(255, 255, 255, 0.426);
                 background-color: $Deep-blue;
                 color: $White;
                 display: flex;
                 gap: 28px;
-                padding: 12px 0 11px 28px;
+                padding: 12px 30px 11px 28px;
 
                 p{
                     font-family: $Font-Spartan;
@@ -64,5 +67,52 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:768px){
+.planet{
+        display: block;
+
+        .img{
+            text-align: center;
+            margin-right: 80px;
+            img{
+                margin: 0;
+                margin-top: 8vh;
+                margin-bottom: 8vh;
+            }
+        }
+
+        &_description{
+            width: 90%;
+            // border: 1px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            
+            &-main{
+                width: 45%;
+                &-header{
+                    margin-top: 0;
+                    font-size: 67px;
+                }
+
+            }
+        }
+        &-nav-buttons{
+           
+            button{
+                gap: 23px;
+                padding: 10px 25px 9px 25px;
+
+                p{
+                    font-family: $Font-Spartan;
+                    font-weight: bold;
+                }
+            }
+        }
+    
     }
 }
