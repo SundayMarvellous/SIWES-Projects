@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       surfaceGeologyContent.style.display = "block";
       surfaceGeologyButton.classList.add("active");
   
-      planetImage.src = "./assets/geology-venus.png"; // Set surface geology image
+      planetImage.src = "./assets/surface-geology-venus.svg"; // Set surface geology image
     });
   });
   

@@ -1,66 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-  <style>
-    .planet_description-nav-buttons button.active {
-      background-color: #2D68F0;
-    }
-  </style>
-</head>
-<body>
-  Neptune
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Planets fact site</title>
+    <style>
+      .planet_description-nav-buttons button.active {
+        background-color: #2d68f0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <div class="nav-bar_site-name">THE PLANETS</div>
+        <div class="nav-bar_site-paths">
+          <a href="./mercury.html">MERCURY</a>
+          <a href="./venus.html">VENUS</a>
+          <a href="./earth.html">EARTH</a>
+          <a href="./mars.html">MARS</a>
+          <a href="./jupiter.html">JUPITER</a>
+          <a href="./saturn.html">SATURN</a>
+          <a href="./uranus.html">URANUS</a>
+          <a href="#">NEPTUNE</a>
+        </div>
+      </div>
+    </nav>
+    <hr />
+    <div class="planet">
+      <img src="./assets/planet-mercury.svg" class="overview" />
+      <!-- <img src="./assets/planet-mercury-internal.svg" class="internal_structure"/>
+      <img src="./assets/geology-mercury.png" class="surface-geology"/> -->
+      <div class="planet_description">
+        <p class="planet_description-header">NEPTUNE</p>
+        <div class="planet_description-content">
+          <div class="planet_description-content-overview">
+            <p class="overview">
+              Neptune is the eighth and farthest-known Solar planet from the
+              Sun. In the Solar System, it is the fourth-largest planet by
+              diameter, the third-most-massive planet, and the densest giant
+              planet. It is 17 times the mass of Earth, more massive than its
+              near-twin Uranus.
+            </p>
+            <p>
+              Source :
+              <a href=" https://en.wikipedia.org/wiki/Neptune" target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
 
-  <!-- Overview Content Start -->
-
-  Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
-  System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
-  and the densest giant planet. It is 17 times the mass of Earth, more massive than 
-  its near-twin Uranus.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
-  to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. 
-  Increasing concentrations of methane, ammonia and water are found in the lower regions.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
-  present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
-  the red and infrared portion of the spectrum.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Atmosphere -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  16.08 Hours
-
-  Revolution Time
-  164.79 Years
-
-  Radius
-  24,622 KM
-
-  Average Temp.
-  -201°c
-</body>
+          <div class="planet_description-content-internal-structure">
+            <p class="internal_structure">
+              Neptune's internal structure resembles that of Uranus. Its
+              atmosphere forms about 5% to 10% of its mass and extends perhaps
+              10% to 20% of the way towards the core. Increasing concentrations
+              of methane, ammonia and water are found in the lower regions.
+            </p>
+            <p>
+              Source :
+              <a
+                href="https://en.wikipedia.org/wiki/Neptune#Internal_structure"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
+          <div class="planet_description-content-surface-geology">
+            <p class="surface-geology">
+              Neptune's atmosphere is 80% hydrogen and 19% helium. A trace
+              amount of methane is also present. Prominent absorption bands of
+              methane exist at wavelengths above 600 nm, in the red and infrared
+              portion of the spectrum.
+            </p>
+            <p>
+              Source :
+              <a
+                href="https://en.wikipedia.org/wiki/Neptune#Atmosphere"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="planet_description-nav-buttons">
+          <button>
+            <p>01</p>
+            <p>OVERVIEW</p>
+          </button>
+          <button>
+            <p>02</p>
+            <p>INTERNAL STRUCTURE</p></button
+          ><button>
+            <p>03</p>
+            <p>SURFACE GEOLOGY</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h5>ROTATION TIME</h5>
+        <h1>16.08 HOURS</h1>
+      </div>
+      <div class="card">
+        <h5>REVOLUTION TIME</h5>
+        <h1>164.79 YEARS</h1>
+      </div>
+      <div class="card">
+        <h5>RADIUS</h5>
+        <h1>24,622 KM</h1>
+      </div>
+      <div class="card">
+        <h5>AVERAGE TEMP.</h5>
+        <h1>-201°C</h1>
+      </div>
+    </div>
+    <script src="./scripts/neptune.js"></script>
+  </body>
 </html>

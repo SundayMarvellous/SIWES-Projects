@@ -3,11 +3,12 @@
     align-items: center;
     justify-content: space-around;
     justify-items: center;
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-left: 10vw;
 
     &_description{
         width: 25vw;
+        border: 1px solid white;
 
         &-header{
             font-family: $Font-Antonio;
@@ -18,7 +19,7 @@
         &-content{
             font-family: $Font-Spartan;
             font-size: 14px;
-            width: 90%;
+            width: 85%;
 
             & div{
                 display: none;
@@ -48,7 +49,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
-            
+
             button{
                 border: 1px solid $White;
                 background-color: $Deep-blue;
@@ -64,36 +65,4 @@
             }
         }
     }
-}
-
-.button-active-mercury{
-    background-color: $Pale-blue;
-}
-
-.button-active-venus{
-    background-color: $Pale-orange;
-}
-
-.button-active-earth{
-    background-color: $Purple;
-}
-
-.button-active-mars{
-    background-color: $Dark-red;
-}
-
-.button-active-jupiter{
-    background-color: $Normal-red;
-}
-
-.button-active-saturn{
-    background-color: $Normal-orange;
-}
-
-.button-active-uranus{
-    background-color: $Green;
-}
-
-.button-active-neptune{
-    background-color: $Normal-blue;
 }

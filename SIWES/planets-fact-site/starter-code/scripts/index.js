@@ -66,6 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
     surfaceGeologyContent.style.display = "block";
     surfaceGeologyButton.classList.add("active");
 
-    planetImage.src = "./assets/geology-mercury.png"; // Set surface geology image
+    planetImage.src = "./assets/surface-geology-mercury.svg"; // Set surface geology image
   });
 });
