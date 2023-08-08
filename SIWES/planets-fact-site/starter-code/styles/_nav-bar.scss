@@ -52,3 +52,44 @@ hr{
         }
     }
 }
+
+@media screen and (max-width:500px){
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: $Deep-blue;
+        color: white;
+
+        &_site-paths{
+            display: flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: white;
+                margin-right: 20px;
+            }
+        }
+    }
+    // .nav-bar{
+    //     overflow: hidden;
+    //         a {
+    //             float: right;
+    //             display: block;
+    //             color:  hsl(240, 100%, 5%);
+    //             text-align: center;
+    //             padding: 14px 16px;
+    //             text-decoration: none;
+    //             font-size: 17px;
+    
+    //             .active {
+    //                 background-color: #04AA6D;
+    //                 color: white;
+    //               }
+    //         }
+    //         .icon {
+    //             display: none;
+    //         }
+    //     }
+}

@@ -22,6 +22,7 @@
                 font-family: $Font-Spartan;
                 font-size: 14px;
                 width: 90%;
+                line-height: 1.5;
                 color: rgba(255, 255, 255, 0.51);
 
                 & div{
@@ -58,8 +59,10 @@
                 background-color: $Deep-blue;
                 color: $White;
                 display: flex;
+                align-items: center;
+                justify-items: center;
                 gap: 28px;
-                padding: 12px 30px 11px 28px;
+                padding: 10px 26px 9px 25px;
 
                 p{
                     font-family: $Font-Spartan;
@@ -68,6 +71,10 @@
             }
         }
     }
+}
+
+.overview, .internal-structure, .surface-geology{
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width:768px){
@@ -105,7 +112,7 @@
            
             button{
                 gap: 23px;
-                padding: 10px 25px 9px 25px;
+                padding: 8px 20px 7px 20px;
 
                 p{
                     font-family: $Font-Spartan;
@@ -115,4 +122,12 @@
         }
     
     }
+}
+
+@media screen and (max-width:500px){
+    
+}
+
+.toggle{
+    background-color: white;
 }

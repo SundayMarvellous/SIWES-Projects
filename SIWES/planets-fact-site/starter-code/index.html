@@ -10,6 +10,10 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,15 +32,21 @@
     <nav>
       <div class="nav-bar">
         <div class="nav-bar_site-name">THE PLANETS</div>
-        <div class="nav-bar_site-paths">
+        <div class="nav-bar_site-paths" id="mySidenav">
           <a href="#">MERCURY</a>
-          <a href="./venus.html">VENUS</a>
-          <a href="./earth.html">EARTH</a>
-          <a href="./mars.html">MARS</a>
-          <a href="./jupiter.html">JUPITER</a>
-          <a href="./saturn.html">SATURN</a>
-          <a href="./uranus.html">URANUS</a>
-          <a href="./neptune.html">NEPTUNE</a>
+          <a href="./venus.html" class="sidenav">VENUS</a>
+          <a href="./earth.html" class="sidenav">EARTH</a>
+          <a href="./mars.html" class="sidenav">MARS</a>
+          <a href="./jupiter.html" class="sidenav">JUPITER</a>
+          <a href="./saturn.html" class="sidenav">SATURN</a>
+          <a href="./uranus.html" class="sidenav">URANUS</a>
+          <a href="./neptune.html" class="sidenav">NEPTUNE</a>
+          <a
+            href="javascript:void(0);"
+            class="icon sidenav"
+            onclick="myFunction()"
+            ><img src="./assets/bars-solid (1).svg" class="toggle" />
+          </a>
         </div>
       </div>
     </nav>

@@ -48,6 +48,25 @@ hr {
     margin-bottom: 24px;
   }
 }
+@media screen and (max-width: 500px) {
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #070724;
+    color: white;
+  }
+  .nav-bar_site-paths {
+    display: flex;
+    align-items: center;
+  }
+  .nav-bar_site-paths a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+  }
+}
 .planet {
   display: flex;
   align-items: center;
@@ -69,6 +88,7 @@ hr {
   font-family: "League Spartan", sans-serif;
   font-size: 14px;
   width: 90%;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.51);
 }
 .planet_description-main-content div {
@@ -100,12 +120,18 @@ hr {
   background-color: #070724;
   color: #ffffff;
   display: flex;
+  align-items: center;
+  justify-items: center;
   gap: 28px;
-  padding: 12px 30px 11px 28px;
+  padding: 10px 26px 9px 25px;
 }
 .planet_description-nav-buttons button p {
   font-family: "League Spartan", sans-serif;
   font-weight: bold;
+}
+
+.overview, .internal-structure, .surface-geology {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -137,13 +163,17 @@ hr {
   }
   .planet-nav-buttons button {
     gap: 23px;
-    padding: 10px 25px 9px 25px;
+    padding: 8px 20px 7px 20px;
   }
   .planet-nav-buttons button p {
     font-family: "League Spartan", sans-serif;
     font-weight: bold;
   }
 }
+.toggle {
+  background-color: white;
+}
+
 .cards {
   margin-left: 10vw;
   margin-right: 10vw;
@@ -156,7 +186,7 @@ hr {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 23px;
-  width: 18vw;
+  width: 17vw;
 }
 .cards .card h5 {
   font-family: "League Spartan", sans-serif;
@@ -186,4 +216,5 @@ body {
   background-image: url("../assets/background-stars.svg");
   margin: 0;
   padding: 0;
+  margin-bottom: 10vw;
 }/*# sourceMappingURL=styles.css.map */

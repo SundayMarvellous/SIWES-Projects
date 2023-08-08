@@ -10,7 +10,7 @@
         padding-top: 20px ;
         padding-bottom:  20px;
         padding-left:  23px;
-        width: 18vw;
+        width: 17vw;
 
         h5{
             font-family: $Font-Spartan;
@@ -39,4 +39,8 @@
             }
         }
     }
+}
+
+@media screen and (max-width:500px){
+
 }
