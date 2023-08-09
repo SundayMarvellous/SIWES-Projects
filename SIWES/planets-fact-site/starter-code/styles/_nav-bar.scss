@@ -14,33 +14,55 @@
         font-family: $Font-Spartan;
         color: $White;
         display: flex;
-        gap: 32px;
-        a{
-            color: $White;
-            font-weight: bold;
-            font-size: 11px;
-            &:visited{
-                text-decoration: none;
+        &-links{
+            display: flex;
+            gap: 32px;
+
+            a{
+                color: $White;
+                font-weight: bold;
+                font-size: 11px;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                &:visited{
+                    text-decoration: none;
+                }
+    
+                &:hover{
+                    text-decoration: none;
+                }
+    
+                &:link{
+                    text-decoration: none;
+                }
+    
+                &:active{
+                    text-decoration:none;
+                }
             }
 
-            &:hover{
-                text-decoration: none;
-            }
-
-            &:link{
-                text-decoration: none;
-            }
-
-            &:active{
-                text-decoration:none;
+            div{
+                img{
+                    display: none;
+                }
             }
         }
-    }
-}
+        
 
-hr{
-    border-top: 1px solid #979797;
-    margin: 0;
+        .hamburger{
+            display: none;
+            cursor: pointer;
+
+            div{
+                width: 25px;
+                margin: 5px;
+                height: 3px;
+                background-color: $White;
+            }
+        }
+    } 
+   
 }
 
 @media screen and (max-width:768px){
@@ -49,6 +71,14 @@ hr{
         flex-direction: column;
         &_site-paths{
             margin-bottom: 24px;
+            &-links{
+                 div{
+                img{
+                    display: none;
+                }
+            }
+            }
+           
         }
     }
 }
@@ -56,40 +86,81 @@ hr{
 @media screen and (max-width:500px){
     .nav-bar{
         display: flex;
+        flex-direction: row;
+        justify-items: center;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
         background-color: $Deep-blue;
         color: white;
+        
+
+        &_site-name{
+            padding: 2px;
+            padding-left: 30px;
+        }
 
         &_site-paths{
             display: flex;
             align-items: center;
-            a{
-                text-decoration: none;
-                color: white;
-                margin-right: 20px;
+            &-links{
+                position: absolute;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                background-image: none;
+                left: 0px;
+                top: 95px;
+                gap: 0;
+                height: 85vh;
+                width: 100%;
+                background-color: $Deep-blue;
+                transform: translateX(-100%);
+                transition: transform 0.5s ease-in-out;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 17px;
+                    padding: 30px;
+                    letter-spacing: 1.36px;
+                    margin-left: -130px;
+                    text-align: left;
+                    opacity: 0;
+                }
+                
+                div{
+                    box-sizing: border-box;
+                    border-bottom: 1px solid rgba(171, 170, 170, 0.501);
+                    width: 100%;
+                    margin: 0;
+                    padding-left: 30px ;
+                    padding-right: 30px ;
+                    display: flex;
+                    justify-items: start;
+                    justify-content: space-between;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+            
+            .hamburger{
+                display: block;
+                margin-top: 20px;
+    
+                div{
+                    width: 25px;
+                    margin: 5px;
+                    height: 3px;
+                    background-color: $White;
+                }
             }
         }
     }
-    // .nav-bar{
-    //     overflow: hidden;
-    //         a {
-    //             float: right;
-    //             display: block;
-    //             color:  hsl(240, 100%, 5%);
-    //             text-align: center;
-    //             padding: 14px 16px;
-    //             text-decoration: none;
-    //             font-size: 17px;
-    
-    //             .active {
-    //                 background-color: #04AA6D;
-    //                 color: white;
-    //               }
-    //         }
-    //         .icon {
-    //             display: none;
-    //         }
-    //     }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    @keyframes identifier {
+        
+    }
 }

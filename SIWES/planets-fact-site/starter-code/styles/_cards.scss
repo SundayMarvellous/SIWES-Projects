@@ -42,5 +42,38 @@
 }
 
 @media screen and (max-width:500px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        gap: 8px;
+        .card{
+            padding: 15px;
+            padding-right: 30px;
+            padding-left: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.537);
 
+
+            & *{
+            margin: 0;
+            }
+            
+            h1{
+                font-size: 25px;
+            }
+            
+            h5{
+                color: rgba(255, 255, 255, 0.677);
+                letter-spacing: 0.73px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
 }

@@ -22,6 +22,16 @@
       .planet_description-nav-buttons button.active {
         background-color: #6d2ed5;
       }
+      @media screen and (max-width: 500px) {
+        .planet_description-nav-buttons button.active {
+          color: white;
+          border-bottom: 5px solid #6d2ed5;
+          background-color: transparent;
+        }
+        hr {
+          border: 1px solid rgba(171, 170, 170, 0.501);
+        }
+      }
     </style>
   </head>
   <body>
@@ -29,14 +39,21 @@
       <div class="nav-bar">
         <div class="nav-bar_site-name">THE PLANETS</div>
         <div class="nav-bar_site-paths">
-          <a href="./index.html">MERCURY</a>
-          <a href="./venus.html">VENUS</a>
-          <a href="#">EARTH</a>
-          <a href="./mars.html">MARS</a>
-          <a href="./jupiter.html">JUPITER</a>
-          <a href="./saturn.html">SATURN</a>
-          <a href="./uranus.html">URANUS</a>
-          <a href="./neptune.html">NEPTUNE</a>
+          <div class="nav-bar_site-paths-links">
+            <a href="./index.html">MERCURY</a>
+            <a href="./venus.html">VENUS</a>
+            <a href="#">EARTH</a>
+            <a href="./mars.html">MARS</a>
+            <a href="./jupiter.html">JUPITER</a>
+            <a href="./saturn.html">SATURN</a>
+            <a href="./uranus.html">URANUS</a>
+            <a href="./neptune.html">NEPTUNE</a>
+          </div>
+          <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </div>
     </nav>
@@ -103,15 +120,15 @@
         </div>
         <div class="planet_description-nav-buttons">
           <button>
-            <p>01</p>
+            <p class="number">01</p>
             <p>OVERVIEW</p>
           </button>
           <button>
-            <p>02</p>
-            <p>INTERNAL STRUCTURE</p></button
+            <p class="number">02</p>
+            <p><span class="number">INTERNAL</span> STRUCTURE</p></button
           ><button>
-            <p>03</p>
-            <p>SURFACE GEOLOGY</p>
+            <p class="number">03</p>
+            <p>SURFACE <span class="number">GEOLOGY</span></p>
           </button>
         </div>
       </div>

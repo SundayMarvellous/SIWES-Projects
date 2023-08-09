@@ -26,6 +26,17 @@
       .planet_description-nav-buttons button.active {
         background-color: #419ebb;
       }
+
+      @media screen and (max-width: 500px) {
+        .planet_description-nav-buttons button.active {
+          color: white;
+          border-bottom: 5px solid #419ebb;
+          background-color: transparent;
+        }
+        hr {
+          border: 1px solid rgba(171, 170, 170, 0.501);
+        }
+      }
     </style>
   </head>
   <body>
@@ -33,20 +44,53 @@
       <div class="nav-bar">
         <div class="nav-bar_site-name">THE PLANETS</div>
         <div class="nav-bar_site-paths" id="mySidenav">
-          <a href="#">MERCURY</a>
-          <a href="./venus.html" class="sidenav">VENUS</a>
-          <a href="./earth.html" class="sidenav">EARTH</a>
-          <a href="./mars.html" class="sidenav">MARS</a>
-          <a href="./jupiter.html" class="sidenav">JUPITER</a>
-          <a href="./saturn.html" class="sidenav">SATURN</a>
-          <a href="./uranus.html" class="sidenav">URANUS</a>
-          <a href="./neptune.html" class="sidenav">NEPTUNE</a>
-          <a
-            href="javascript:void(0);"
-            class="icon sidenav"
-            onclick="myFunction()"
-            ><img src="./assets/bars-solid (1).svg" class="toggle" />
-          </a>
+          <div class="nav-bar_site-paths-links">
+            <div src>
+              <img src="./assets/Oval-mercury.svg" />
+              <a href="#">MERCURY</a>
+              <img src="./assets/arrow.svg" />
+            </div>
+            <div>
+              <img src="./assets/Oval-venus.svg" />
+              <a href="./venus.html" class="sidenav">VENUS</a>
+              <img src="./assets/arrow.svg" />
+            </div>
+            <div>
+              <img src="./assets/Oval-earth.svg" />
+              <a href="./earth.html" class="sidenav">EARTH</a>
+              <img src="./assets/arrow.svg" />
+            </div>
+            <div>
+              <img src="./assets/Oval-mars.svg" />
+              <a href="./mars.html" class="sidenav">MARS</a>
+              <img src="./assets/arrow.svg" />
+            </div>
+            <div>
+              <img src="./assets/Oval-jupiter.svg" />
+              <a href="./jupiter.html" class="sidenav">JUPITER</a>
+              <img src="./assets/arrow.svg" />
+            </div>
+            <div>
+              <img src="./assets/Oval-saturn.svg" />
+              <a href="./saturn.html" class="sidenav">SATURN</a>
+              <img src="./assets/arrow.svg" />
+            </div>
+            <div>
+              <img src="./assets/Oval-uranus.svg" />
+              <a href="./uranus.html" class="sidenav">URANUS</a>
+              <img src="./assets/arrow.svg" />
+            </div>
+            <div>
+              <img src="./assets/Oval-neptune.svg" />
+              <a href="./neptune.html" class="sidenav">NEPTUNE</a>
+              <img src="./assets/arrow.svg" />
+            </div>
+          </div>
+          <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </div>
     </nav>
@@ -117,15 +161,15 @@
         </div>
         <div class="planet_description-nav-buttons">
           <button>
-            <p>01</p>
+            <p class="number">01</p>
             <p>OVERVIEW</p>
           </button>
           <button>
-            <p>02</p>
-            <p>INTERNAL STRUCTURE</p></button
+            <p class="number">02</p>
+            <p><span class="number">INTERNAL</span> STRUCTURE</p></button
           ><button>
-            <p>03</p>
-            <p>SURFACE GEOLOGY</p>
+            <p class="number">03</p>
+            <p>SURFACE <span class="number">GEOLOGY</span></p>
           </button>
         </div>
       </div>

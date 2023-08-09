@@ -69,3 +69,15 @@ document.addEventListener("DOMContentLoaded", function () {
     planetImage.src = "./assets/surface-geology-mercury.svg"; // Set surface geology image
   });
 });
+
+const navSlide = () => {
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector("nav-bar_site-paths-links");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle(".nav-active");
+
+  });
+}
+
+navSlide();

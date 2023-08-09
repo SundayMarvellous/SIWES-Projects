@@ -82,6 +82,7 @@
         display: block;
 
         .img{
+            box-sizing: border-box;
             text-align: center;
             margin-right: 80px;
             img{
@@ -125,9 +126,86 @@
 }
 
 @media screen and (max-width:500px){
+
+    .planet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+        .img{
+            margin:0;
+            img{
+                width: 60%;
+                margin-top: 15vh;
+                margin-bottom: 15vh;            
+            }
+        }
+
+        &_description{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            justify-items: center;
+            
+            &-main{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                flex-direction: column;
+                &-header{
+                    margin-top: 0;
+                    font-size: 40px;
+                }
+                &-content{
+                    margin: 0;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+            &-nav-buttons{
+                display: flex;
+                box-sizing: border-box;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-bottom: 0;
+                border-bottom: 1px solid rgba(171, 170, 170, 0.501);
+                padding: 10px;
+                padding-bottom: 0;
+                width: 100%;
+                position: absolute;
+                top: 85px;
+                button{
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 2px;
+                    padding-bottom: 12px;
+                    padding-left: 18px;
+                    // padding-right: 18px;
+                    display: block;
+                    letter-spacing: 1.93px;
+                    border: none;
+                    color: rgba(255, 255, 255, 0.638);
+                }
+            }
+        }
+        
     
+    }
+    .overview, .internal-structure, .surface-geology{
+        color: rgba(255, 255, 255, 0.785);
+        }
+
+    .number{
+        display: none;
+        }   
 }
 
-.toggle{
-    background-color: white;
-}
+
