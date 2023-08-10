@@ -70,14 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const navSlide = () => {
-  const hamburger = document.querySelector(".hamburger");
-  const nav = document.querySelector("nav-bar_site-paths-links");
+const hamburger = document.querySelector(".hamburger");
+const sidenav = document.querySelector(".side-nav")
 
-  hamburger.addEventListener("click", () => {
-    nav.classList.toggle(".nav-active");
-
-  });
-}
-
-navSlide();
+hamburger.addEventListener("click", () => {
+  sidenav.classList.toggle("active");
+  console.log("fish")
+})

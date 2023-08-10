@@ -70,3 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+
+  const hamburger = document.querySelector(".hamburger");
+  const sidenav = document.querySelector(".side-nav")
+  
+  hamburger.addEventListener("click", () => {
+    sidenav.classList.toggle("active");
+  })
