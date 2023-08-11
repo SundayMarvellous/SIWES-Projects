@@ -1,1 +1,93 @@
-/*# sourceMappingURL=App.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.FormContainer {
+  font-family: "Outfit", sans-serif;
+  background-color: #10141E;
+  text-align: center;
+  padding: 4.8rem 2.4rem;
+}
+.FormContainer .movieicon {
+  margin-bottom: 5.84rem;
+}
+.FormContainer .Form {
+  background-color: #161D2F;
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+}
+.FormContainer .Form h2 {
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  text-align: left;
+  margin-bottom: 1.8rem;
+}
+.FormContainer .Form .input {
+  width: 100%;
+  background-color: #161D2F;
+  color: rgba(255, 255, 255, 0.3137254902);
+  border: none;
+  border-bottom: 1px solid #5A698F;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.FormContainer .Form button {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #FC4747;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.1rem 3.75rem;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+.FormContainer .Form button:hover {
+  background-color: #FFFFFF;
+  color: #FC4747;
+}
+.FormContainer .Form p {
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 1.4rem 1.5rem 1.8rem 1.5rem;
+}
+.FormContainer .Form p span {
+  color: #FC4747;
+  cursor: pointer;
+}
+
+.Nav {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+  background-color: #161D2F;
+}
+.Nav .Sections {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.MoviesContainer {
+  padding: 2.4rem;
+}
+
+body {
+  background-color: #10141E;
+  font-family: "Outfit", sans-serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 200;
+}/*# sourceMappingURL=App.css.map */

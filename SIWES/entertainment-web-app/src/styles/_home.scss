@@ -1,0 +1,20 @@
+.Nav{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+    background-color: $Deep-blue;
+
+    .Sections{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+.MoviesContainer{
+    padding: 2.4rem;
+}
