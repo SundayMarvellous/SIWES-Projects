@@ -73,7 +73,35 @@
 }
 
 .MoviesContainer {
-  padding: 2.4rem;
+  padding: 1.5rem;
+}
+.MoviesContainer .Search {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.MoviesContainer .Search-input {
+  width: 100vw;
+  height: 1.6rem;
+  background-color: #10141E;
+  border: none;
+  font-size: 1rem;
+  margin-left: 1.4rem;
+  color: rgba(255, 255, 255, 0.579);
+}
+.MoviesContainer .Search-input[type=text]:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #5A698F;
+}
+.MoviesContainer .Trending {
+  margin-top: 1.7rem;
+}
+.MoviesContainer .Trending p {
+  font-size: 1.2rem;
+  letter-spacing: -0.31px;
+  color: #FFFFFF;
+  margin-bottom: 1.2rem;
 }
 
 body {

@@ -24,10 +24,12 @@ function Home() {
       </div>
       <div className='MoviesContainer'>
         <div className='Search'>
-        <Searchicon />
+          <Searchicon />
+          <input type='text' placeholder='Search for movies or TV series' className='Search-input'/>
         </div>
         <div className='Trending'>
-
+          <p>Trending</p>
+          
         </div>
         <div className='Recommendations'>
 

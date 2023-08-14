@@ -16,5 +16,38 @@
 }
 
 .MoviesContainer{
-    padding: 2.4rem;
+    padding: 1.5rem;
+    // padding-top: 0;
+
+    .Search{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        &-input{ 
+            width: 100vw;
+            height: 1.6rem;
+            background-color: $Bg-color;
+            border: none;
+            font-size: 1rem;
+            margin-left: 1.4rem;
+            color: rgba(255, 255, 255, 0.579);
+
+            
+        }
+        &-input[type=text]:focus{
+                border: none;
+                outline: none;
+                border-bottom: 1px solid $Greyish-blue;
+            }
+    }
+
+    .Trending{
+        margin-top: 1.7rem;
+        p{
+            font-size: 1.2rem;
+            letter-spacing: -0.31px;
+            color: $White;
+            margin-bottom: 1.2rem;
+        }
+    }
 }

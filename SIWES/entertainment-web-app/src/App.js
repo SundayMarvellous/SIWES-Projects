@@ -3,6 +3,7 @@ import './components/Login';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Home from './components/Home';
+
 import {
   BrowserRouter as Router,
   Routes,
