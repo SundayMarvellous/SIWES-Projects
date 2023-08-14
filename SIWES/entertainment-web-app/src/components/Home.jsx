@@ -6,6 +6,8 @@ import {ReactComponent as TVicon} from '../assets/Tv.icon.svg';
 import {ReactComponent as Bookmarkicon} from '../assets/Bookmark.icon.svg';
 import {ReactComponent as Profileicon} from '../assets/Profile.icon.svg';
 import {ReactComponent as Searchicon} from '../assets/Search.icon.svg';
+import Trending from './Trending';
+
 
 
 
@@ -29,7 +31,7 @@ function Home() {
         </div>
         <div className='Trending'>
           <p>Trending</p>
-          
+          <Trending />
         </div>
         <div className='Recommendations'>
 
