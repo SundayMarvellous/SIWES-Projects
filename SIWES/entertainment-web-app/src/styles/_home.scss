@@ -5,6 +5,9 @@
     justify-content: space-between;
     padding: 1.6rem;
     background-color: $Deep-blue;
+    width: 100vw;
+    // box-sizing: content-box;
+    margin: 0;
 
     .Sections{
         display: flex;
@@ -43,8 +46,87 @@
 
     .Trending{
         margin-top: 1.7rem;
-        p{
-            font-size: 1.2rem;
+        overflow-x: hidden;
+
+        p.trend{
+            font-size: 1.3rem;
+            letter-spacing: -0.31px;
+            color: $White;
+            margin-bottom: 1.2rem;
+        }
+        &-container{
+            display: flex;
+            gap: 1.2rem;
+            &-images{  
+            position: relative;
+
+                &-bookmark{
+                    position: absolute;
+                    right: 0.4rem;
+                    top: 0.4rem;
+                }
+                &-label{
+                    position: absolute;
+                    top: 4.4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    justify-items: center;
+                    width: 100%;
+                    padding: 0.8rem;
+
+                    &-class{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.4rem;
+                        // border: 1px solid red;
+
+                        
+                        &-yearCategory{
+                            display: flex;
+                            // border: 1px solid red;
+                            align-items: center;
+                            justify-items: center;
+                            font-size: 0.8rem;
+                            color: #ffffff75;
+                            gap: 0.4rem;
+                            justify-content: space-between;
+                            &-year{
+                                font-size: 0.8rem;
+                                color: #ffffff75;
+                                
+                            }
+                            &-category{
+                                display: flex;
+                                gap: 0.4rem;
+                            }
+                        }
+
+                        &-name{
+                            color: white;
+                            font-weight: 500;
+                            font-size: 0.9rem;
+                        }
+                    } 
+                    
+                    &-mpaa{
+                        color: $White;
+                        font-size: 0.8rem;
+                        background-color: #ffffff50;
+                        padding: 0.3rem 0.5rem;
+                        border-radius: 42%;
+                    }
+                }
+           
+            }
+        }
+        
+    }
+
+    .Recommendations{
+        margin-top: 1.7rem;
+        p.recom{
+            font-size: 1.3rem;
             letter-spacing: -0.31px;
             color: $White;
             margin-bottom: 1.2rem;

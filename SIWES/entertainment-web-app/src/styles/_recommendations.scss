@@ -1,0 +1,46 @@
+.Recommended-container{
+    display: flex;
+    gap: 1.2rem;
+    &-images{  
+    position: relative;
+        &-bookmark{
+            position: absolute;
+            left: 7.8rem;
+            top: 0.4rem;
+        }
+        &-label{
+            margin-top: 0.6rem;
+            margin-bottom: 1.4rem;
+            &-class{
+                color: #ffffff75;
+                font-size: 0.8rem;
+                &-yearCategory{
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    gap: 0.4rem;
+                    &-category{
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                        gap: 0.4rem;
+                    }
+                }
+
+                &-name{
+                    color: white;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                }
+            }
+           
+        }
+    }
+}
+
+.Recommended-movies{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+}

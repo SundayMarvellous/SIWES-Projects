@@ -63,6 +63,8 @@
   justify-content: space-between;
   padding: 1.6rem;
   background-color: #161D2F;
+  width: 100vw;
+  margin: 0;
 }
 .Nav .Sections {
   display: flex;
@@ -96,12 +98,122 @@
 }
 .MoviesContainer .Trending {
   margin-top: 1.7rem;
+  overflow-x: hidden;
 }
-.MoviesContainer .Trending p {
-  font-size: 1.2rem;
+.MoviesContainer .Trending p.trend {
+  font-size: 1.3rem;
   letter-spacing: -0.31px;
   color: #FFFFFF;
   margin-bottom: 1.2rem;
+}
+.MoviesContainer .Trending-container {
+  display: flex;
+  gap: 1.2rem;
+}
+.MoviesContainer .Trending-container-images {
+  position: relative;
+}
+.MoviesContainer .Trending-container-images-bookmark {
+  position: absolute;
+  right: 0.4rem;
+  top: 0.4rem;
+}
+.MoviesContainer .Trending-container-images-label {
+  position: absolute;
+  top: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  width: 100%;
+  padding: 0.8rem;
+}
+.MoviesContainer .Trending-container-images-label-class {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.MoviesContainer .Trending-container-images-label-class-yearCategory {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4588235294);
+  gap: 0.4rem;
+  justify-content: space-between;
+}
+.MoviesContainer .Trending-container-images-label-class-yearCategory-year {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4588235294);
+}
+.MoviesContainer .Trending-container-images-label-class-yearCategory-category {
+  display: flex;
+  gap: 0.4rem;
+}
+.MoviesContainer .Trending-container-images-label-class-name {
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.MoviesContainer .Trending-container-images-label-mpaa {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.3137254902);
+  padding: 0.3rem 0.5rem;
+  border-radius: 42%;
+}
+.MoviesContainer .Recommendations {
+  margin-top: 1.7rem;
+}
+.MoviesContainer .Recommendations p.recom {
+  font-size: 1.3rem;
+  letter-spacing: -0.31px;
+  color: #FFFFFF;
+  margin-bottom: 1.2rem;
+}
+
+.Recommended-container {
+  display: flex;
+  gap: 1.2rem;
+}
+.Recommended-container-images {
+  position: relative;
+}
+.Recommended-container-images-bookmark {
+  position: absolute;
+  left: 7.8rem;
+  top: 0.4rem;
+}
+.Recommended-container-images-label {
+  margin-top: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+.Recommended-container-images-label-class {
+  color: rgba(255, 255, 255, 0.4588235294);
+  font-size: 0.8rem;
+}
+.Recommended-container-images-label-class-yearCategory {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.4rem;
+}
+.Recommended-container-images-label-class-yearCategory-category {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.4rem;
+}
+.Recommended-container-images-label-class-name {
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.Recommended-movies {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
 }
 
 body {
