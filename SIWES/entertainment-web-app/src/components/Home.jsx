@@ -18,10 +18,10 @@ function Home() {
       <div className='Nav'>
       <Movieicon4home />
         <div className='Sections'>
-            <Trendingicon />
-            <Movieslisticon />
-            <TVicon />
-            <Bookmarkicon />
+            <Trendingicon className='Trendingicon'/>
+            <Movieslisticon className='Movieslisticon'/>
+            <TVicon className='TVicon'/>
+            <Bookmarkicon className='Bookmarkicon'/>
         </div>
         <Profileicon />
       </div>

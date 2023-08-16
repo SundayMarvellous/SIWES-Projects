@@ -30,6 +30,7 @@
             padding: 1rem;
             font-size: 1rem;
             margin-bottom: 1rem;
+            cursor: pointer;
         }
 
         button{
@@ -42,6 +43,8 @@
             width: 100%;
             font-size: 1rem;
             margin-top: 2rem;
+            cursor: pointer;
+
 
             &:hover{
                 background-color: $White;
@@ -56,6 +59,54 @@
             span{
                 color: $Orange;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 376px){
+    body{
+        .FormContainer{
+            padding: 4.8rem 8rem;
+        
+            .movieicon{
+                margin-bottom: 4rem;
+            }
+        
+            .Form{
+                padding: 1.5rem;
+                border-radius: 0.8rem;
+        
+                h2{
+                    font-size: 2rem;
+                    margin-bottom: 1.2rem;
+                }
+                
+                .input{
+                    padding: 1rem;
+                    font-size: 0.8rem;
+                    margin-bottom: 0.8rem;
+                }
+        
+                button{
+                    margin-top: 0.8rem;
+                }
+        
+                p{
+                    padding: 1.2rem 1.5rem 0.5rem 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px){
+    body{
+        .FormContainer{
+            padding: 4.8rem 36rem;
+        
+            .movieicon{
+                margin-bottom: 5.5rem;
             }
         }
     }

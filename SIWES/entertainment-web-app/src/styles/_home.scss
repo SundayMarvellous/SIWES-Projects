@@ -20,6 +20,7 @@
 
 .MoviesContainer{
     padding: 1.5rem;
+    overflow-x: hidden;
     // padding-top: 0;
 
     .Search{
@@ -46,7 +47,6 @@
 
     .Trending{
         margin-top: 1.7rem;
-        overflow-x: hidden;
 
         p.trend{
             font-size: 1.3rem;
@@ -57,9 +57,11 @@
         &-container{
             display: flex;
             gap: 1.2rem;
+            overflow-x: auto;
+            overflow-y: hidden;
             &-images{  
             position: relative;
-
+            
                 &-bookmark{
                     position: absolute;
                     right: 0.4rem;
@@ -67,7 +69,7 @@
                 }
                 &-label{
                     position: absolute;
-                    top: 4.4rem;
+                    top: 4rem;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -100,6 +102,9 @@
                                 display: flex;
                                 gap: 0.4rem;
                             }
+                            &-mpaa-tab{
+                                display: none;
+                            }
                         }
 
                         &-name{
@@ -131,5 +136,125 @@
             color: $White;
             margin-bottom: 1.2rem;
         }
+    }
+}
+
+@media screen and (min-width: 400px){
+    body{
+        .MoviesContainer{
+            .Trending{
+                p.trend{
+                    font-size: 1.5rem;
+                }
+                &-container{
+                    overflow-y: hidden;
+                    &-images{  
+                    position: relative;
+                    img.movie{
+                        width: 62vw;
+                    }
+                        &-bookmark{
+                            right: 1rem;
+                            top: 1rem;
+                        }
+                        &-label{
+                            bottom: -2.8rem;
+                            &-class{
+                                &-yearCategory{
+                                    &-mpaa-tab{
+                                        display: block;
+                                        display: flex;
+                                        gap: 0.4rem;
+                                    }
+                                }
+                            } 
+                            
+                            &-mpaa{
+                                display: none;
+                            }
+                        }
+                   
+                    }
+                }
+                
+            }
+        
+            .Recommendations{
+                p.recom{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px){
+    body{
+        .Home{
+            display: flex;
+        }
+        .Nav{
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.6rem;
+            background-color: $Deep-blue;
+            height: 90vh;
+            width: 5vw;
+            // box-sizing: content-box;
+            margin: 2.5rem;
+        
+            .Sections{
+                margin-top: -40vh;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2rem;
+            }
+        }
+        .MoviesContainer{
+            margin-left: 10vw;
+            .Trending{
+                p.trend{
+                    font-size: 1.5rem;
+                }
+                &-container{
+                    overflow-y: hidden;
+                    &-images{  
+                    position: relative;
+                    img.movie{
+                        width: 20rem;
+                    }
+                        &-bookmark{
+                            right: 1rem;
+                            top: 1rem;
+                        }
+                        &-label{
+                            bottom: -2.8rem;
+                            &-class{
+                                &-yearCategory{
+                                    &-mpaa-tab{
+                                        display: block;
+                                        display: flex;
+                                        gap: 0.4rem;
+                                    }
+                                }
+                            } 
+                            
+                            &-mpaa{
+                                display: none;
+                            }
+                        }
+                   
+                    }
+                }
+                
+            }
+        }   
     }
 }

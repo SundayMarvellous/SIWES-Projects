@@ -26,6 +26,7 @@ import VanLife from '../assets/Movie-cards/Van Life.svg';
 import WhisperingHill from '../assets/Movie-cards/Whispering Hill.svg';
 import RInlinemovieicon from '../assets/Movie-cards/R-Inline-movie-icon.svg';
 import Inlinebookmarkicon from '../assets/Movie-cards/Inline-bookmark-icon.svg';
+import Inlinebookmarkcheckedicon from '../assets/Movie-cards/Inline-bookmark-checked-icon.svg';
 import InlineTVSeriesicon from '../assets/Movie-cards/Inline-TV-icon.svg';
 
 
@@ -186,7 +187,7 @@ function Recommendations() {
       </div> 
       <div className='Recommended-container-images'>
         <img src={TheRockies} />
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>
@@ -205,7 +206,7 @@ function Recommendations() {
       </div> 
       <div className='Recommended-container-images'>
         <img src={Relentless} />
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>
@@ -262,7 +263,7 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={TheHeiress} />
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>
@@ -281,7 +282,7 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={Offthetrack} />
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>
@@ -338,7 +339,7 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={LoneHeart} />
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>
@@ -376,7 +377,7 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={Dogs} />
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>
@@ -433,7 +434,7 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={Darker} />
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>
@@ -471,7 +472,7 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={MissionSaturn} />
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>

@@ -30,6 +30,7 @@
   padding: 1rem;
   font-size: 1rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .FormContainer .Form button {
   color: #FFFFFF;
@@ -41,6 +42,7 @@
   width: 100%;
   font-size: 1rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 .FormContainer .Form button:hover {
   background-color: #FFFFFF;
@@ -56,6 +58,41 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 376px) {
+  body .FormContainer {
+    padding: 4.8rem 8rem;
+  }
+  body .FormContainer .movieicon {
+    margin-bottom: 4rem;
+  }
+  body .FormContainer .Form {
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+  }
+  body .FormContainer .Form h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  body .FormContainer .Form .input {
+    padding: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  body .FormContainer .Form button {
+    margin-top: 0.8rem;
+  }
+  body .FormContainer .Form p {
+    padding: 1.2rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  body .FormContainer {
+    padding: 4.8rem 36rem;
+  }
+  body .FormContainer .movieicon {
+    margin-bottom: 5.5rem;
+  }
+}
 .Nav {
   display: flex;
   justify-items: center;
@@ -76,6 +113,7 @@
 
 .MoviesContainer {
   padding: 1.5rem;
+  overflow-x: hidden;
 }
 .MoviesContainer .Search {
   display: flex;
@@ -98,7 +136,6 @@
 }
 .MoviesContainer .Trending {
   margin-top: 1.7rem;
-  overflow-x: hidden;
 }
 .MoviesContainer .Trending p.trend {
   font-size: 1.3rem;
@@ -109,6 +146,8 @@
 .MoviesContainer .Trending-container {
   display: flex;
   gap: 1.2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .MoviesContainer .Trending-container-images {
   position: relative;
@@ -120,7 +159,7 @@
 }
 .MoviesContainer .Trending-container-images-label {
   position: absolute;
-  top: 4.4rem;
+  top: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -150,6 +189,9 @@
   display: flex;
   gap: 0.4rem;
 }
+.MoviesContainer .Trending-container-images-label-class-yearCategory-mpaa-tab {
+  display: none;
+}
 .MoviesContainer .Trending-container-images-label-class-name {
   color: white;
   font-weight: 500;
@@ -172,6 +214,95 @@
   margin-bottom: 1.2rem;
 }
 
+@media screen and (min-width: 400px) {
+  body .MoviesContainer .Trending p.trend {
+    font-size: 1.5rem;
+  }
+  body .MoviesContainer .Trending-container {
+    overflow-y: hidden;
+  }
+  body .MoviesContainer .Trending-container-images {
+    position: relative;
+  }
+  body .MoviesContainer .Trending-container-images img.movie {
+    width: 62vw;
+  }
+  body .MoviesContainer .Trending-container-images-bookmark {
+    right: 1rem;
+    top: 1rem;
+  }
+  body .MoviesContainer .Trending-container-images-label {
+    bottom: -2.8rem;
+  }
+  body .MoviesContainer .Trending-container-images-label-class-yearCategory-mpaa-tab {
+    display: block;
+    display: flex;
+    gap: 0.4rem;
+  }
+  body .MoviesContainer .Trending-container-images-label-mpaa {
+    display: none;
+  }
+  body .MoviesContainer .Recommendations p.recom {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  body .Home {
+    display: flex;
+  }
+  body .Nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+    background-color: #161D2F;
+    height: 90vh;
+    width: 5vw;
+    margin: 2.5rem;
+  }
+  body .Nav .Sections {
+    margin-top: -40vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  body .MoviesContainer {
+    margin-left: 10vw;
+  }
+  body .MoviesContainer .Trending p.trend {
+    font-size: 1.5rem;
+  }
+  body .MoviesContainer .Trending-container {
+    overflow-y: hidden;
+  }
+  body .MoviesContainer .Trending-container-images {
+    position: relative;
+  }
+  body .MoviesContainer .Trending-container-images img.movie {
+    width: 20rem;
+  }
+  body .MoviesContainer .Trending-container-images-bookmark {
+    right: 1rem;
+    top: 1rem;
+  }
+  body .MoviesContainer .Trending-container-images-label {
+    bottom: -2.8rem;
+  }
+  body .MoviesContainer .Trending-container-images-label-class-yearCategory-mpaa-tab {
+    display: block;
+    display: flex;
+    gap: 0.4rem;
+  }
+  body .MoviesContainer .Trending-container-images-label-mpaa {
+    display: none;
+  }
+}
 .Recommended-container {
   display: flex;
   gap: 1.2rem;
@@ -179,9 +310,12 @@
 .Recommended-container-images {
   position: relative;
 }
+.Recommended-container-images > :first-child {
+  width: 40vw;
+}
 .Recommended-container-images-bookmark {
   position: absolute;
-  left: 7.8rem;
+  right: 0.6rem;
   top: 0.4rem;
 }
 .Recommended-container-images-label {
@@ -216,6 +350,46 @@
   justify-content: space-between;
 }
 
+@media screen and (min-width: 400px) {
+  .Recommended-container {
+    display: flex;
+    gap: 1.2rem;
+  }
+  .Recommended-container-images {
+    position: relative;
+  }
+  .Recommended-container-images > :first-child {
+    width: 28vw;
+  }
+  .Recommended-container-images-bookmark {
+    position: absolute;
+    right: 1.6rem;
+    top: 0.4rem;
+  }
+  .Recommended-movies {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (min-width: 800px) {
+  .Recommended-container {
+    display: flex;
+    gap: 1.2rem;
+  }
+  .Recommended-container-images {
+    position: relative;
+  }
+  .Recommended-container-images > :first-child {
+    width: 20vw;
+  }
+  .Recommended-container-images-bookmark {
+    position: absolute;
+    right: 1.6rem;
+    top: 0.4rem;
+  }
+  .Recommended-movies {
+    grid-template-columns: auto auto auto auto;
+  }
+}
 body {
   background-color: #10141E;
   font-family: "Outfit", sans-serif;

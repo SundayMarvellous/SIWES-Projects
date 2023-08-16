@@ -2,10 +2,13 @@
     display: flex;
     gap: 1.2rem;
     &-images{  
-    position: relative;
+        &>:first-child{
+            width: 40vw;
+        }
+        position: relative;
         &-bookmark{
             position: absolute;
-            left: 7.8rem;
+            right: 0.6rem;
             top: 0.4rem;
         }
         &-label{
@@ -42,5 +45,46 @@
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
+}
 
+@media screen and (min-width: 400px){
+    .Recommended-container{
+        display: flex;
+        gap: 1.2rem;
+        &-images{  
+            &>:first-child{
+                width: 28vw;
+            }
+            position: relative;
+            &-bookmark{
+                position: absolute;
+                right: 1.6rem;
+                top: 0.4rem;
+            }
+        }
+    }
+    .Recommended-movies{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .Recommended-container{
+        display: flex;
+        gap: 1.2rem;
+        &-images{  
+            &>:first-child{
+                width: 20vw;
+            }
+            position: relative;
+            &-bookmark{
+                position: absolute;
+                right: 1.6rem;
+                top: 0.4rem;
+            }
+        }
+    }
+    .Recommended-movies{
+        grid-template-columns: auto auto auto auto;
+    }
 }
