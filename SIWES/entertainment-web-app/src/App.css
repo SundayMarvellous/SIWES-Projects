@@ -330,14 +330,14 @@
     position: relative;
   }
   body .MoviesContainer .Trending-container-images img.movie {
-    width: 18rem;
+    width: 30rem;
   }
   body .MoviesContainer .Trending-container-images-bookmark {
     right: 1rem;
     top: 1rem;
   }
   body .MoviesContainer .Trending-container-images-label {
-    bottom: -2.8rem;
+    bottom: -5.8rem;
   }
   body .MoviesContainer .Trending-container-images-label-class-yearCategory-mpaa-tab {
     display: block;
