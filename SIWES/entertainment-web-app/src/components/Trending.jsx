@@ -5,6 +5,7 @@ import Dot from '../assets/Movie-cards/Dot.svg';
 import year1998 from '../assets/Movie-cards/1998.svg';
 import UndiscoveredCities from '../assets/Movie-cards/Undiscovered Cities.svg';
 import DarkSideoftheMoon from '../assets/Movie-cards/Dark Side of the Moon.svg';
+import Playicon from '../assets/Movie-cards/Shape.svg';
 import Inlinemovieicon from '../assets/Movie-cards/Inline-movie-icon.svg';
 import Inlinebookmarkicon from '../assets/Movie-cards/Inline-bookmark-icon.svg';
 
@@ -14,6 +15,10 @@ function Trending() {
     <div className='Trending-container'>
       <div className='Trending-container-images'>
         <img src={Beyondearth} className='movie'/>
+        <div class="content">
+          <img src={Playicon} className='playicon'/>
+          <div class="text">Play</div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Trending-container-images-bookmark'/>
         <div className='Trending-container-images-label'>
           <div className='Trending-container-images-label-class'>

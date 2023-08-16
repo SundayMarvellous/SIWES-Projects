@@ -4,6 +4,10 @@
     &-images{  
         &>:first-child{
             width: 40vw;
+            &:hover{
+                opacity: 50%;
+                cursor: pointer;
+            }
         }
         position: relative;
         &-bookmark{
@@ -79,7 +83,7 @@
             position: relative;
             &-bookmark{
                 position: absolute;
-                right: 1.6rem;
+                right: 1rem;
                 top: 0.4rem;
             }
         }
