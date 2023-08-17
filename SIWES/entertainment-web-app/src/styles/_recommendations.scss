@@ -2,18 +2,65 @@
     display: flex;
     gap: 1.2rem;
     &-images{  
+        position: relative;
+        cursor: pointer;
+        &:hover .container-content {
+            bottom: 50%;
+            height: 60%;
+          }
         &>:first-child{
             width: 40vw;
             &:hover{
-                opacity: 50%;
                 cursor: pointer;
             }
         }
-        position: relative;
+        .container-content{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 0;
+            width: 100%;
+            -webkit-transition: all 400ms ease-out;
+            -moz-transition: all 400ms ease-out;
+            -o-transition: all 400ms ease-out;
+            -ms-transition: all 400ms ease-out;
+            transition: all 400ms ease-out;
+            text-align: center;
+            overflow: hidden;
+            backdrop-filter: blur(2px) brightness(80%);
+            transition: all .3s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.042);
+            
+        }
+        .content {
+            .playicon{
+                width: 1rem;
+            }
+            position: relative; 
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: space-around;
+            gap: 0.3rem;
+            padding: 0.5rem;
+            font-size: 0.6rem;
+            width: 4rem;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.266);
+            top: 30%;
+            left: 25%;
+            color: $White;
+           
+            }
+          
         &-bookmark{
             position: absolute;
             right: 0.6rem;
             top: 0.4rem;
+            &:hover{
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+                cursor: pointer;
+            }
         }
         &-label{
             margin-top: 0.6rem;
@@ -56,6 +103,15 @@
         display: flex;
         gap: 1.2rem;
         &-images{  
+            &:hover .container-content {
+                bottom: 50%;
+                height: 65%;
+              }
+
+            .content {
+            top: 42%;
+            left: 30%;
+            }
             &>:first-child{
                 width: 28vw;
             }
@@ -77,6 +133,15 @@
         display: flex;
         gap: 1.2rem;
         &-images{  
+            &:hover .container-content {
+                bottom: 50%;
+                height: 68%;
+              }
+
+            .content {
+            top: 40%;
+            left: 33%;
+            }
             &>:first-child{
                 width: 20vw;
             }
@@ -91,4 +156,23 @@
     .Recommended-movies{
         grid-template-columns: auto auto auto auto;
     }
+}
+
+@media screen and (min-width: 1120px){
+    .Recommended-container{
+        &-images{  
+            &:hover .container-content {
+                bottom: 50%;
+                height: 75%;
+            }
+            .content {
+                top: 40%;
+                left: 40%;
+            }
+        }
+    }
+}
+
+.food{
+    color: $White;
 }

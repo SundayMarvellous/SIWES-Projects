@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TheGreatLands from '../assets/Movie-cards/The Great Lands.svg';
 import TheDiary from '../assets/Movie-cards/The Diary.svg';
 import Dot from '../assets/Movie-cards/Dot.svg';
@@ -28,13 +28,35 @@ import RInlinemovieicon from '../assets/Movie-cards/R-Inline-movie-icon.svg';
 import Inlinebookmarkicon from '../assets/Movie-cards/Inline-bookmark-icon.svg';
 import Inlinebookmarkcheckedicon from '../assets/Movie-cards/Inline-bookmark-checked-icon.svg';
 import InlineTVSeriesicon from '../assets/Movie-cards/Inline-TV-icon.svg';
+import Playicon from '../assets/Movie-cards/Shape.svg';
+import data from './data';
 
 
 function Recommendations() {
+
+  const [movies, setMovies] = useState({})
+
+  // import React from 'react';
+
+  // {  data.map((movie)=> {
+  //   setMovies(movie)
+  // })}
+
+
+
   return (
     <div className='Recommended-movies'>
-       <div className='Recommended-container-images'>
+            {data.map((movie, index) => (
+      <div>{movie.name}</div>
+      ))}
+      {/* <div className='Recommended-container-images'>
         <img src={TheGreatLands} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -54,6 +76,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={TheDiary} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -73,6 +101,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={EarthsUntouched} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -92,6 +126,12 @@ function Recommendations() {
       </div> 
       <div className='Recommended-container-images'>
         <img src={NoLandBeyond} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -111,6 +151,12 @@ function Recommendations() {
       </div> 
       <div className='Recommended-container-images'>
         <img src={DuringtheHunt} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -130,6 +176,12 @@ function Recommendations() {
       </div> 
       <div className='Recommended-container-images'>
         <img src={AutosporttheSeries} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -149,6 +201,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={SameAnswer2} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -168,6 +226,12 @@ function Recommendations() {
       </div> 
       <div className='Recommended-container-images'>
         <img src={BelowEcho} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -187,6 +251,12 @@ function Recommendations() {
       </div> 
       <div className='Recommended-container-images'>
         <img src={TheRockies} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -206,6 +276,12 @@ function Recommendations() {
       </div> 
       <div className='Recommended-container-images'>
         <img src={Relentless} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -225,6 +301,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={CommunityofOurs} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -244,6 +326,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={VanLife} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -263,6 +351,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={TheHeiress} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -282,6 +376,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={Offthetrack} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -301,6 +401,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={WhisperingHill} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -320,6 +426,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={Onehundredandtwelve} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -339,6 +451,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={LoneHeart} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -358,6 +476,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={ProductionLine} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -377,6 +501,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={Dogs} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -396,6 +526,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={Asiain24Days} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -415,6 +551,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={TheTastyTour} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -434,6 +576,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={Darker} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -453,6 +601,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={UnresolvedCases} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -472,6 +626,12 @@ function Recommendations() {
       </div>
       <div className='Recommended-container-images'>
         <img src={MissionSaturn} />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
@@ -488,7 +648,7 @@ function Recommendations() {
             <p className='Recommended-container-images-label-class-name' id='movie-name'>Mission: Saturn</p>
           </div>
         </div>
-      </div>    
+      </div>     */}
     </div>
   )
 }

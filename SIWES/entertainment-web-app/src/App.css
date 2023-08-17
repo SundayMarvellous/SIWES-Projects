@@ -14,12 +14,25 @@
   padding: 1.4rem;
   border-radius: 0.8rem;
 }
+.FormContainer .Form .InputContainer {
+  position: relative;
+}
+.FormContainer .Form .InputContainer .ErrorMessage {
+  position: absolute;
+  top: 1px;
+  left: 11.5rem;
+  font-size: 0.8rem;
+  color: #FC4747;
+}
 .FormContainer .Form h2 {
   font-weight: 300;
   color: #FFFFFF;
   font-size: 2.2rem;
   text-align: left;
   margin-bottom: 1.8rem;
+}
+.FormContainer .Form .input.error {
+  border-color: #FC4747;
 }
 .FormContainer .Form .input {
   width: 100%;
@@ -30,7 +43,9 @@
   padding: 1rem;
   font-size: 1rem;
   margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
   cursor: pointer;
+  caret-color: #FC4747;
 }
 .FormContainer .Form button {
   color: #FFFFFF;
@@ -87,7 +102,7 @@
 }
 @media screen and (min-width: 800px) {
   body .FormContainer {
-    padding: 4.8rem 36rem;
+    padding: 4.8rem 25rem;
   }
   body .FormContainer .movieicon {
     margin-bottom: 5.5rem;
@@ -110,6 +125,13 @@
   justify-content: space-between;
   gap: 2rem;
 }
+.Nav .Sections #nav-icon:hover {
+  filter: invert(38%) sepia(42%) saturate(3972%) hue-rotate(336deg) brightness(102%) contrast(97%);
+  cursor: pointer;
+}
+.Nav .Sections #nav-icon:active {
+  filter: invert(100%) sepia(98%) saturate(7%) hue-rotate(142deg) brightness(102%) contrast(103%);
+}
 
 .MoviesContainer {
   padding: 1.5rem;
@@ -126,10 +148,11 @@
   height: 1.6rem;
   background-color: #10141E;
   border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-left: 1.4rem;
-  color: rgba(255, 255, 255, 0.579);
+  color: #FFFFFF;
   cursor: pointer;
+  caret-color: #FC4747;
 }
 .MoviesContainer .Search-input[type=text]:focus {
   border: none;
@@ -155,44 +178,45 @@
   position: relative;
   cursor: pointer;
 }
+.MoviesContainer .Trending-container-images:hover .container-content {
+  bottom: 50rem;
+  height: 100%;
+}
 .MoviesContainer .Trending-container-images img.movie {
   width: 62vw;
 }
-.MoviesContainer .Trending-container-images img.movie:hover {
-  opacity: 30%;
+.MoviesContainer .Trending-container-images .container-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  transition: all 400ms ease-out;
+  text-align: center;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(2px) brightness(80%);
+          backdrop-filter: blur(2px) brightness(80%);
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.042);
 }
 .MoviesContainer .Trending-container-images .content {
-  opacity: 1;
+  position: relative;
   display: flex;
   align-items: center;
   justify-items: center;
+  justify-content: space-around;
   gap: 0.3rem;
   padding: 0.5rem;
   font-size: 0.6rem;
+  width: 4rem;
   border-radius: 15px;
-  position: absolute;
-  top: 5rem;
+  background-color: rgba(255, 255, 255, 0.266);
+  top: 45%;
   left: 40%;
   color: #FFFFFF;
-  background-color: rgba(207, 207, 207, 0.707);
-  transition: all 400ms ease-out;
-  text-align: center;
 }
 .MoviesContainer .Trending-container-images .content .playicon {
   width: 1rem;
-}
-.MoviesContainer .Trending-container-images .content:hover {
-  opacity: 1;
-}
-.MoviesContainer .Trending-container-images .content:hover .text {
-  opacity: 1;
-  transform: translateY(250px);
-  -webkit-transform: translateY(250px);
-}
-.MoviesContainer .Trending-container-images .content .text {
-  opacity: 1;
-  transition-delay: 0s;
-  transition-duration: 0.4s;
 }
 .MoviesContainer .Trending-container-images-bookmark {
   position: absolute;
@@ -354,18 +378,59 @@
 }
 .Recommended-container-images {
   position: relative;
+  cursor: pointer;
+}
+.Recommended-container-images:hover .container-content {
+  bottom: 50%;
+  height: 60%;
 }
 .Recommended-container-images > :first-child {
   width: 40vw;
 }
 .Recommended-container-images > :first-child:hover {
-  opacity: 50%;
   cursor: pointer;
+}
+.Recommended-container-images .container-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  transition: all 400ms ease-out;
+  text-align: center;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(2px) brightness(80%);
+          backdrop-filter: blur(2px) brightness(80%);
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.042);
+}
+.Recommended-container-images .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  width: 4rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.266);
+  top: 30%;
+  left: 25%;
+  color: #FFFFFF;
+}
+.Recommended-container-images .content .playicon {
+  width: 1rem;
 }
 .Recommended-container-images-bookmark {
   position: absolute;
   right: 0.6rem;
   top: 0.4rem;
+}
+.Recommended-container-images-bookmark:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  cursor: pointer;
 }
 .Recommended-container-images-label {
   margin-top: 0.6rem;
@@ -407,6 +472,14 @@
   .Recommended-container-images {
     position: relative;
   }
+  .Recommended-container-images:hover .container-content {
+    bottom: 50%;
+    height: 65%;
+  }
+  .Recommended-container-images .content {
+    top: 42%;
+    left: 30%;
+  }
   .Recommended-container-images > :first-child {
     width: 28vw;
   }
@@ -427,6 +500,14 @@
   .Recommended-container-images {
     position: relative;
   }
+  .Recommended-container-images:hover .container-content {
+    bottom: 50%;
+    height: 68%;
+  }
+  .Recommended-container-images .content {
+    top: 40%;
+    left: 33%;
+  }
   .Recommended-container-images > :first-child {
     width: 20vw;
   }
@@ -437,6 +518,16 @@
   }
   .Recommended-movies {
     grid-template-columns: auto auto auto auto;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .Recommended-container-images:hover .container-content {
+    bottom: 50%;
+    height: 75%;
+  }
+  .Recommended-container-images .content {
+    top: 40%;
+    left: 40%;
   }
 }
 body {

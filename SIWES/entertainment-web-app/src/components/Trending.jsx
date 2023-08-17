@@ -15,9 +15,11 @@ function Trending() {
     <div className='Trending-container'>
       <div className='Trending-container-images'>
         <img src={Beyondearth} className='movie'/>
-        <div class="content">
-          <img src={Playicon} className='playicon'/>
-          <div class="text">Play</div>
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
         </div>
         <img src={Inlinebookmarkicon}  className='Trending-container-images-bookmark'/>
         <div className='Trending-container-images-label'>
@@ -41,6 +43,12 @@ function Trending() {
       </div>
       <div className='Trending-container-images'>
         <img src={Bottomgear} className='movie'/>
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Trending-container-images-bookmark'/>
         <div className='Trending-container-images-label'>
           <div className='Trending-container-images-label-class'>
@@ -63,6 +71,12 @@ function Trending() {
       </div>
       <div className='Trending-container-images'>
         <img src={UndiscoveredCities} className='movie'/>
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Trending-container-images-bookmark'/>
         <div className='Trending-container-images-label'>
           <div className='Trending-container-images-label-class'>
@@ -85,6 +99,12 @@ function Trending() {
       </div>
       <div className='Trending-container-images'>
         <img src={year1998} className='movie' />
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Trending-container-images-bookmark'/>
         <div className='Trending-container-images-label'>
           <div className='Trending-container-images-label-class'>
@@ -107,6 +127,12 @@ function Trending() {
       </div>
       <div className='Trending-container-images'>
         <img src={DarkSideoftheMoon} className='movie'/>
+        <div className="container-content">
+          <div class="content">
+            <img src={Playicon} className='playicon'/>
+            <div class="text">Play</div>
+          </div>
+        </div>
         <img src={Inlinebookmarkicon}  className='Trending-container-images-bookmark'/>
         <div className='Trending-container-images-label'>
           <div className='Trending-container-images-label-class'>
