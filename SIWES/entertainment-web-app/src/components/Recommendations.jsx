@@ -46,7 +46,7 @@ function Recommendations() {
 
   return (
     <div className='Recommended-movies'>
-            {data.map((movie, index) => (
+      {data.map((movie, index) => (
       <div>{movie.name}
        <div className='Recommended-container-images'>
         <img src={TheGreatLands} />

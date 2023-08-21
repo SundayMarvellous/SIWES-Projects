@@ -51,7 +51,7 @@ function Bookmark() {
           <input type='text' placeholder='Search for movies or TV series' className='Search-input'/>
         </div>
         <div className='Bookmark trend'>
-          <p className='bookmark filteredcategories'>Bookmark</p>
+          <p className='bookmark filteredcategories'>Bookmarked Movies</p>
          
         </div>
       </div>
