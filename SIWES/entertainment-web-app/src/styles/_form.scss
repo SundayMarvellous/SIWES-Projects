@@ -17,7 +17,7 @@
             .ErrorMessage{
                 position: absolute;
                 top: 1px;
-                left: 11.5rem;
+                right: 0.5rem;
                 font-size: 0.8rem;
                 color: $Orange;
             }
@@ -118,7 +118,7 @@
 @media screen and (min-width: 800px){
     body{
         .FormContainer{
-            padding: 4.8rem 25rem;
+            padding: 4.8rem 30vw;
         
             .movieicon{
                 margin-bottom: 5.5rem;

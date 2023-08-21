@@ -47,9 +47,8 @@ function Recommendations() {
   return (
     <div className='Recommended-movies'>
             {data.map((movie, index) => (
-      <div>{movie.name}</div>
-      ))}
-      {/* <div className='Recommended-container-images'>
+      <div>{movie.name}
+       <div className='Recommended-container-images'>
         <img src={TheGreatLands} />
         <div className="container-content">
           <div class="content">
@@ -57,598 +56,601 @@ function Recommendations() {
             <div class="text">Play</div>
           </div>
         </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+        <img src={movie.Image}  className='Recommended-container-images-bookmark'/>
         <div className='Recommended-container-images-label'>
           <div className='Recommended-container-images-label-class'>
             <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2019</p>
+              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>{movie.year}</p>
               <img src={Dot} />
               <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
+                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={movie.categoryicon} /></div>
+                <p>{movie.category}</p>
               </div>
               <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
+              <p className='Recommended-container-images-label-mpaa' id='mpaa'>{movie.MPAA}</p>
             </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>The Great Lands</p>
+            <p className='Recommended-container-images-label-class-name' id='movie-name'>{movie.name}</p>
           </div>
         </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={TheDiary} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2019</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>The Diary</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={EarthsUntouched} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Earth's Untouched</p>
-          </div>
-        </div>
-      </div> 
-      <div className='Recommended-container-images'>
-        <img src={NoLandBeyond} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2019</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>No Land Beyond</p>
-          </div>
-        </div>
-      </div> 
-      <div className='Recommended-container-images'>
-        <img src={DuringtheHunt} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>During the Hunt</p>
-          </div>
-        </div>
-      </div> 
-      <div className='Recommended-container-images'>
-        <img src={AutosporttheSeries} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Autosport the Series</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={SameAnswer2} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Same Answer II</p>
-          </div>
-        </div>
-      </div> 
-      <div className='Recommended-container-images'>
-        <img src={BelowEcho} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Below Echo</p>
-          </div>
-        </div>
-      </div> 
-      <div className='Recommended-container-images'>
-        <img src={TheRockies} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2015</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>The Rockies</p>
-          </div>
-        </div>
-      </div> 
-      <div className='Recommended-container-images'>
-        <img src={Relentless} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Relentless</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={CommunityofOurs} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2018</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Community of Ours</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={VanLife} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2015</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Van Life</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={TheHeiress} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2021</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>The Heiress</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={Offthetrack} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Off the Track</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={WhisperingHill} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Whispering Hill</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={Onehundredandtwelve} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2013</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>112</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={LoneHeart} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Lone Heart</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={ProductionLine} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2018</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Production Line</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={Dogs} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Dogs</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={Asiain24Days} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2020</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Asia in 24 Days</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={TheTastyTour} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>The Tasty Tour</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={Darker} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Darker</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={UnresolvedCases} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2018</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
-                <p>TV Series</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Unresolved Cases</p>
-          </div>
-        </div>
-      </div>
-      <div className='Recommended-container-images'>
-        <img src={MissionSaturn} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
-                <p>Movie</p>
-              </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
-            </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>Mission: Saturn</p>
-          </div>
-        </div>
-      </div>     */}
+      </div></div>
+
+      ))}
+     
+      {/* // <div className='Recommended-container-images'>
+      //   <img src={TheDiary} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2019</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>The Diary</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={EarthsUntouched} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Earth's Untouched</p>
+      //     </div>
+      //   </div>
+      // </div> 
+      // <div className='Recommended-container-images'>
+      //   <img src={NoLandBeyond} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2019</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>No Land Beyond</p>
+      //     </div>
+      //   </div>
+      // </div> 
+      // <div className='Recommended-container-images'>
+      //   <img src={DuringtheHunt} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>During the Hunt</p>
+      //     </div>
+      //   </div>
+      // </div> 
+      // <div className='Recommended-container-images'>
+      //   <img src={AutosporttheSeries} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Autosport the Series</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={SameAnswer2} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Same Answer II</p>
+      //     </div>
+      //   </div>
+      // </div> 
+      // <div className='Recommended-container-images'>
+      //   <img src={BelowEcho} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Below Echo</p>
+      //     </div>
+      //   </div>
+      // </div> 
+      // <div className='Recommended-container-images'>
+      //   <img src={TheRockies} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2015</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>The Rockies</p>
+      //     </div>
+      //   </div>
+      // </div> 
+      // <div className='Recommended-container-images'>
+      //   <img src={Relentless} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Relentless</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={CommunityofOurs} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2018</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Community of Ours</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={VanLife} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2015</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Van Life</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={TheHeiress} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2021</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>The Heiress</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={Offthetrack} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Off the Track</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={WhisperingHill} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Whispering Hill</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={Onehundredandtwelve} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2013</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>112</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={LoneHeart} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Lone Heart</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={ProductionLine} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2018</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Production Line</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={Dogs} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>E</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Dogs</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={Asiain24Days} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2020</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Asia in 24 Days</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={TheTastyTour} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2016</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>The Tasty Tour</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={Darker} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Darker</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={UnresolvedCases} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2018</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={InlineTVSeriesicon} /></div>
+      //           <p>TV Series</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>18+</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Unresolved Cases</p>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className='Recommended-container-images'>
+      //   <img src={MissionSaturn} />
+      //   <div className="container-content">
+      //     <div class="content">
+      //       <img src={Playicon} className='playicon'/>
+      //       <div class="text">Play</div>
+      //     </div>
+      //   </div>
+      //   <img src={Inlinebookmarkcheckedicon}  className='Recommended-container-images-bookmark'/>
+      //   <div className='Recommended-container-images-label'>
+      //     <div className='Recommended-container-images-label-class'>
+      //       <div className='Recommended-container-images-label-class-yearCategory'>
+      //         <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>2017</p>
+      //         <img src={Dot} />
+      //         <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
+      //           <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={RInlinemovieicon} /></div>
+      //           <p>Movie</p>
+      //         </div>
+      //         <img src={Dot} />
+      //         <p className='Recommended-container-images-label-mpaa' id='mpaa'>PG</p>
+      //       </div>
+      //       <p className='Recommended-container-images-label-class-name' id='movie-name'>Mission: Saturn</p>
+      //     </div>
+      //   </div>
+      // </div>     */}
     </div>
   )
 }

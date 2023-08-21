@@ -21,6 +21,11 @@
                 cursor: pointer;
             }
             &:active{
+                color: white;
+            
+                filter: invert(100%) sepia(98%) saturate(7%) hue-rotate(142deg) brightness(102%) contrast(103%);
+            }
+            &:focus{
                 filter: invert(100%) sepia(98%) saturate(7%) hue-rotate(142deg) brightness(102%) contrast(103%);
             }
         }
@@ -324,3 +329,11 @@
     }
 }
 
+
+.filteredcategories{
+    margin-top: 1.7rem;
+    font-size: 1.6rem;
+    letter-spacing: -0.31px;
+    color: $White;
+    margin-bottom: 1.2rem;
+}

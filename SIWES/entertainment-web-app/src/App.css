@@ -20,7 +20,7 @@
 .FormContainer .Form .InputContainer .ErrorMessage {
   position: absolute;
   top: 1px;
-  left: 11.5rem;
+  right: 0.5rem;
   font-size: 0.8rem;
   color: #FC4747;
 }
@@ -102,7 +102,7 @@
 }
 @media screen and (min-width: 800px) {
   body .FormContainer {
-    padding: 4.8rem 25rem;
+    padding: 4.8rem 30vw;
   }
   body .FormContainer .movieicon {
     margin-bottom: 5.5rem;
@@ -130,6 +130,10 @@
   cursor: pointer;
 }
 .Nav .Sections #nav-icon:active {
+  color: white;
+  filter: invert(100%) sepia(98%) saturate(7%) hue-rotate(142deg) brightness(102%) contrast(103%);
+}
+.Nav .Sections #nav-icon:focus {
   filter: invert(100%) sepia(98%) saturate(7%) hue-rotate(142deg) brightness(102%) contrast(103%);
 }
 
@@ -372,6 +376,14 @@
     display: none;
   }
 }
+.filteredcategories {
+  margin-top: 1.7rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.31px;
+  color: #FFFFFF;
+  margin-bottom: 1.2rem;
+}
+
 .Recommended-container {
   display: flex;
   gap: 1.2rem;
@@ -530,6 +542,10 @@
     left: 40%;
   }
 }
+.food {
+  color: #FFFFFF;
+}
+
 body {
   background-color: #10141E;
   font-family: "Outfit", sans-serif;

@@ -60,7 +60,7 @@ function SignUp() {
                     Create an account
                 </button>
                 <p>
-                Don't have an account?{' '}
+                Already have an account?{' '}
                 <span className='Formlink' onClick={handleToSignUp}>
                     Login
                 </span>

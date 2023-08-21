@@ -7,13 +7,12 @@ import {ReactComponent as Bookmarkicon} from '../assets/Bookmark.icon.svg';
 import {ReactComponent as Profileicon} from '../assets/Profile.icon.svg';
 import {ReactComponent as Searchicon} from '../assets/Search.icon.svg';
 import { useNavigate } from "react-router-dom";
-import Trending from './Trending';
-import Recommendations from './Recommendations';
 
 
 
 
-function Home() {
+
+function TVSeries() {
   const navigate = useNavigate();
   const handleToTrendingMovies = () => {
     navigate('/home');
@@ -31,26 +30,10 @@ function Home() {
       <div className='Nav'>
       <Movieicon4home />
         <div className='Sections'>
-        <span className='Formlink' onClick={handleToTrendingMovies} 
-        to="home"
-        styles={({ isActive }) =>
-        isActive
-              ? {
-                  color: '#fff', filter: 'invert(38%) sepia(42%) saturate(3972%) hue-rotate(336deg) brightness(102%) contrast(97%)'
-                }
-                : { color: '#545e6f'}
-          }>
+        <span className='Formlink' onClick={handleToTrendingMovies}>
           <Trendingicon className='Trendingicon nav-icon'/>
         </span>
-        <span className='Formlink' onClick={handleToAllMovies}
-        to="allmovies"
-        styles={({ isActive }) =>
-        isActive
-              ? {
-                  color: '#fff', filter: 'invert(38%) sepia(42%) saturate(3972%) hue-rotate(336deg) brightness(102%) contrast(97%)'
-                }
-              : { color: '#545e6f', }
-          }>
+        <span className='Formlink' onClick={handleToAllMovies}>
           <Movieslisticon className='Movieslisticon nav-icon'/>
         </span>
         <span className='Formlink' onClick={handleToTVSeries}>
@@ -67,17 +50,13 @@ function Home() {
           <Searchicon />
           <input type='text' placeholder='Search for movies or TV series' className='Search-input'/>
         </div>
-        <div className='Trending'>
-          <p className='trend'>Trending</p>
-          <Trending />
-        </div>
-        <div className='Recommendations'>
-          <p className='recom'>Recommended for you</p>
-          <Recommendations />
+        <div className='TVSeries trend'>
+          <p className='tv-series filteredcategories'>TV Series</p>
+          
         </div>
       </div>
     </div>
   )
 }
 
-export default Home
+export default TVSeries
