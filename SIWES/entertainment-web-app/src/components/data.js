@@ -1,264 +1,288 @@
 const data = [
     // {
     //     id:1,
-    //     categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+    //     categoryicon: '/Movie-cards/Inline-movie-icon',
     //     category: "Movie",
     //     year: 2019,
     //     MPAA: "PG",
     //     name: "Beyond Earth", 
-    //     Image: 'src/assets/Movie-cards/BeyondEarth.svg'
+    //     Image: '/Movie-cards/BeyondEarth.svg'
     // },
     // {
     //     id:2,
-    //     categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+    //     categoryicon: '/Movie-cards/Inline-movie-icon',
     //     category: "Movie",
     //     year: 2021,
     //     MPAA: "PG", 
     //     name: "Bottom Gear", 
-    //     Image: 'src/assets/Movie-cards/BottomGear.svg'
+    //     Image: '/Movie-cards/BottomGear.svg'
     // },
     // {
     //     id:3,
-    //     categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+    //     categoryicon: '../assets/Inline-TV-icon',
     //     category: "TV Series",
     //     year: 2019,
     //     MPAA: "PG",
     //     name: "Unresolved Cases", 
-    //     Image: 'src/assets/Movie-cards/UnresolvedCases.svg'
+    //     Image: '/Movie-cards/UnresolvedCases.svg'
     // },
     // {
     //     id:4,
-    //     categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+    //     categoryicon: '/Movie-cards/Inline-movie-icon',
     //     category: "Movie",
     //     year: 2021,
     //     MPAA: "18+",
     //     name: 1998, 
-    //     Image: 'src/assets/Movie-cards/1998.svg'
+    //     Image: '/Movie-cards/1998.svg'
     // },
     // {
     //     id:5,
-    //     categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+    //     categoryicon: '/Movie-cards/Inline-movie-icon',
     //     category: "Movie",
     //     year: 2018,
     //     MPAA: "18+",
     //     name: "Dark Side of the Moon",
-    //     Image: 'src/assets/DarkSideoftheMoon.svg'
+    //     Image: '/DarkSideoftheMoon.svg'
     // },
     {
         id:6,
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2019, 
         MPAA: "E", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "The Great Lands", 
-        Image: 'src/assets/Movie-cards/TheGreatLands.svg'
+        Image: '/Movie-cards/TheGreatLands.svg'
     },
     {
         id:7, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series", 
         year: 2019, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "The Diary", 
-        Image: 'src/assets/Movie-cards/TheDiary.svg'
+        Image: '/Movie-cards/TheDiary.svg'
     },
     {
         id:8, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "18+", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "Earth's Untouched", 
-        Image: 'src/assets/Movie-cards/EarthsUntouched.svg'
+        Image: '/Movie-cards/EarthsUntouched.svg'
     },
     {
         id:9, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2019, 
         MPAA: "E", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "No Land Beyond", 
-        Image: 'src/assets/Movie-cards/NoLandBeyond.svg'
+        Image: '/Movie-cards/NoLandBeyond.svg'
     },
     {
         id:10, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2016, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "During The Hunt", 
-        Image: 'src/assets/Movie-cards/DuringtheHunt.svg'
+        Image: '/Movie-cards/DuringtheHunt.svg'
     },
     {
         id:11, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2016, 
         MPAA: "18+", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Autosport the Series", 
-        Image: 'src/assets/Movie-cards/AutosporttheSeries.svg'
+        Image: '/Movie-cards/AutosporttheSeries.svg'
     },
     {
         id:12, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "E", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Same Answer II", 
-        Image: 'src/assets/Movie-cards/SameAnswerII.svg'
+        Image: '/Movie-cards/SameAnswerII.svg'
     },
     {
         id:13, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2016, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Below Echo", 
-        Image: 'src/assets/Movie-cards/BelowEcho.svg'
+        Image: '/Movie-cards/BelowEcho.svg'
     },
     {
         id:14, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2015, 
         MPAA: "E", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "The Rockies", 
-        Image: 'src/assets/Movie-cards/TheRockies.svg'
+        Image: '/Movie-cards/TheRockies.svg'
     },
     {
         id:15, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "Relentless", 
-        Image: 'src/assets/Movie-cards/Relentless.svg'
+        Image: '/Movie-cards/Relentless.svg'
     },
     {
         id:16, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2018, 
         MPAA: "18+", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Community of Ours", 
-        Image: 'src/assets/Movie-cards/CommunityofOurs.svg'
+        Image: '/Movie-cards/CommunityofOurs.svg'
     },
     {
         id:17, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Van Life", 
-        Image: 'src/assets/Movie-cards/VanLife.svg'
+        Image: '/Movie-cards/VanLife.svg'
     },
     {
         id:18, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2021, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "The Heiress", 
-        Image: 'src/assets/Movie-cards/TheHeiress.svg'
+        Image: '/Movie-cards/TheHeiress.svg'
     },
     {
         id:19, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "18+", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "Off the Track", 
-        Image: 'src/assets/Movie-cards/OfftheTrack.svg'
+        Image: '/Movie-cards/OfftheTrack.svg'
     },
     {
         id:20, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "E", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Whispering Hill", 
-        Image: 'src/assets/Movie-cards/WhisperingHill.svg'
+        Image: '/Movie-cards/WhisperingHill.svg'
     },
     {
         id:21, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "TV Series",
         year: 2013, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "112", 
-        Image: 'src/assets/Movie-cards/112.svg'
+        Image: '/Movie-cards/112.svg'
     },
     {
         id:22, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "E", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "Lone Heart", 
-        Image: 'src/assets/Movie-cards/LoneHeart.svg'
+        Image: '/Movie-cards/LoneHeart.svg'
     },
     {
         id:23, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2018, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Production Line", 
-        Image: 'src/assets/Movie-cards/ProductionLine.svg'
+        Image: '/Movie-cards/ProductionLine.svg'
     },
     {
         id:24, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2016, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "Dogs", 
-        Image: 'src/assets/Movie-cards/Dogs.svg'
+        Image: '/Movie-cards/Dogs.svg'
     },
     {
         id:25, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2020, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Asia in 24 Days", 
-        Image: 'src/assets/Movie-cards/Asiain24Days.svg'
+        Image: '/Movie-cards/Asiain24Days.svg'
     },
     {
         id:26, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2016, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "The Tasty Tour", 
-        Image: 'src/assets/Movie-cards/TheTastyTour.svg'
+        Image: '/Movie-cards/TheTastyTour.svg'
     },
     {
         id:27, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "18+", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "Darker", 
-        Image: 'src/assets/Movie-cards/Darker.svg'
+        Image: '/Movie-cards/Darker.svg'
     },
     {
         id:28, 
-        categoryicon: 'src/assets/Movie-cards/Inline-TV-icon',
+        categoryicon: '../assets/Inline-TV-icon',
         category: "TV Series",
         year: 2018, 
         MPAA: "18+", 
+        bookmark: '../assets/Inline-bookmark-icon.svg',
         name: "Unresolved Cases", 
-        Image: 'src/assets/Movie-cards/UnresolvedCases.svg'
+        Image: '/Movie-cards/UnresolvedCases.svg'
     },
     {
         id:29, 
-        categoryicon: 'src/assets/Movie-cards/Inline-movie-icon',
+        categoryicon: '/Movie-cards/Inline-movie-icon',
         category: "Movie",
         year: 2017, 
         MPAA: "PG", 
+        bookmark: '../assets/Inline-bookmark-checked-icon.svg',
         name: "Mission: Saturn", 
-        Image: 'src/assets/Movie-cards/MissionSaturn.svg'
+        Image: '/Movie-cards/MissionSaturn.svg'
     }
 
 ]

@@ -6,8 +6,8 @@ import year1998 from "../assets/Movie-cards/1998.svg";
 import UndiscoveredCities from "../assets/Movie-cards/UndiscoveredCities.svg";
 import DarkSideoftheMoon from "../assets/Movie-cards/DarkSideoftheMoon.svg";
 import Playicon from "../assets/Movie-cards/Shape.svg";
-import Inlinemovieicon from "../assets/Movie-cards/Inline-movie-icon.svg";
-import Inlinebookmarkicon from "../assets/Movie-cards/Inline-bookmark-icon.svg";
+import Inlinemovieicon from "../assets/Inline-movie-icon.svg";
+import Bookmarkicon from "../assets/Inline-bookmark-icon.svg";
 
 function Trending() {
   return (
@@ -21,7 +21,7 @@ function Trending() {
           </div>
         </div>
         <img
-          src={Inlinebookmarkicon}
+          src={Bookmarkicon}
           className="Trending-container-images-bookmark"
         />
         <div className="Trending-container-images-label">
@@ -74,7 +74,7 @@ function Trending() {
           </div>
         </div>
         <img
-          src={Inlinebookmarkicon}
+          src={Bookmarkicon}
           className="Trending-container-images-bookmark"
         />
         <div className="Trending-container-images-label">
@@ -127,7 +127,7 @@ function Trending() {
           </div>
         </div>
         <img
-          src={Inlinebookmarkicon}
+          src={Bookmarkicon}
           className="Trending-container-images-bookmark"
         />
         <div className="Trending-container-images-label">
@@ -180,7 +180,7 @@ function Trending() {
           </div>
         </div>
         <img
-          src={Inlinebookmarkicon}
+          src={Bookmarkicon}
           className="Trending-container-images-bookmark"
         />
         <div className="Trending-container-images-label">
@@ -233,7 +233,7 @@ function Trending() {
           </div>
         </div>
         <img
-          src={Inlinebookmarkicon}
+          src={Bookmarkicon}
           className="Trending-container-images-bookmark"
         />
         <div className="Trending-container-images-label">

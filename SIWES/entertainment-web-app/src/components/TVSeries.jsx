@@ -63,7 +63,7 @@ function TVSeries() {
               .map((movie, index) => (
                 <div key={movie.id}>
                   <div className="Recommended-container-images">
-                    <img src={TheGreatLands} />
+                    <img src={movie.Image} />
                     <div className="container-content">
                       <div class="content">
                         <img src={Playicon} className="playicon" />
@@ -71,7 +71,7 @@ function TVSeries() {
                       </div>
                     </div>
                     <img
-                      src={movie.Image}
+                      src={movie.bookmark}
                       alt=""
                       className="Recommended-container-images-bookmark"
                     />

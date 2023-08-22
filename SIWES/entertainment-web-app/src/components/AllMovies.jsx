@@ -63,6 +63,7 @@ function AllMovies() {
             className="Search-input"
           />
         </div>
+        {/* <Search /> */}
         <div className="Bookmark trend">
           <p className="bookmark filteredcategories">Movies</p>
           <div className="Recommended-movies">

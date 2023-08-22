@@ -25,11 +25,12 @@ import Dot from "../assets/Movie-cards/Dot.svg";
 // import VanLife from "../assets/Movie-cards/Van Life.svg";
 // import WhisperingHill from "../assets/Movie-cards/Whispering Hill.svg";
 // import RInlinemovieicon from "../assets/Movie-cards/R-Inline-movie-icon.svg";
-// import Inlinebookmarkicon from "../assets/Movie-cards/Inline-bookmark-icon.svg";
-// import Inlinebookmarkcheckedicon from "../assets/Movie-cards/Inline-bookmark-checked-icon.svg";
-// import InlineTVSeriesicon from "../assets/Movie-cards/Inline-TV-icon.svg";
+// import Inlinebookmarkicon from "../assets/Inline-bookmark-icon.svg";
+// import Inlinebookmarkcheckedicon from "../assets/Inline-bookmark-checked-icon.svg";
+import InlineTVSeriesicon from "../assets/Inline-TV-icon.svg";
 import Playicon from "../assets/Movie-cards/Shape.svg";
 import data from "./data";
+import Bookmark from "./BookmarkedMovies";
 
 function Recommendations() {
   const [movies, setMovies] = useState({});
@@ -46,7 +47,7 @@ function Recommendations() {
         <div>
           {movie.name}
           <div className="Recommended-container-images">
-            <img src={TheGreatLands} />
+            <img src={movie.Image} />
             <div className="container-content">
               <div class="content">
                 <img src={Playicon} className="playicon" />
@@ -54,7 +55,7 @@ function Recommendations() {
               </div>
             </div>
             <img
-              src={movie.Image}
+              src={movie.bookmark}
               className="Recommended-container-images-bookmark"
             />
             <div className="Recommended-container-images-label">
