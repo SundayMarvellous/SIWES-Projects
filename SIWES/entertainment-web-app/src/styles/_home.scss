@@ -337,3 +337,21 @@
     color: $White;
     margin-bottom: 1.2rem;
 }
+/* Default color for inactive images */
+.Formlink {
+    fill: grey;
+  }
+  
+   
+  
+  /* Change color for active images */
+  .Formlink.active {
+    fill: white;
+  }
+
+  .god{
+    color: white;
+    width: 50px;
+    height: 100px;
+    // background-color: pink;
+  }

@@ -1,40 +1,38 @@
-import React, { useState } from 'react';
-import TheGreatLands from '../assets/Movie-cards/The Great Lands.svg';
-import TheDiary from '../assets/Movie-cards/The Diary.svg';
-import Dot from '../assets/Movie-cards/Dot.svg';
-import Onehundredandtwelve from '../assets/Movie-cards/112.svg';
-import Asiain24Days from '../assets/Movie-cards/Asia in 24 Days.svg';
-import AutosporttheSeries from '../assets/Movie-cards/Autosport the Series.svg';
-import BelowEcho from '../assets/Movie-cards/Below Echo.svg';
-import CommunityofOurs from '../assets/Movie-cards/Community of Ours.svg';
-import Darker from '../assets/Movie-cards/Darker.svg';
-import Dogs from '../assets/Movie-cards/Dogs.svg';
-import DuringtheHunt from '../assets/Movie-cards/During the Hunt.svg';
-import EarthsUntouched from '../assets/Movie-cards/Earths Untouched.svg';
-import LoneHeart from '../assets/Movie-cards/Lone Heart.svg';
-import MissionSaturn from '../assets/Movie-cards/Mission; Saturn.svg';
-import NoLandBeyond from '../assets/Movie-cards/No Land Beyond.svg';
-import Offthetrack from '../assets/Movie-cards/Off the Track.svg';
-import ProductionLine from '../assets/Movie-cards/Production Line.svg';
-import Relentless from '../assets/Movie-cards/Relentless.svg';
-import SameAnswer2 from '../assets/Movie-cards/Same Answer II.svg';
-import TheHeiress from '../assets/Movie-cards/The Heiress.svg';
-import TheRockies from '../assets/Movie-cards/The Rockies.svg';
-import TheTastyTour from '../assets/Movie-cards/The Tasty Tour.svg';
-import UnresolvedCases from '../assets/Movie-cards/Unresolved Cases.svg';
-import VanLife from '../assets/Movie-cards/Van Life.svg';
-import WhisperingHill from '../assets/Movie-cards/Whispering Hill.svg';
-import RInlinemovieicon from '../assets/Movie-cards/R-Inline-movie-icon.svg';
-import Inlinebookmarkicon from '../assets/Movie-cards/Inline-bookmark-icon.svg';
-import Inlinebookmarkcheckedicon from '../assets/Movie-cards/Inline-bookmark-checked-icon.svg';
-import InlineTVSeriesicon from '../assets/Movie-cards/Inline-TV-icon.svg';
-import Playicon from '../assets/Movie-cards/Shape.svg';
-import data from './data';
-
+import React, { useState } from "react";
+import TheGreatLands from "../assets/Movie-cards/TheGreatLands.svg";
+// import TheDiary from "../assets/Movie-cards/The Diary.svg";
+import Dot from "../assets/Movie-cards/Dot.svg";
+// import Onehundredandtwelve from "../assets/Movie-cards/112.svg";
+// import Asiain24Days from "../assets/Movie-cards/Asia in 24 Days.svg";
+// import AutosporttheSeries from "../assets/Movie-cards/Autosport the Series.svg";
+// import BelowEcho from "../assets/Movie-cards/Below Echo.svg";
+// import CommunityofOurs from "../assets/Movie-cards/Community of Ours.svg";
+// import Darker from "../assets/Movie-cards/Darker.svg";
+// import Dogs from "../assets/Movie-cards/Dogs.svg";
+// import DuringtheHunt from "../assets/Movie-cards/During the Hunt.svg";
+// import EarthsUntouched from "../assets/Movie-cards/Earths Untouched.svg";
+// import LoneHeart from "../assets/Movie-cards/Lone Heart.svg";
+// import MissionSaturn from "../assets/Movie-cards/Mission; Saturn.svg";
+// import NoLandBeyond from "../assets/Movie-cards/No Land Beyond.svg";
+// import Offthetrack from "../assets/Movie-cards/Off the Track.svg";
+// import ProductionLine from "../assets/Movie-cards/Production Line.svg";
+// import Relentless from "../assets/Movie-cards/Relentless.svg";
+// import SameAnswer2 from "../assets/Movie-cards/Same Answer II.svg";
+// import TheHeiress from "../assets/Movie-cards/The Heiress.svg";
+// import TheRockies from "../assets/Movie-cards/The Rockies.svg";
+// import TheTastyTour from "../assets/Movie-cards/The Tasty Tour.svg";
+// import UnresolvedCases from "../assets/Movie-cards/Unresolved Cases.svg";
+// import VanLife from "../assets/Movie-cards/Van Life.svg";
+// import WhisperingHill from "../assets/Movie-cards/Whispering Hill.svg";
+// import RInlinemovieicon from "../assets/Movie-cards/R-Inline-movie-icon.svg";
+// import Inlinebookmarkicon from "../assets/Movie-cards/Inline-bookmark-icon.svg";
+// import Inlinebookmarkcheckedicon from "../assets/Movie-cards/Inline-bookmark-checked-icon.svg";
+// import InlineTVSeriesicon from "../assets/Movie-cards/Inline-TV-icon.svg";
+import Playicon from "../assets/Movie-cards/Shape.svg";
+import data from "./data";
 
 function Recommendations() {
-
-  const [movies, setMovies] = useState({})
+  const [movies, setMovies] = useState({});
 
   // import React from 'react';
 
@@ -42,40 +40,62 @@ function Recommendations() {
   //   setMovies(movie)
   // })}
 
-
-
   return (
-    <div className='Recommended-movies'>
+    <div className="Recommended-movies">
       {data.map((movie, index) => (
-      <div>{movie.name}
-       <div className='Recommended-container-images'>
-        <img src={TheGreatLands} />
-        <div className="container-content">
-          <div class="content">
-            <img src={Playicon} className='playicon'/>
-            <div class="text">Play</div>
-          </div>
-        </div>
-        <img src={movie.Image}  className='Recommended-container-images-bookmark'/>
-        <div className='Recommended-container-images-label'>
-          <div className='Recommended-container-images-label-class'>
-            <div className='Recommended-container-images-label-class-yearCategory'>
-              <p className='Recommended-container-images-label-class-yearCategory-year' id='movie-year'>{movie.year}</p>
-              <img src={Dot} />
-              <div className='Recommended-container-images-label-class-yearCategory-category' id='movie-category'>
-                <div className='Recommended-container-images-label-class-yearCategory-category-image'><img src={movie.categoryicon} /></div>
-                <p>{movie.category}</p>
+        <div>
+          {movie.name}
+          <div className="Recommended-container-images">
+            <img src={TheGreatLands} />
+            <div className="container-content">
+              <div class="content">
+                <img src={Playicon} className="playicon" />
+                <div class="text">Play</div>
               </div>
-              <img src={Dot} />
-              <p className='Recommended-container-images-label-mpaa' id='mpaa'>{movie.MPAA}</p>
             </div>
-            <p className='Recommended-container-images-label-class-name' id='movie-name'>{movie.name}</p>
+            <img
+              src={movie.Image}
+              className="Recommended-container-images-bookmark"
+            />
+            <div className="Recommended-container-images-label">
+              <div className="Recommended-container-images-label-class">
+                <div className="Recommended-container-images-label-class-yearCategory">
+                  <p
+                    className="Recommended-container-images-label-class-yearCategory-year"
+                    id="movie-year"
+                  >
+                    {movie.year}
+                  </p>
+                  <img src={Dot} />
+                  <div
+                    className="Recommended-container-images-label-class-yearCategory-category"
+                    id="movie-category"
+                  >
+                    <div className="Recommended-container-images-label-class-yearCategory-category-image">
+                      <img src={movie.categoryicon} />
+                    </div>
+                    <p>{movie.category}</p>
+                  </div>
+                  <img src={Dot} />
+                  <p
+                    className="Recommended-container-images-label-mpaa"
+                    id="mpaa"
+                  >
+                    {movie.MPAA}
+                  </p>
+                </div>
+                <p
+                  className="Recommended-container-images-label-class-name"
+                  id="movie-name"
+                >
+                  {movie.name}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div></div>
-
       ))}
-     
+
       {/* // <div className='Recommended-container-images'>
       //   <img src={TheDiary} />
       //   <div className="container-content">
@@ -652,7 +672,7 @@ function Recommendations() {
       //   </div>
       // </div>     */}
     </div>
-  )
+  );
 }
 
-export default Recommendations
+export default Recommendations;
