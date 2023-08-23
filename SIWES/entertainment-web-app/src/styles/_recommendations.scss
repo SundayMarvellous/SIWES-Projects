@@ -6,7 +6,7 @@
         cursor: pointer;
         &:hover .container-content {
             bottom: 50%;
-            height: 60%;
+            height: 68%;
           }
         &>:first-child{
             width: 40vw;
@@ -47,7 +47,7 @@
             width: 4rem;
             border-radius: 15px;
             background-color: rgba(255, 255, 255, 0.266);
-            top: 30%;
+            top: 35%;
             left: 25%;
             color: $White;
            
@@ -72,7 +72,7 @@
                     display: flex;
                     align-items: center;
                     justify-items: center;
-                    gap: 0.8rem;
+                    gap: 0.4rem;
                     &-category{
                         display: flex;
                         align-items: center;
@@ -128,6 +128,36 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .Recommended-container{
+        &-images{  
+            &:hover .container-content {
+                bottom: 50%;
+                height: 72%;
+            }
+            .content {
+                top: 40%;
+                left: 28%;
+            }
+        }
+    }
+}
+
+@media (min-width: 670px) and (max-width: 900px){
+    .Recommended-container{
+        &-images{  
+            &:hover .container-content {
+                bottom: 50%;
+                height: 80%;
+            }
+            .content {
+                top: 40%;
+                left: 35%;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 800px){
     .Recommended-container{
         display: flex;
@@ -158,16 +188,34 @@
     }
 }
 
-@media screen and (min-width: 1120px){
+@media (min-width: 900px) and (max-width: 1200px){
     .Recommended-container{
         &-images{  
             &:hover .container-content {
                 bottom: 50%;
-                height: 75%;
+                height: 82%;
             }
             .content {
                 top: 40%;
+                left: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .Recommended-container{
+        &-images{  
+            &:hover .container-content {
+                bottom: 50%;
+                height: 87%;
+            }
+            .content {
+                top: 45%;
                 left: 40%;
+                .playicon{
+                    width: 1.5rem;
+                }
             }
         }
     }
