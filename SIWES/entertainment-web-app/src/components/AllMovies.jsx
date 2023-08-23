@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Search from "./Search";
+// import Search from "./Search";
 import { ReactComponent as Movieicon4home } from "../assets/Movie.icon4home.svg";
 import { ReactComponent as Trendingicon } from "../assets/Trending.icon.svg";
 import { ReactComponent as Movieslisticon } from "../assets/Movies.list.icon.svg";
@@ -70,7 +70,7 @@ function AllMovies() {
               .filter((movie) => movie.category === "Movie") // Filter movies only
               .map((movie, index) => (
                 <div key={movie.id}>
-                  <p className="god">{movie.Image} </p>
+                  {/* <p className="god">{movie.Image} </p> */}
                   <div className="Recommended-container-images">
                     <img src={movie.Image} />
                     <div className="container-content">
@@ -80,7 +80,7 @@ function AllMovies() {
                       </div>
                     </div>
                     <img
-                      src={Bookmarkicon}
+                      src={movie.bookmark}
                       className="Recommended-container-images-bookmark"
                     />
                     <div className="Recommended-container-images-label">

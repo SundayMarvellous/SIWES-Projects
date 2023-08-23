@@ -61,7 +61,7 @@ function Bookmark() {
               .filter(
                 (movie) =>
                   movie.bookmark ===
-                    "../assets/Inline-bookmark-checked-icon.svg" &&
+                    "../Movie-cards/Inline-bookmark-checked-icon.svg" &&
                   movie.category === "Movie"
               ) // Filter movies only
               .map((movie, index) => (
@@ -76,7 +76,7 @@ function Bookmark() {
                       </div>
                     </div>
                     <img
-                      src={Bookmarkicon}
+                      src={movie.bookmark}
                       className="Recommended-container-images-bookmark"
                     />
                     <div className="Recommended-container-images-label">
@@ -124,7 +124,7 @@ function Bookmark() {
               .filter(
                 (movie) =>
                   movie.bookmark ===
-                    "../assets/Inline-bookmark-checked-icon.svg" &&
+                    "../Movie-cards/Inline-bookmark-checked-icon.svg" &&
                   movie.category === "TV Series"
               ) // Filter movies only
               .map((movie, index) => (
@@ -139,7 +139,7 @@ function Bookmark() {
                       </div>
                     </div>
                     <img
-                      src={Bookmarkicon}
+                      src={movie.bookmark}
                       className="Recommended-container-images-bookmark"
                     />
                     <div className="Recommended-container-images-label">

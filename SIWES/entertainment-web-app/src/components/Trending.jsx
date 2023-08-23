@@ -8,6 +8,7 @@ import DarkSideoftheMoon from "../Movie-cards/DarkSideoftheMoon.svg";
 import Playicon from "../Movie-cards/Shape.svg";
 import Inlinemovieicon from "../Movie-cards/Inline-movie-icon.svg";
 import Bookmarkicon from "../Movie-cards/Inline-bookmark-icon.svg";
+import Bookmarkcheckedicon from "../Movie-cards/Inline-bookmark-checked-icon.svg";
 
 function Trending() {
   return (
