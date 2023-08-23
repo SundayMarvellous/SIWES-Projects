@@ -588,7 +588,10 @@
     left: 40%;
   }
   .Recommended-container-images .content .playicon {
-    width: 1.5rem;
+    width: 1rem;
+  }
+  .Recommended-container-label-class-yearCategory {
+    gap: 0.8rem;
   }
 }
 .food {

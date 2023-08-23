@@ -9,6 +9,7 @@ function Search({ data, onSearch }) {
     setSearchQuery(query);
     onSearch(query);
   };
+  // food;
 
   return (
     <div className="Search">

@@ -5,60 +5,49 @@ import { ReactComponent as Movieslisticon } from "../assets/Movies.list.icon.svg
 import { ReactComponent as TVicon } from "../assets/Tv.icon.svg";
 import { ReactComponent as Bookmarkicon } from "../assets/Bookmark.icon.svg";
 import { ReactComponent as Profileicon } from "../assets/Profile.icon.svg";
-import { ReactComponent as Searchicon } from "../assets/Search.icon.svg";
 import { useNavigate } from "react-router-dom";
+import Search from "./Search";
 import Trending from "./Trending";
 import Recommendations from "./Recommendations";
+import data from "./data";
 
 function Home() {
   const navigate = useNavigate();
+
   const handleToTrendingMovies = () => {
     navigate("/home");
   };
+
   const handleToAllMovies = () => {
     navigate("/allmovies");
   };
+
   const handleToTVSeries = () => {
     navigate("/tvseries");
   };
+
   const handleToBookmarkedMovies = () => {
     navigate("/bookmarked");
   };
+
+  // State to manage search results
+  const [searchResults, setSearchResults] = useState([]);
+
+  // Callback for handling search
+  const handleSearch = (query, filteredData) => {
+    // Update the search results based on the filtered data
+    setSearchResults(filteredData);
+  };
+
   return (
     <div className="Home">
       <div className="Nav">
         <Movieicon4home />
         <div className="Sections">
-          <span
-            className="Formlink"
-            onClick={handleToTrendingMovies}
-            to="home"
-            styles={({ isActive }) =>
-              isActive
-                ? {
-                    color: "#fff",
-                    filter:
-                      "invert(38%) sepia(42%) saturate(3972%) hue-rotate(336deg) brightness(102%) contrast(97%)",
-                  }
-                : { color: "#545e6f" }
-            }
-          >
+          <span className="Formlink" onClick={handleToTrendingMovies}>
             <Trendingicon className="Trendingicon nav-icon" />
           </span>
-          <span
-            className="Formlink"
-            onClick={handleToAllMovies}
-            to="allmovies"
-            styles={({ isActive }) =>
-              isActive
-                ? {
-                    color: "#fff",
-                    filter:
-                      "invert(38%) sepia(42%) saturate(3972%) hue-rotate(336deg) brightness(102%) contrast(97%)",
-                  }
-                : { color: "#545e6f" }
-            }
-          >
+          <span className="Formlink" onClick={handleToAllMovies}>
             <Movieslisticon className="Movieslisticon nav-icon" />
           </span>
           <span className="Formlink" onClick={handleToTVSeries}>
@@ -72,12 +61,7 @@ function Home() {
       </div>
       <div className="MoviesContainer">
         <div className="Search">
-          <Searchicon />
-          <input
-            type="text"
-            placeholder="Search for movies or TV series"
-            className="Search-input"
-          />
+          <Search data={data} onSearch={handleSearch} />
         </div>
         <div className="Trending">
           <p className="trend">Trending</p>

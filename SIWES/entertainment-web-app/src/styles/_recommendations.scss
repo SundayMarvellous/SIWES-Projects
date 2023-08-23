@@ -214,10 +214,17 @@
                 top: 40%;
                 left: 40%;
                 .playicon{
-                    width: 1.5rem;
+                    width: 1rem;
                 }
             }
         }
+        &-label{
+            &-class{
+                &-yearCategory{
+                    gap: 0.8rem;
+                }
+            }
+        }    
     }
 }
 
