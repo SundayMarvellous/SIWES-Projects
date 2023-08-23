@@ -1,13 +1,13 @@
 import React from "react";
-import Beyondearth from "../assets/Movie-cards/BeyondEarth.svg";
-import Bottomgear from "../assets/Movie-cards/BottomGear.svg";
-import Dot from "../assets/Movie-cards/Dot.svg";
-import year1998 from "../assets/Movie-cards/1998.svg";
-import UndiscoveredCities from "../assets/Movie-cards/UndiscoveredCities.svg";
-import DarkSideoftheMoon from "../assets/Movie-cards/DarkSideoftheMoon.svg";
-import Playicon from "../assets/Movie-cards/Shape.svg";
-import Inlinemovieicon from "../assets/Inline-movie-icon.svg";
-import Bookmarkicon from "../assets/Inline-bookmark-icon.svg";
+import Beyondearth from "../Movie-cards/BeyondEarth.svg";
+import Bottomgear from "../Movie-cards/BottomGear.svg";
+import Dot from "../Movie-cards/Dot.svg";
+import year1998 from "../Movie-cards/1998.svg";
+import UndiscoveredCities from "../Movie-cards/UndiscoveredCities.svg";
+import DarkSideoftheMoon from "../Movie-cards/DarkSideoftheMoon.svg";
+import Playicon from "../Movie-cards/Shape.svg";
+import Inlinemovieicon from "../Movie-cards/Inline-movie-icon.svg";
+import Bookmarkicon from "../Movie-cards/Inline-bookmark-icon.svg";
 
 function Trending() {
   return (

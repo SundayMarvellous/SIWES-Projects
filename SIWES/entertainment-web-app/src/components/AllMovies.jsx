@@ -8,10 +8,9 @@ import { ReactComponent as Bookmarkicon } from "../assets/Bookmark.icon.svg";
 import { ReactComponent as Profileicon } from "../assets/Profile.icon.svg";
 import { ReactComponent as Searchicon } from "../assets/Search.icon.svg";
 import { useNavigate } from "react-router-dom";
-import Dot from "../assets/Movie-cards/Dot.svg";
-import Playicon from "../assets/Movie-cards/Shape.svg";
+import Dot from "../Movie-cards/Dot.svg";
+import Playicon from "../Movie-cards/Shape.svg";
 import data from "./data";
-import TheGreatLands from "../assets/Movie-cards/TheGreatLands.svg";
 
 function AllMovies() {
   const navigate = useNavigate();
