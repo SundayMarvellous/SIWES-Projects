@@ -7,7 +7,7 @@ import { ReactComponent as Bookmarkicon } from "../assets/Bookmark.icon.svg";
 import { ReactComponent as Profileicon } from "../assets/Profile.icon.svg";
 import { useNavigate } from "react-router-dom";
 import Search from "./Search";
-import Trending from "./Trending";
+import SearchComponent from "./Search4home";
 import Recommendations from "./Recommendations";
 import data from "./data";
 
@@ -60,17 +60,7 @@ function Home() {
         <Profileicon />
       </div>
       <div className="MoviesContainer">
-        <div className="Search">
-          <Search data={data} onSearch={handleSearch} />
-        </div>
-        <div className="Trending">
-          <p className="trend">Trending</p>
-          <Trending />
-        </div>
-        <div className="Recommendations">
-          <p className="recom">Recommended for you</p>
-          <Recommendations />
-        </div>
+        <SearchComponent data={data} filterCategory={"All"} />
       </div>
     </div>
   );

@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { ReactComponent as Searchicon } from "../assets/Search.icon.svg";
 import Dot from "../Movie-cards/Dot.svg";
 import Playicon from "../Movie-cards/Shape.svg";
+import Trending from "./Trending";
 
 function SearchComponent({ data, filterCategory }) {
   const [searchTerm, setSearchTerm] = useState("");
   const filteredData = data.filter(
     (movie) =>
-      (filterCategory === "All" || movie.category === filterCategory) &&
+      (filterCategory === "All" ||
+        (movie.bookmark === "../Movie-cards/Inline-bookmark-checked-icon.svg" &&
+          movie.category === filterCategory)) &&
       movie.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -23,7 +26,11 @@ function SearchComponent({ data, filterCategory }) {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <p className="bookmark filteredcategories">Movies</p>
+      <div className="Trending">
+        <p className="trend">Trending</p>
+        <Trending />
+      </div>
+      <p className="bookmark filteredcategories"></p>
       <div className="Recommended-movies">
         {filteredData.map((movie, index) => (
           <div key={movie.id}>

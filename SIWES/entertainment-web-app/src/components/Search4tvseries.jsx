@@ -23,7 +23,7 @@ function SearchComponent({ data, filterCategory }) {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <p className="bookmark filteredcategories">Movies</p>
+      <p className="bookmark filteredcategories">TV Series</p>
       <div className="Recommended-movies">
         {filteredData.map((movie, index) => (
           <div key={movie.id}>

@@ -7,7 +7,9 @@ function SearchComponent({ data, filterCategory }) {
   const [searchTerm, setSearchTerm] = useState("");
   const filteredData = data.filter(
     (movie) =>
-      (filterCategory === "All" || movie.category === filterCategory) &&
+      (filterCategory === "All" ||
+        (movie.bookmark === "../Movie-cards/Inline-bookmark-checked-icon.svg" &&
+          movie.category === filterCategory)) &&
       movie.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -23,7 +25,7 @@ function SearchComponent({ data, filterCategory }) {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <p className="bookmark filteredcategories">Movies</p>
+      <p className="bookmark filteredcategories">Bookmarked Movies</p>
       <div className="Recommended-movies">
         {filteredData.map((movie, index) => (
           <div key={movie.id}>

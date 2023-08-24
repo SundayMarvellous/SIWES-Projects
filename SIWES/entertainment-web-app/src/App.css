@@ -400,6 +400,10 @@
   height: 100px;
 }
 
+.SearchMargin {
+  margin-bottom: 2rem;
+}
+
 .Recommended-container {
   display: flex;
   gap: 1.2rem;
