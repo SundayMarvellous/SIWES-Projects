@@ -33,7 +33,6 @@ function Home() {
   // State to manage search results
   const [searchResults, setSearchResults] = useState([]);
 
-  // Callback for handling search
   const handleSearch = (query, filteredData) => {
     // Update the search results based on the filtered data
     setSearchResults(filteredData);
