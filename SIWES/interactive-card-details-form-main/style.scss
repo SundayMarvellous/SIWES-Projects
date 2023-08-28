@@ -1,0 +1,16 @@
+@import "./partial";
+
+
+body{
+    // background: linear-gradient(to right, hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
+    font-size: 1.4rem;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.color{
+    height: 30vh;
+    width: 100vw;
+    background: linear-gradient(to right,  hsl(278, 68%, 11%) 0%, hsl(278, 94%, 30%) 70%,hsl(278, 68%, 11%) 100% );
+}
