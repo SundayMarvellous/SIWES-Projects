@@ -1,5 +1,35 @@
+.completed-state {
+  margin-top: 40vw;
+  padding: 1rem;
+  text-align: center;
+  display: none;
+}
+.completed-state .thanks {
+  color: hsl(278, 68%, 11%);
+  font-size: 1.8rem;
+}
+.completed-state .comment {
+  color: hsl(278, 13%, 47%);
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+.completed-state .checkdiv {
+  text-align: center;
+}
+.completed-state button {
+  color: hsl(300, 13%, 67%);
+  background-color: hsl(278, 68%, 11%);
+  position: relative;
+  width: 100%;
+  font-size: 1.1rem;
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
 body {
-  font-size: 1.4rem;
+  font-size: 62.5%;
   font-family: "Space Grotesk", sans-serif;
   margin: 0;
   padding: 0;
@@ -9,4 +39,147 @@ body {
   height: 30vh;
   width: 100vw;
   background: linear-gradient(to right, hsl(278, 68%, 11%) 0%, hsl(278, 94%, 30%) 70%, hsl(278, 68%, 11%) 100%);
+}
+
+.card-back {
+  width: 80vw;
+  height: 9rem;
+  position: absolute;
+  top: 2rem;
+  right: 0.8rem;
+  border-radius: 8px;
+  background: linear-gradient(white, hsl(270, 3%, 87%));
+}
+.card-back .black-line {
+  position: relative;
+  z-index: 1;
+  height: 2rem;
+  top: 1rem;
+  background-color: rgba(0, 0, 0, 0.779);
+}
+.card-back .grey-line {
+  position: relative;
+  top: 1rem;
+  height: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 5px;
+  background-color: rgba(173, 177, 188, 0.912);
+}
+.card-back .grey-line p {
+  text-align: right;
+  font-size: 0.8rem;
+  color: white;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+}
+
+.card-front {
+  margin: 0;
+  padding: 0;
+  width: 70vw;
+  background-image: url("./images/bg-card-front.png");
+  height: 9rem;
+  position: absolute;
+  top: 7.8rem;
+  left: 0.8rem;
+  border-radius: 8px;
+  color: white;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-front .circles {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.7rem;
+}
+.card-front .circles .big-circle {
+  border-radius: 50%;
+  background-color: white;
+  width: 2rem;
+  height: 2rem;
+}
+.card-front .circles .small-circle {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.card-front .card-details {
+  position: relative;
+  bottom: 0.5rem;
+}
+.card-front .card-details .card-number {
+  font-size: 1.3rem;
+  margin: 0;
+  margin-bottom: 0.8rem;
+}
+.card-front .card-details .card-holder {
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form {
+  margin-top: 30vw;
+  padding: 1.5rem;
+  box-sizing: border-box !important;
+}
+form label {
+  color: hsl(278, 68%, 11%);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+form input {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid hsl(270, 3%, 87%);
+  font-size: 1rem;
+  box-sizing: border-box !important;
+  font-family: "Space Grotesk", sans-serif;
+}
+form input::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.603);
+  opacity: 0.5;
+}
+form input::placeholder {
+  color: rgba(128, 128, 128, 0.603);
+  opacity: 0.5;
+}
+form .card-datediv {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+form .card-datediv .card-dates {
+  width: 65%;
+}
+form .card-datediv .cvcdiv {
+  width: 35%;
+}
+form .card-datediv .card-datesubdiv {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+form button {
+  color: hsl(300, 13%, 67%);
+  background-color: hsl(278, 68%, 11%);
+  position: relative;
+  width: 100%;
+  font-size: 1.1rem;
+  font-family: "Space Grotesk", sans-serif;
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */

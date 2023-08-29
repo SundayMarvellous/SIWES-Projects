@@ -1,0 +1,29 @@
+.completed-state{
+    margin-top: 40vw;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+    .thanks{
+        color: $Very-dark-violet;
+        font-size: 1.8rem;
+    }
+    .comment{
+        color: hsl(278, 13%, 47%);
+        font-size: 1.2rem;
+        margin-top: -1rem;
+    }
+    .checkdiv{
+        text-align: center;
+    }
+    button{
+        color:  hsl(300, 13%, 67%);
+        background-color: $Very-dark-violet;
+        position: relative;
+        width: 100%;
+        font-size: 1.1rem;
+        font-family: 'Space Grotesk', sans-serif;
+        padding: 0.7rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+}
