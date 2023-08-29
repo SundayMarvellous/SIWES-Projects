@@ -31,12 +31,25 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <script>
+      //displaying the value from local storage to another page by their respective Ids
+      document.getElementById("data").innerHTML =
+        localStorage.getItem("txtValue");
+      document.getElementById("data1").innerHTML =
+        localStorage.getItem("txtValue1");
+      document.getElementById("data2").innerHTML =
+        localStorage.getItem("txtValue2");
+      document.getElementById("data3").innerHTML =
+        localStorage.getItem("txtValue3");
+      document.getElementById("data4").innerHTML =
+        localStorage.getItem("txtValue4");
+    </script>
   </head>
   <body>
     <div class="color"></div>
     <div class="card-back">
       <div class="black-line"></div>
-      <div class="grey-line"><p id="cardcvc">000</p></div>
+      <div class="grey-line"><p id="data2">000</p></div>
     </div>
     <div class="card-front">
       <div class="circles">
@@ -44,12 +57,10 @@
         <div class="small-circle"></div>
       </div>
       <div class="card-details">
-        <p class="card-number" id="cardholdernumber">0000 0000 0000 0000</p>
+        <p class="card-number" id="data1">0000 0000 0000 0000</p>
         <div class="card-holder">
-          <div id="cardholdername">JANE APPLESEED</div>
-          <div>
-            <span id="cardmonth">00</span>/<span id="cardyear">00</span>
-          </div>
+          <div id="data">JANE APPLESEED</div>
+          <div><span id="data3">00</span>/<span id="data4">00</span></div>
         </div>
       </div>
     </div>
@@ -59,7 +70,7 @@
       </div>
       <p class="thanks">THANK YOU!</p>
       <p class="comment">We've added your card details</p>
-      <button type="submit">Continue</button>
+      <a href="./index.html"><button type="submit">Continue</button> </a>
     </div>
 
     <div class="attribution">
@@ -68,6 +79,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
   </body>
 </html>

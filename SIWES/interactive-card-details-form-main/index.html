@@ -31,6 +31,22 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <script>
+      function getData() {
+        //gettting the values
+        var myText = document.getElementById("cardholder-name").value;
+        var myNumber = document.getElementById("card-number").value;
+        var myCvc = document.getElementById("cvc").value;
+        var myMonth = document.getElementById("card-month").value;
+        var myYear = document.getElementById("card-year").value;
+        //saving the values in local storage
+        localStorage.setItem("txtValue", myText);
+        localStorage.setItem("txtValue1", myNumber);
+        localStorage.setItem("txtValue2", myCvc);
+        localStorage.setItem("txtValue3", myMonth);
+        localStorage.setItem("txtValue4", myYear);
+      }
+    </script>
   </head>
   <body>
     <div class="color"></div>
@@ -53,7 +69,7 @@
         </div>
       </div>
     </div>
-    <form>
+    <form action="./thankyou.html" method="get">
       <label for="">CARDHOLDER NAME</label><br />
       <input
         id="cardholder-name"
@@ -63,7 +79,7 @@
       <label for="">CARD NUMBER</label><br />
       <input
         id="card-number"
-        type="number"
+        type="text"
         placeholder="e.g. 1234 5678 9123 0000"
       /><br />
       <div class="card-datediv">
@@ -81,16 +97,13 @@
         </div>
       </div>
 
-      <a href="./thankyou.html">
-        <button
-          type="submit"
-          name="button"
-          id="button"
-          onclick="myfunction(event)"
-        >
-          Confirm
+      <button name="button" id="button" onclick="getData()">Confirm</button>
+
+      <!-- <a href="./thankyou.html">
+        <button class="button.hover:links" formaction="./thankyou.html">
+          Next
         </button>
-      </a>
+      </a> -->
     </form>
     <!-- <div class="completed-state"></div> -->
 
@@ -100,6 +113,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Sunday Marvellous</a>.
     </div>
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
   </body>
 </html>

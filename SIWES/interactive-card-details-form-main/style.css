@@ -2,7 +2,6 @@
   margin-top: 40vw;
   padding: 1rem;
   text-align: center;
-  display: none;
 }
 .completed-state .thanks {
   color: hsl(278, 68%, 11%);
