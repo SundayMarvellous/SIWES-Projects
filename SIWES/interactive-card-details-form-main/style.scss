@@ -201,7 +201,7 @@ form{
         height: 15rem;
         background-image: url('./images/bg-card-back.png');
         background-repeat: no-repeat;
-        background-size: 25rem 15rem;
+        background-size: 100% 100%;
         top: 54vh;
         left: 15vw;
         position: absolute;
@@ -212,7 +212,7 @@ form{
             // background-color: transparent;
             position: relative;
             top: 5.5rem;
-            left: 20rem;
+            left: 20vw;
             height: 2rem;
             margin: 0;
             width: 1rem;
@@ -227,7 +227,7 @@ form{
         background-image: url('./images/bg-card-front.png');
         background-repeat: no-repeat;
         height: 15rem;
-        background-size: 25rem 15rem;
+        background-size: 100% 100%;
         position: absolute;
         top: 7.8rem;
         left: 10vw;
