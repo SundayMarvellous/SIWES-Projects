@@ -116,6 +116,7 @@ form{
         font-size: 0.8rem;
         letter-spacing: 1px;
         box-sizing: border-box;
+        margin-top: 2rem;
     }
     input{
         cursor: pointer;
@@ -179,6 +180,13 @@ form{
         border-radius: 10px;
         margin-top: 1rem;
     }
+}
+
+.error{
+    border: 1px solid $active-input-border;
+}
+.error-message{
+    color: $input-errors;
 }
 
 @media screen and (min-width:400px){

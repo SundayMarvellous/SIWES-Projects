@@ -146,6 +146,7 @@ form label {
   font-size: 0.8rem;
   letter-spacing: 1px;
   box-sizing: border-box;
+  margin-top: 2rem;
 }
 form input {
   cursor: pointer;
@@ -203,6 +204,14 @@ form button {
   padding: 0.7rem;
   border-radius: 10px;
   margin-top: 1rem;
+}
+
+.error {
+  border: 1px solid linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+}
+
+.error-message {
+  color: hsl(0, 100%, 66%);
 }
 
 @media screen and (min-width: 400px) {

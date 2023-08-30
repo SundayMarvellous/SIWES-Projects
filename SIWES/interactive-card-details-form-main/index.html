@@ -32,7 +32,8 @@
       }
     </style>
     <script>
-      function getData() {
+      function getData(event) {
+        event.preventDefault();
         //gettting the values
         var myText = document
           .getElementById("cardholder-name")
@@ -41,12 +42,72 @@
         var myCvc = document.getElementById("cvc").value;
         var myMonth = document.getElementById("card-month").value;
         var myYear = document.getElementById("card-year").value;
+
+        var errorOccurred = false;
+
+        if (myText.trim() === "") {
+          document.getElementById("error-name").innerText = "Can't be blank";
+          document.getElementById("cardholder-name").classList.add("error");
+          errorOccurred = true;
+        } else {
+          document.getElementById("error-name").innerText = "";
+          document.getElementById("cardholder-name").classList.remove("error");
+        }
+        if (myNumber.trim() === "") {
+          document.getElementById("error-number").innerText = "Can't be blank";
+          document.getElementById("card-number").classList.add("error");
+          errorOccurred = true;
+        } else {
+          document.getElementById("error-number").innerText = "";
+          document.getElementById("card-number").classList.remove("error");
+        }
+        if (myCvc.trim() === "") {
+          document.getElementById("error-cvc").innerText = "Can't be blank";
+          document.getElementById("cvc").classList.add("error");
+          errorOccurred = true;
+        } else {
+          document.getElementById("error-cvc").innerText = "";
+          document.getElementById("cvc").classList.remove("error");
+        }
+        if (myMonth.trim() === "") {
+          document.getElementById("error-month").innerText = "Can't be blank";
+          document.getElementById("card-month").classList.add("error");
+          errorOccurred = true;
+        } else {
+          document.getElementById("error-month").innerText = "";
+          document.getElementById("card-month").classList.remove("error");
+        }
+        if (myYear.trim() === "") {
+          document.getElementById("error-year").innerText = "Can't be blank";
+          document.getElementById("card-year").classList.add("error");
+          errorOccurred = true;
+        } else {
+          document.getElementById("error-year").innerText = "";
+          document.getElementById("card-year").classList.remove("error");
+        }
+
+        if (!/^[0-9\s]+$/.test(myNumber)) {
+          document.getElementById("error-number").innerText =
+            "Wrong format. Numbers only";
+          document.getElementById("card-number").classList.add("error");
+
+          errorOccurred = true;
+        } else {
+          document.getElementById("error-year").innerText = "";
+          document.getElementById("card-number").classList.remove("error");
+        }
+        if (errorOccurred) {
+          return;
+        }
+
         //saving the values in local storage
         localStorage.setItem("txtValue", myText);
         localStorage.setItem("txtValue1", myNumber);
         localStorage.setItem("txtValue2", myCvc);
         localStorage.setItem("txtValue3", myMonth);
         localStorage.setItem("txtValue4", myYear);
+
+        event.target.form.submit();
       }
     </script>
   </head>
@@ -79,28 +140,36 @@
           type="text"
           placeholder="eg. Jane Appleseed"
         /><br />
+        <span id="error-name" class="error-message"></span><br />
         <label for="">CARD NUMBER</label><br />
         <input
           id="card-number"
           type="text"
+          inputmode="numeric"
           placeholder="e.g. 1234 5678 9123 0000"
         /><br />
+        <span id="error-number" class="error-message"></span><br />
         <div class="card-datediv">
           <div class="card-dates">
             <label for="">EXP. DATE (MM/YY)</label><br />
             <div class="card-datesubdiv">
               <input id="card-month" type="number" placeholder="MM" />
+              <span id="error-month" class="error-message"></span><br />
               <input id="card-year" type="number" placeholder="YY" /><br />
+              <span id="error-year" class="error-message"></span>
             </div>
           </div>
           <div class="cvcdiv">
             <label for="cvc">CVC</label><br />
             <input id="cvc" type="number" placeholder="e.g. 123" />
             <br />
+            <span id="error-cvc" class="error-message"></span><br />
           </div>
         </div>
 
-        <button name="button" id="button" onclick="getData()">Confirm</button>
+        <button name="button" id="button" onclick="getData(event)">
+          Confirm
+        </button>
 
         <!-- <a href="./thankyou.html">
         <button class="button.hover:links" formaction="./thankyou.html">
