@@ -34,7 +34,9 @@
     <script>
       function getData() {
         //gettting the values
-        var myText = document.getElementById("cardholder-name").value;
+        var myText = document
+          .getElementById("cardholder-name")
+          .value.toUpperCase();
         var myNumber = document.getElementById("card-number").value;
         var myCvc = document.getElementById("cvc").value;
         var myMonth = document.getElementById("card-month").value;
@@ -50,68 +52,70 @@
   </head>
   <body>
     <div class="color"></div>
-    <div class="card-back">
-      <div class="black-line"></div>
-      <div class="grey-line"><p id="cardcvc">000</p></div>
-    </div>
-    <div class="card-front">
-      <div class="circles">
-        <div class="big-circle"></div>
-        <div class="small-circle"></div>
+    <div>
+      <div class="card-back">
+        <div class="black-line"></div>
+        <div class="grey-line"><p id="cardcvc">000</p></div>
       </div>
-      <div class="card-details">
-        <p class="card-number" id="cardholdernumber">0000 0000 0000 0000</p>
-        <div class="card-holder">
-          <div id="cardholdername">JANE APPLESEED</div>
-          <div>
-            <span id="cardmonth">00</span>/<span id="cardyear">00</span>
+      <div class="card-front">
+        <div class="circles">
+          <div class="big-circle"></div>
+          <div class="small-circle"></div>
+        </div>
+        <div class="card-details">
+          <p class="card-number" id="cardholdernumber">0000 0000 0000 0000</p>
+          <div class="card-holder">
+            <div id="cardholdername">JANE APPLESEED</div>
+            <div>
+              <span id="cardmonth">00</span>/<span id="cardyear">00</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <form action="./thankyou.html" method="get">
-      <label for="">CARDHOLDER NAME</label><br />
-      <input
-        id="cardholder-name"
-        type="text"
-        placeholder="eg. Jane Appleseed"
-      /><br />
-      <label for="">CARD NUMBER</label><br />
-      <input
-        id="card-number"
-        type="text"
-        placeholder="e.g. 1234 5678 9123 0000"
-      /><br />
-      <div class="card-datediv">
-        <div class="card-dates">
-          <label for="">EXP. DATE (MM/YY)</label><br />
-          <div class="card-datesubdiv">
-            <input id="card-month" type="number" placeholder="MM" />
-            <input id="card-year" type="number" placeholder="YY" /><br />
+      <form action="./thankyou.html" method="get">
+        <label for="">CARDHOLDER NAME</label><br />
+        <input
+          id="cardholder-name"
+          type="text"
+          placeholder="eg. Jane Appleseed"
+        /><br />
+        <label for="">CARD NUMBER</label><br />
+        <input
+          id="card-number"
+          type="text"
+          placeholder="e.g. 1234 5678 9123 0000"
+        /><br />
+        <div class="card-datediv">
+          <div class="card-dates">
+            <label for="">EXP. DATE (MM/YY)</label><br />
+            <div class="card-datesubdiv">
+              <input id="card-month" type="number" placeholder="MM" />
+              <input id="card-year" type="number" placeholder="YY" /><br />
+            </div>
+          </div>
+          <div class="cvcdiv">
+            <label for="cvc">CVC</label><br />
+            <input id="cvc" type="number" placeholder="e.g. 123" />
+            <br />
           </div>
         </div>
-        <div class="cvcdiv">
-          <label for="cvc">CVC</label><br />
-          <input id="cvc" type="number" placeholder="e.g. 123" />
-          <br />
-        </div>
-      </div>
 
-      <button name="button" id="button" onclick="getData()">Confirm</button>
+        <button name="button" id="button" onclick="getData()">Confirm</button>
 
-      <!-- <a href="./thankyou.html">
+        <!-- <a href="./thankyou.html">
         <button class="button.hover:links" formaction="./thankyou.html">
           Next
         </button>
       </a> -->
-    </form>
-    <!-- <div class="completed-state"></div> -->
+      </form>
+      <!-- <div class="completed-state"></div> -->
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Sunday Marvellous</a>.
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sunday Marvellous</a>.
+      </div>
     </div>
     <!-- <script src="./script.js"></script> -->
   </body>

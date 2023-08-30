@@ -55,6 +55,7 @@ body{
     // background: linear-gradient( to bottom right, hsl(278, 92%, 40%) , hsl(249, 99%, 64%), hsl(278, 68%, 11%) );
     width: 70vw;
     background-image: url('./images/bg-card-front.png');
+    background-repeat: no-repeat;
     height: 9rem;
     position: absolute;
     top: 7.8rem;
@@ -117,6 +118,7 @@ form{
         box-sizing: border-box;
     }
     input{
+        cursor: pointer;
         margin: 0;
         margin-top: 5px;
         margin-bottom: 10px;
@@ -132,6 +134,22 @@ form{
             color: rgba(128, 128, 128, 0.603);
             opacity: 0.5;
         }
+        &:hover{
+            border: 1px solid hsl(278, 94%, 30%);
+            box-shadow: hsl(278, 94%, 30%) 0px 0px 3px;
+        }
+        &:focus {
+            border: 1px solid hsl(278, 68%, 11%);
+            box-shadow: hsl(278, 94%, 30%) 0px 0px 2px;
+            outline: none;
+        }
+        
+        //   border: 1px solid var(--cyan);
+        // }
+        // .input:hover {
+        //   box-shadow: var(--cyan) 0px 0px 20px;
+        //   border: 1px solid var(--cyan)
+        // }
     }
     .card-datediv{
         display: flex;
@@ -160,5 +178,64 @@ form{
         padding: 0.7rem;
         border-radius: 10px;
         margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width:400px){
+    .color{
+        background: url('./images/bg-main-desktop.png');
+        height: 100vh;
+        width: 28vw;
+    }
+    .card-back{
+        background:none;
+        width: 26.2vw;
+        height: 15rem;
+        background-image: url('./images/bg-card-back.png');
+        background-repeat: no-repeat;
+        background-size: 25rem 15rem;
+        top: 54vh;
+        left: 15vw;
+        position: absolute;
+        .black-line{
+            display: none;
+        }
+        .grey-line{
+            // background-color: transparent;
+            position: relative;
+            top: 5.5rem;
+            left: 20rem;
+            height: 2rem;
+            margin: 0;
+            width: 1rem;
+            border-radius: 0;
+            background-color: rgba(173, 177, 188, 0.912);
+        }
+    }
+    
+    .card-front{
+        box-sizing: border-box !important;
+        width: 26.2vw;
+        background-image: url('./images/bg-card-front.png');
+        background-repeat: no-repeat;
+        height: 15rem;
+        background-size: 25rem 15rem;
+        position: absolute;
+        top: 7.8rem;
+        left: 10vw;
+        border-radius: 0;
+        padding: 2rem;
+        box-shadow: none;
+        // border: 1px solid red;
+    }
+
+    form{
+        position: absolute;
+        top: 0;
+        left: 55vw;
+        margin-top: 12vw;
+        padding: 1.5rem;
+        box-sizing: border-box !important;
+        width: 30vw;
     }
 }

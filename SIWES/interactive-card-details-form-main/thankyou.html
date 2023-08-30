@@ -31,19 +31,6 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-    <script>
-      //displaying the value from local storage to another page by their respective Ids
-      document.getElementById("data").innerHTML =
-        localStorage.getItem("txtValue");
-      document.getElementById("data1").innerHTML =
-        localStorage.getItem("txtValue1");
-      document.getElementById("data2").innerHTML =
-        localStorage.getItem("txtValue2");
-      document.getElementById("data3").innerHTML =
-        localStorage.getItem("txtValue3");
-      document.getElementById("data4").innerHTML =
-        localStorage.getItem("txtValue4");
-    </script>
   </head>
   <body>
     <div class="color"></div>
@@ -70,15 +57,31 @@
       </div>
       <p class="thanks">THANK YOU!</p>
       <p class="comment">We've added your card details</p>
-      <a href="./index.html"><button type="submit">Continue</button> </a>
+      <a href="./index.html"><button type="button">Continue</button> </a>
     </div>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Sunday Marvellous</a>.
     </div>
-    <!-- <script src="./script.js"></script> -->
+
+    <!-- Move your script to the end of the body to ensure the DOM is loaded -->
+    <script>
+      // Displaying the values from local storage on the page
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("data").innerHTML =
+          localStorage.getItem("txtValue");
+        document.getElementById("data1").innerHTML =
+          localStorage.getItem("txtValue1");
+        document.getElementById("data2").innerHTML =
+          localStorage.getItem("txtValue2");
+        document.getElementById("data3").innerHTML =
+          localStorage.getItem("txtValue3");
+        document.getElementById("data4").innerHTML =
+          localStorage.getItem("txtValue4");
+      });
+    </script>
   </body>
 </html>
