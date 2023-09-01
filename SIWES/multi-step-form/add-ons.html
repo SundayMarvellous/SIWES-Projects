@@ -64,63 +64,57 @@
             <h1 class="container__main-heading">Pick add-ons</h1>
             <p class="container__main-info">Add-ons help enhance your gaming experience.</p>
             <form>
-              <div class="contai ner__main-form">
-                <div class="container__main-cards-button">
-                    <button class="container__main-card container__main-cards-1 container__main-card-head-active" id="container__main-card-head-active">
-                            <div class="container__main-card-addons">
-                                  <input type="checkbox" id="container__main-cards-addons-checkbox 1">
-                                <div class="container__main-card-details">
-                                    <p class="container__main-card-head">Online service</p>
-                                    <p class="container__main-card-price">Access to multiplayer games</p>
-                                </div>
-                                <div class="container__main-card-price-addons">
-                                    <p>+$1/mo</p>
-                                </div>
-                            </div>
-                    </button>
-                    <button class="container__main-card container__main-cards-2">
-                        <div class="container__main-card-addons">
-                              <input type="checkbox" id="container__main-cards-addons-checkbox 2">
-                            <div class="container__main-card-details">
-                            <p class="container__main-card-head">Larger storage</p>
-                            <p class="container__main-card-price">Extra 1TB of cloud save</p>
-                            </div>
-                            <div class="container__main-card-price-addons">
-                                <p>+$2/mo</p>
-                            </div>
-                        </div>
-                    </button>
+              <div class="container__main-cards-button" id="container__main-cards-button" >
+                <button class="container__main-card container__main-cards-1">
+                  <div class="container__main-card-addons">
+                    <div class="first">
+                      <input type="checkbox" id="container__main-cards-addons-checkbox 1">
+                      <div class="container__main-card-details">
+                        <p class="container__main-card-head">Online service</p>
+                        <p class="container__main-card-price">Access to multiplayer games</p>
+                      </div>
+                    </div>
+                      <div class="container__main-card-price-addons">
+                        <p>+$1/mo</p>
+                      </div>
                   </div>
-                    <button class="container__main-card container__main-cards-3">
-                        <div class="container__main-card-addons">
-                              <input type="checkbox" id="container__main-cards-addons-checkbox 3">
-                            <div class="container__main-card-details">
-                                <p class="container__main-card-head">Customizable profile</p>
-                                <p class="container__main-card-price">Custom theme on your profile</p>
-                            </div>
-                            <div class="container__main-card-price-addons">
-                                <p>+$2/mo</p>
-                            </div>
+                </button>
+                <button class="container__main-card container__main-cards-2" id="button2">
+                    <div class="container__main-card-addons">
+                      <div class="first">
+                        <input type="checkbox" type="checkbox" id="termsChkbx2" onchange="isChecked()">
+                        <div class="container__main-card-details">
+                          <p class="container__main-card-head">Larger storage</p>
+                          <p class="container__main-card-price">Extra 1TB of cloud save</p>
                         </div>
-                    </button>
-                </div>
-                <div class="container__main-plan-option">
-                  <p class="container__main-card-plan-option-monthly">Monthly</p>
-                  <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
-                  <p class="container__main-card-plan-option-yearly">Yearly</p>
-                </div>
-                
-
+                      </div>
+                        <div class="container__main-card-price-addons">
+                          <p>+$2/mo</p>
+                        </div>
+                    </div>
+                </button>
+              
+                <button class="container__main-card container__main-cards-3">
+                    <div class="container__main-card-addons">
+                      <div class="first">
+                        <input type="checkbox" id="container__main-cards-addons-checkbox 3">
+                        <div class="container__main-card-details">
+                          <p class="container__main-card-head">Customizable profile</p>
+                          <p class="container__main-card-price">Custom theme on your profile</p>
+                        </div>
+                      </div>
+                        <div class="container__main-card-price-addons">
+                          <p>+$2/mo</p>
+                        </div>
+                    </div>
+                </button>
               </div>
             </form>
       </div>
     </div>
     <div class="container__buttom">
-      <button class="container__buttom-button-previous" type="submit">Go back</button>
-      <button class="container__buttom-button-next" type="submit">Next Step</button>
+      <a href="./plan-selection.html"><button class="container__buttom-button-previous" type="submit">Go back</button></a>
+      <a><button class="container__buttom-button-next" type="submit">Next Step</button></a>
     </div>
     <script src="./script.js"></script>
   </body>
